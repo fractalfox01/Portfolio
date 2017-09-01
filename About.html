@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 16px;
+  background-color: white;
+  color: black;
+}
+
+.box {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.a {
+  grid-area: 1/1/1/2;
+}
+.b {
+  grid-area: 2/4/2/2;
+}
+.c {
+  grid-area: 3/3/3/2;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="box a">About Me:</div>
+    <div class="box b"><strong>Thomas Vandivier</strong></div>
+    <div class="box c">C</div>
+    <div class="box a">About Me:</div>
+    <div class="box b"><strong>Thomas Vandivier</strong></div>
+    <div class="box c">C</div>
+</div>
+</body>
+</html>
