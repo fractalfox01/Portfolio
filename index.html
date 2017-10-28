@@ -5,21 +5,32 @@
     <meta charset="UTF-8">
 </head>
     <style>
+        body{
+            margin: 75px;
+            background-color: lightgrey;
+        }
         table{
             background-color: blue;
             color: white;
+            font-size: 26px;
+        }
+        img{
+            width: 350px;
+            height: 350px;
+            border: solid;
+            border-radius: 180px;
+            border-width: 15px;
+            border-color: blue;
+        }
+        #skills{
+            width: 300px;
+            font-size: 24px;
+            color: white;
+            background-color: blue;
         }
     </style>
 <body>
-<center>
-    <table width="100%" border="2">
-        <tr>
-            <td colspan="2" bgcolor="#12d736">
-                <center><h1>Portfolio</h1></center>
-            </td>
-        </tr>
-    </table>
-</center>
+<center><img src="me.jpg" ></center>
 <hr>
 <br>
 <table width="100%" border="0">
@@ -37,9 +48,9 @@
         </td>
 </table>
 <br>
-<h1>Skills:</h1>
-<div style="width:100%;color:#45d712">
-    <ul>
+<div>
+    <h1>Skills:</h1>
+    <ul id="skills">
         <li>Github</li>
         <li>Cisco Networking</li>
         <li>Java</li>
@@ -90,7 +101,7 @@
     <tr>
         <td>
             <ul>
-                <li><strong>Current:</strong> BS in Network Engineering,
+                <li><strong>Current:</strong> A.S. Network Engineering
                     Expected graduation: Fall 2018
                     Coconino Community College | Flagstaff, AZ
                 </li>
