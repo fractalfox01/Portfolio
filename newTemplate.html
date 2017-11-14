@@ -100,3 +100,19 @@
 <div class="footer">
   <div class="inner-footer">Created by Thomas V</div>
 </div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script>
+  $(document).ready(function(){
+  var width = screen.width;
+  
+});
+$('#button-aboutMe').hover(function(){ $('#button-skills').css("background-color", "blue");}, function(){
+  $('#button-skills').css('background-color','#555555');
+  $("#portfolio").css("color","grey");
+});
+$('#button-skills').hover(function(){ $('#button-skills').css("background-color", "#33aa99")},function(){$('#button-skills').css("background-color", "#555555")});
+$("#button-aboutMe").on('click', function(){
+  $("#portfolio").css("color","#00ff00");
+});
+</script>
