@@ -75,6 +75,11 @@
     color: orange;
     text-align: center;
   }
+  #aboutMe-text{
+    text-align: center;
+    color: blue;
+    background-color: lightgrey;
+  }
 </style>
 <div class="container-fluid">
   
@@ -95,7 +100,10 @@
   
 </div>
 <div class="wrapper">
-  
+  <section id="aboutMe-text">
+    
+  </section>
+  <section></section>
 </div>
 <div class="footer">
   <div class="inner-footer">Created by Thomas V</div>
@@ -113,6 +121,6 @@ $('#button-aboutMe').hover(function(){ $('#button-skills').css("background-color
 });
 $('#button-skills').hover(function(){ $('#button-skills').css("background-color", "#33aa99")},function(){$('#button-skills').css("background-color", "#555555")});
 $("#button-aboutMe").on('click', function(){
-  $("#portfolio").css("color","#00ff00");
+  $("#aboutMe-text").html("<h1>Thomas V <i><h3>freelance web developer</h3></i></h1>");
 });
 </script>
