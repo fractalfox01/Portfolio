@@ -53,7 +53,7 @@
     background-color: #555555;
     color: white;
     height: 100%;
-  } 
+  }
   #button-skills:hover{
     background-color: #33aa99;
   }
@@ -76,37 +76,46 @@
     text-align: center;
   }
   #aboutMe-text{
+    font-family: Merriweather;
+    opacity: 0.9;
     text-align: center;
     color: blue;
-    background-color: lightgrey;
   }
   .picture{
+
     text-align: center;
+  }
+  .about-wrap{
+    background-color: #555555;
+  }
+  .aboutMe-info{
+      color: lightgreen;
   }
 </style>
 <div class="container-fluid">
-  
+
   <div class="fixed-header">
     <div class="navbar">
       <h1 id="portfolio" class="jumbotron header">
         Portfolio
       </h1>
     </div>
-    
+
     <div class="navbar buttons">
       <button id="button-aboutMe" class="navbar" type="button" value="about me" onClick="">About Me</button>
       <button id="button-projects" class="navbar" type="button" value="projects" onClick="">Projects</button>
       <button id="button-skills" class="navbar" type="button" value="skills" onClick="">Skills</button>
       <button id="button-otherLinks" class="navbar" type="button" value="other links" onClick="">Other Links</button>
-    </div>   
+    </div>
   </div>
-  
+
 </div>
 <div class="wrapper">
-  <section id="aboutMe-text">
-    
-  </section>
-  <section class="picture"></section>
+  <div class="about-wrap">
+    <section id="aboutMe-text"></section>
+    <section class="picture"></section>
+    <section class="aboutMe-info"></section>
+  </div>
 </div>
 <div class="footer">
   <div class="inner-footer">Created by Thomas V</div>
@@ -116,10 +125,14 @@
 <script>
   $(document).ready(function(){
   var width = screen.width;
-  
+
 });
 $("#button-aboutMe").on('click', function(){
   $("#aboutMe-text").html("<h1>Thomas V <i><h3>freelance web developer</h3></i></h1>");
   $(".picture").html('<img  src="http://coderealms.com/me.jpg" width="300px" height="300px" centered/>');
+  $(".aboutMe-info").html("<p>Hi, my name is Thomas VanDivier. Thanks for taking the time to view my profile!</p>" +
+    "<p>I've spent a large portion of the last three years improving my programming skills. the two years previous to that were spent" +
+    " tuning my math skills. I've worked on a few small scale websites including local businesses in expanding my knowledge</p>" +
+    " <p>Currently I'm working through a web-developer certification at <a href='https://freecodecamp.org'>FreeCodeCamp.org</a></p> ");
 });
 </script>
