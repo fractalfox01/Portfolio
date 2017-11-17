@@ -12,7 +12,7 @@
     height: 1000px;
     margin-left: 100px;
     margin-right: 100px;
-    background-color: white;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f0/DARPA_Big_Data.jpg");;
   }
   .header{
     font-family: Russo One, Sofia, Serif;
@@ -82,14 +82,24 @@
     color: blue;
   }
   .picture{
-
+    margin-bottom: 10px;
     text-align: center;
   }
   .about-wrap{
-    background-color: #555555;
+    opacity: .8;
+    background-color: #aaaaaa;
   }
   .aboutMe-info{
-      color: lightgreen;
+      color: #111111;
+      background-color: #999999;
+      border: 3px solid grey;
+      opacity: 0;
+      font-family: Russo One, serif;
+      text-shadow: 2px 2px 4px blue;
+  }
+  #freeCodeCamp{
+      color: white;
+      background-color: black;
   }
 </style>
 <div class="container-fluid">
@@ -97,7 +107,7 @@
   <div class="fixed-header">
     <div class="navbar">
       <h1 id="portfolio" class="jumbotron header">
-        Thomas Vandivier
+        Portfolio
       </h1>
     </div>
 
@@ -123,19 +133,21 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 <script>
+  function FreeCodeCamp(){
+    window.open("https://www.freecodecamp.org/fractalfox01s");
+  };
   $(document).ready(function(){
-  var width = screen.width;
-
-});
-$("#button-aboutMe").on('click', function(){
-  $("#aboutMe-text").html("<h1>Tommy V <i><h3>freelance web developer</h3></i></h1>");
+    var width = screen.width;
+  });
+  $("#button-aboutMe").on('click', function(){
+  $("#aboutMe-text").html("<h1>Thomas V <i><h3>freelance web developer</h3></i></h1>");
   $(".picture").html('<img  src="http://coderealms.com/me.jpg" width="300px" height="300px" centered/>');
-  $(".aboutMe-info").html("<p>Hi, my name is Thomas VanDivier. Thanks for taking the time to view my profile!</p>" +
+  $(".aboutMe-info").css("opacity", "1");
+  $(".aboutMe-info").html("<p>Hi, my name is Thomas VanDivier. Thanks for taking the time to view my profile!</p><br/><hr/>" +
     "<p>I've spent a large portion of the last three years improving my programming skills. the two years previous to that were spent" +
-    " tuning my math skills. I've worked on a few small scale websites including local businesses in expanding my knowledge</p>" +
-    " <p>Currently I'm working through a web-developer certification at <a href='https://freecodecamp.org'>FreeCodeCamp.org</a></p>" +
+    " tuning my math skills. I've worked on a few small scale websites including local businesses in expanding my knowledge</p><br/><hr/>" +
+    "<p>Currently I'm working through a web-developer certification at <button id='freeCodeCamp' type='button' value='FreeCodeCamp' onClick='FreeCodeCamp()'>FreeCodeCamp.org</button></p>" +
     "<p>Some time around 9 years ago I started in my journey into the tech world. I had downloaded a copy of Ubuntu and started learning the command line!" +
-    " My Linux experience is much greater than any of my other skill sets; while my documentation for it only gos back a few years (when I finally formed the habit)," +
-    "it will help give a clearer view of exactly what I know. All projects and documentation can be viewed by clicking the projects button above.</p>");
+    " My Linux experience is much greater than any of my other skill sets; while my documentation for it only gos back a few years (when I finally formed the habit), it will help give a clearer view of exactly what I know. All projects and documentation can be viewed by clicking the projects button above.</p>");
 });
 </script>
