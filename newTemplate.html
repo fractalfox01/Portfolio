@@ -153,6 +153,9 @@
     " it will help give a clearer view of exactly what I know. All projects and documentation can be viewed by clicking the projects button above.</p>");
   });
   $("#button-projects").on(('click'), function(){
-    console.log("testing...");
+    $("aboutMe-text").html("<h1>Projects</h1>");
+  });
+  $("#button-skills").on('click', function(){
+    $("#aboutMe-text").html("<h1>Skills</h1>");
   });
 </script>
