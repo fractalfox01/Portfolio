@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' rel='stylesheet'>
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css' rel='stylesheet'>
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
-  <style>
+<head>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
+    <style>
     nav{
       display: inline-block;
       width: 100%;
-      height: 50px;
+      height: 75px;
       background-color: #000000;
       border-top: 3px solid #ddaa00;
       border-left: 3px solid #ddaa00;
@@ -35,9 +35,9 @@
     }
     #left-box{
       width: 100%;
-    
+
     }
-    
+
     #stream{
       font-family: Vollkorn SC;
       width: 100%;
@@ -48,8 +48,9 @@
       border: 3px solid white;
     }
     #stream:hover{
-      opacity: .6;
-      background-color: #000000;
+      opacity: .7;
+      background-color: #aa55bb;
+      color: blue;
       /*border: 3px solid #99aaff;
       */
     }
@@ -62,7 +63,7 @@
       background-color: orange;
     }
     .icon{
-      width: 20%;
+      width: 0%;
       text-align: center;
       background-color: black;
     }
@@ -77,13 +78,13 @@
       margin-top: 30px;
     }
     .right-colum{
-      width: 30%;
+      width: 25%;
     }
     .right-box{
       width: 100%;
       background-color: #ffffff;
     }
-    #user{ 
+    #user{
       color: lightgreen;
     }
     #offline{
@@ -117,21 +118,19 @@
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Vollkorn SC">
 <div class="container">
-  <nav class="nav">
-    <nav><div class="title-box"><h1 class="title">Twitch Streams</h1></div></nav>
-    <div class="left-colum">
-      <div type="button" id="left-box">
-        
-      </div>
-        
-      </div>
-    <div class="icon">
-     
-    </div>
-    <div class="right-colum"><div class="right-box"></div></div>
-    <footer><h4 style='text-align: center;color:orange;'>Created by Thomas V</h4></footer>
-  </nav>
-  
+    <nav class="nav">
+        <nav><div class="title-box"><h1 class="title">Twitch Streams</h1></div></nav>
+        <div class="left-colum">
+            <div type="button" id="left-box"></div>
+        </div>
+        <div class="right-colum">
+            <div class="right-box"></div>
+        </div>
+        <div class="icon"></div>
+
+        <footer><h4 style='text-align: center;color:orange;'>Created by Thomas V</h4></footer>
+    </nav>
+
 </div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
@@ -166,7 +165,7 @@ function rClicker(val1){
 }
 
 $(document).ready(function(){
-  
+
   // Right colum
   // calls to kraken/streams; grabs first 10 streams
   // appends to left colum
@@ -186,9 +185,9 @@ $(document).ready(function(){
           $("#left-box").append("<button id='stream' type='button' value='" + JSON.stringify(data.streams[i]['channel']['name'],null,4).toString() + "' onClick='clicker(" +JSON.stringify(data.streams[i]['channel']['name'],null,4).toString()+ ")'>" + "<img src=" + "" + JSON.stringify(data.streams[i]['channel']['logo'],null,4) + "width='50px'/>\t<h4 style='color:red;'>Live</h4><h4>User " + "<a id='user'>" + JSON.stringify(data.streams[i]['channel']['name'],null,4).toString() + "</a> playing " +  "<a id='user'>" + JSON.stringify(data.streams[i]['game'],null,4) + "</a></h4><p> started at: " + JSON.stringify(data.streams[i]['created_at'],null,4) + "</p><p>Viewers: " + JSON.stringify(data.streams[i]['viewers'],null,4).toString() + "</p></button>" );
           countToTen++;
         }
-        
+
         //console.log(JSON.stringify(data,null,4));
-        
+
       }
       ;},
     // On Error return, block is executed.
@@ -197,13 +196,13 @@ $(document).ready(function(){
     }
 }
   );
-  
+
   // Left colum
   // makes a call for each string in global variable names
   // for each name, if success return, check to see if currently streaming
   // and alters button style accordingly.
   // then appends button to right colum.
-  
+
   // COLUM BUTTON CLICKS
   // if channel has live stream, uses left colums button click
   // else, uses rClicker()
@@ -215,11 +214,11 @@ $(document).ready(function(){
     success: function(data) {
       //console.log(names[z]);
       var arg = JSON.stringify(data._links.self,null,4).split('/');
-      
+
       if(JSON.stringify(data.stream,null,4) === 'null'){
         $(".right-box").append("<button id='right-button' type='button' value='' onClick='rClicker(" +JSON.stringify(data._links.self,null,4).toString()+ ")'><h4><i id='user'>" + arg[arg.length-1].replace('"',"") + "</i> - <i id='offline'>Offline</i></h4><p style='color:white;'>" + "click To View Video's" + "</p></button>");
       }
-      
+
       else(
         $(".right-box").append("<button id='right-button' type='button' value='" + JSON.stringify(data.stream['channel']['name'],null,4) + "' onClick='clicker(" +JSON.stringify(data.stream['channel']['name'],null,4).toString()+ ")'>" + "<img src=" + "" + JSON.stringify(data.stream['channel']['logo'],null,4) + "width='50px'/>\t<h4 style='color:red;'>Live</h4><h4>User " + "<a id='user'>" + JSON.stringify(data.stream['channel']['name'],null,4) + "</a> playing " +  "<a id='user'>" + JSON.stringify(data.stream['game'],null,4) + "</a></h4><p> started at: " + JSON.stringify(data.stream['created_at'],null,4) + "</p><p>Viewers: " + JSON.stringify(data.stream['viewers'],null,4).toString() + "</p></button>" )
       )
@@ -227,7 +226,7 @@ $(document).ready(function(){
     error: function(data){
       console.log("@2 Error: " + names[z] + "\n" + JSON.stringify(data,null,4));
     }
-    
+
   });
 }
   })
