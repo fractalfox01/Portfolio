@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    nav{
+      display: inline-block;
+      width: 100%;
+      height: 50px;
+      background-color: #000000;
+      border-top: 3px solid #ddaa00;
+      border-left: 3px solid #ddaa00;
+      border-right: 3px solid #ddaa00;
+      border-bottom: 1px solid #ffffff;
+    }
+    .title{
+      font-family: Permanent Marker;
+      margin-left: 40%;
+      color: orange;
+    }
+    .title-box{
+      width: 100%;
+      height: 50px;
+    }
+
+    body{
+      background-color: black;
+    }
+    .left-colum{
+      width: 50%;
+      color: white;
+      background-color: white;
+    }
+    #left-box{
+      width: 100%;
+    
+    }
+    
+    #stream{
+      font-family: Vollkorn SC;
+      width: 100%;
+      hight: 30px;
+      padding: 3px;
+      color: #999999;
+      background-color: #550077;
+      border: 3px solid white;
+    }
+    #stream:hover{
+      opacity: .6;
+      background-color: #000000;
+      /*border: 3px solid #99aaff;
+      */
+    }
+    #streamButton{
+      displiay: block;
+      width: 15%;
+      hight: 100%;
+      margin-top: 3px;
+      margin-left: 20px;
+      background-color: orange;
+    }
+    .icon{
+      width: 20%;
+      text-align: center;
+      background-color: black;
+    }
+    #top-center-title{
+      color: orange;
+      margin-left: 10px;
+      margin-top: 30px;
+    }
+    #bottom-center-title{
+      color: orange;
+      margin-left: 10px;
+      margin-top: 30px;
+    }
+    .right-colum{
+      width: 30%;
+    }
+    .right-box{
+      width: 100%;
+      background-color: #ffffff;
+    }
+    #user{ 
+      color: lightgreen;
+    }
+    #offline{
+      color: #aaaa00;
+    }
+    #picture{
+      width: 50px;
+      height: 50px;
+    }
+    #right-button{
+      font-family: Vollkorn SC;
+      width: 100%;
+      background-color: #550077;
+    }
+    #right-button:hover{
+      opacity: .8;
+      color: white;
+      border: 3px solid #ccaa00;
+      background-color: #666666;
+    }
+    footer{
+      width: 100%;
+    }
+      </style>
+</head>
+<body>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Pacifico">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Permanent Marker">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Vollkorn SC">
+<div class="container">
+  <nav class="nav">
+    <nav><div class="title-box"><h1 class="title">Twitch Streams</h1></div></nav>
+    <div class="left-colum">
+      <div type="button" id="left-box">
+        
+      </div>
+        
+      </div>
+    <div class="icon">
+     
+    </div>
+    <div class="right-colum"><div class="right-box"></div></div>
+    <footer><h4 style='text-align: center;color:orange;'>Created by Thomas V</h4></footer>
+  </nav>
+  
+</div>
+<script>
+// global string, used as temp storage.
+var arg = "";
+// List of twitch channels; used for right button colum.
+var names = ["warner","shroud", "OgamingSC2", "cretetion", "freecodecamp"];
+
+// counter used in ajax callback loops.
+var countToTen = 0; // counts left colum appends; stops at ten.
+
+// Left button colum click event.
+function clicker(val){
+  // Takes val and concatenates to str.
+  var str = "https://go.twitch.tv/" + val;
+  // then opens the URL in a new window.
+  window.open(str);
+}
+
+// Right button colum click event.
+function rClicker(val1){
+  // Takes val1 as,
+  // https://api.twitch.tv/kraken/streams/doublelift
+  // And changes to,
+  // https://go.twitch.tv/doublelift/videos/all
+  var str1 = val1.replace("api","go");
+  str1 = str1.replace("kraken/streams/","");
+  str1 += "/videos/all"
+  // Then opens the URL in a new window.
+  window.open(str1);
+}
+
+$(document).ready(function(){
+  
+  // Right colum
+  // calls to kraken/streams; grabs first 10 streams
+  // appends to left colum
+  $.ajax({
+    type: 'GET',
+    url: 'https://api.twitch.tv/kraken/streams/',
+    headers: {'Client-ID': 'b9y4yem3s7yfymjp6k8lor2qdsmlxl'},
+    // On successfull return, block is executed
+    success: function(data) {
+      for(var i in data.streams){
+        var arg1 = JSON.stringify(data.streams[i]['channel']['name'],null,4);
+        arg = "https://go.twitch.tv/" + arg1.toString().slice(1,arg.length-1);
+        if(countToTen === 10){
+          break;
+        }
+        else{
+          $("#left-box").append("<button id='stream' type='button' value='" + JSON.stringify(data.streams[i]['channel']['name'],null,4).toString() + "' onClick='clicker(" +JSON.stringify(data.streams[i]['channel']['name'],null,4).toString()+ ")'>" + "<img src=" + "" + JSON.stringify(data.streams[i]['channel']['logo'],null,4) + "width='50px'/>\t<h4 style='color:red;'>Live</h4><h4>User " + "<a id='user'>" + JSON.stringify(data.streams[i]['channel']['name'],null,4).toString() + "</a> playing " +  "<a id='user'>" + JSON.stringify(data.streams[i]['game'],null,4) + "</a></h4><p> started at: " + JSON.stringify(data.streams[i]['created_at'],null,4) + "</p><p>Viewers: " + JSON.stringify(data.streams[i]['viewers'],null,4).toString() + "</p></button>" );
+          countToTen++;
+        }
+        
+        //console.log(JSON.stringify(data,null,4));
+        
+      }
+      ;},
+    // On Error return, block is executed.
+    error: function(data) {
+      console.log("@1 Error: " + JSON.stringify(data,null,4));
+    }
+}
+  );
+  
+  // Left colum
+  // makes a call for each string in global variable names
+  // for each name, if success return, check to see if currently streaming
+  // and alters button style accordingly.
+  // then appends button to right colum.
+  
+  // COLUM BUTTON CLICKS
+  // if channel has live stream, uses left colums button click
+  // else, uses rClicker()
+  for(var z = 0; z < names.length; z++){
+  $.ajax({
+    type: 'GET',
+    url: 'https://api.twitch.tv/kraken/streams/' + names[z].toString(),
+    headers: {'Client-ID': 'b9y4yem3s7yfymjp6k8lor2qdsmlxl'},
+    success: function(data) {
+      //console.log(names[z]);
+      var arg = JSON.stringify(data._links.self,null,4).split('/');
+      
+      if(JSON.stringify(data.stream,null,4) === 'null'){
+        $(".right-box").append("<button id='right-button' type='button' value='' onClick='rClicker(" +JSON.stringify(data._links.self,null,4).toString()+ ")'><h4><i id='user'>" + arg[arg.length-1].replace('"',"") + "</i> - <i id='offline'>Offline</i></h4><p style='color:white;'>" + "click To View Video's" + "</p></button>");
+      }
+      
+      else(
+        $(".right-box").append("<button id='right-button' type='button' value='" + JSON.stringify(data.stream['channel']['name'],null,4) + "' onClick='clicker(" +JSON.stringify(data.stream['channel']['name'],null,4).toString()+ ")'>" + "<img src=" + "" + JSON.stringify(data.stream['channel']['logo'],null,4) + "width='50px'/>\t<h4 style='color:red;'>Live</h4><h4>User " + "<a id='user'>" + JSON.stringify(data.stream['channel']['name'],null,4) + "</a> playing " +  "<a id='user'>" + JSON.stringify(data.stream['game'],null,4) + "</a></h4><p> started at: " + JSON.stringify(data.stream['created_at'],null,4) + "</p><p>Viewers: " + JSON.stringify(data.stream['viewers'],null,4).toString() + "</p></button>" )
+      )
+    },
+    error: function(data){
+      console.log("@2 Error: " + names[z] + "\n" + JSON.stringify(data,null,4));
+    }
+    
+  });
+}
+  })
+;
+;
+//later use https://go.twitch.tv/communities/
+//$.ajax({type: "", url: "", headers: "", success:""});
+//
+//
+//
+</script>
+</body>
+</html>
