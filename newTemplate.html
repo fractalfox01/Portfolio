@@ -102,7 +102,9 @@
       color: white;
       background-color: black;
   }
-
+  .clear{
+      opacity: .5;
+  }
 </style>
 <div class="container-fluid">
 
@@ -126,8 +128,8 @@
   <div class="about-wrap">
     <section id="aboutMe-text"></section>
     <section class="picture"></section>
-    <section class="aboutMe-info"></section>
-    <section id="clear" class="aboutMe-info"></section>
+    <section id="about" class="aboutMe-info"></section>
+    <section id="proj" class="aboutMe-info"></section>
   </div>
 </div>
 <div class="footer">
@@ -145,8 +147,9 @@
   $("#button-aboutMe").on('click', function(){
   $("#aboutMe-text").html("<h1>Thomas V <i><h3>freelance web developer</h3></i></h1>");
   $(".picture").html('<img  src="http://coderealms.com/me.jpg" width="300px" height="300px" centered/>');
-  $(".aboutMe-info").css("opacity", "1");
-  $(".aboutMe-info").html("<p>Hi, my name is Thomas VanDivier. Thanks for taking the time to view my profile!</p><br/><hr/>" +
+  $(".aboutMe-info[id|='proj']").html("");
+  $(".aboutMe-info[id|='about']").css("opacity", "1");
+  $(".aboutMe-info[id|='about']").html("<p>Hi, my name is Thomas VanDivier. Thanks for taking the time to view my profile!</p><br/><hr/>" +
     "<p>I've spent a large portion of the last three years working on my programming skills; C#, Python, Java, HTML, CSS, Javascript are some of the most learned (check skills for duration). the two years previous to that were spent" +
     " mostly building up my math. Prior to that I had fiddled around with different programming languages like Ruby, Perl, VB+. I've worked on a few small scale websites including one for a local business.</p><br/><hr/>" +
     "<p>Currently I'm working through a web-developer certification at <button id='freeCodeCamp' type='button' value='FreeCodeCamp' onClick='FreeCodeCamp()'>FreeCodeCamp.org</button></p>" +
@@ -156,10 +159,10 @@
   });
   $("#button-projects").on('click', function(){
     $(".picture").html("");
-    $(".aboutMe-info").html("");
+    $(".aboutMe-info[id|='about']").html("");
     $("#aboutMe-text").html("<h1>Projects</h1>");
-    $(".aboutMe-info[id|='clear']").css("background", "transparent");
-    $(".aboutMe-info[id|='clear']").html("<h1>Twitch Project</h1><object data='./twitch.html' width='500px' height='500px' type='text/html'></object>");
+    $(".aboutMe-info[id|='proj']").css("background", "transparent");
+    $(".aboutMe-info[id|='proj']").html("<h1>Twitch Project</h1><object data='./twitch.html' width='500px' height='500px' type='text/html'></object>");
   });
   $("#button-skills").on('click', function(){
     $("#aboutMe-text").html("<h1>Skills</h1>");
