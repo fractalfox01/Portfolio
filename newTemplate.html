@@ -9,10 +9,10 @@
     background-color: black;
   }
   .wrapper{
-    height: 1000px;
+    height: auto;
     margin-left: 100px;
     margin-right: 100px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f0/DARPA_Big_Data.jpg");;
+    background-image: url("./wood1.jpg");;
   }
   .header{
     font-family: Russo One, Sofia, Serif;
@@ -102,6 +102,7 @@
       color: white;
       background-color: black;
   }
+
 </style>
 <div class="container-fluid">
 
@@ -126,6 +127,7 @@
     <section id="aboutMe-text"></section>
     <section class="picture"></section>
     <section class="aboutMe-info"></section>
+    <section id="clear" class="aboutMe-info"></section>
   </div>
 </div>
 <div class="footer">
@@ -153,9 +155,11 @@
     "All projects and documentation can be viewed by clicking the projects button above.</p>");
   });
   $("#button-projects").on('click', function(){
-    $("#aboutMe-text").html("<h1>Projects</h1>");
     $(".picture").html("");
-    $(".aboutMe-info").html("<h1>Twitch Project</h1><iframe src='./twitch.html' width='500px' height='500px'></iframe>");
+    $(".aboutMe-info").html("");
+    $("#aboutMe-text").html("<h1>Projects</h1>");
+    $(".aboutMe-info[id|='clear']").css("background", "transparent");
+    $(".aboutMe-info[id|='clear']").html("<h1>Twitch Project</h1><object data='./twitch.html' width='500px' height='500px' type='text/html'></object>");
   });
   $("#button-skills").on('click', function(){
     $("#aboutMe-text").html("<h1>Skills</h1>");
