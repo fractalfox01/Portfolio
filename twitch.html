@@ -3,111 +3,116 @@
 <head>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css' rel='stylesheet'>
     <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap-grid.css' rel='stylesheet'>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
+    <!--<link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>-->
     <style>
-    nav{
-      display: inline-block;
-      width: 100%;
-      height: 75px;
-      background-color: #000000;
-      border-top: 3px solid #ddaa00;
-      border-left: 3px solid #ddaa00;
-      border-right: 3px solid #ddaa00;
-      border-bottom: 1px solid #ffffff;
-    }
-    .title{
-      font-family: Permanent Marker;
-      margin-left: 40%;
-      color: orange;
-    }
-    .title-box{
-      width: 100%;
-      height: 50px;
-    }
+nav{
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  border-top: 3px solid #ddaa00;
+  border-left: 3px solid #ddaa00;
+  border-right: 3px solid #ddaa00;
+  border-bottom: 1px solid #ffffff;
+}
+.title{
+  font-family: Permanent Marker;
+  margin-left: 40%;
+  color: orange;
+}
+.title-box{
+  width: 100%;
+  height: 70px;
+}
 
-    body{
-      background-color: black;
-    }
-    .left-colum{
-      width: 50%;
-      color: white;
-      background-color: white;
-    }
-    #left-box{
-      width: 100%;
+body{
+  background-color: black;
+}
+.left-colum{
+  width: 50%;
+  color: white;
+  background-color: #000000;
+}
+#left-box{
+  width: 100%;
 
-    }
+}
 
-    #stream{
-      font-family: Vollkorn SC;
-      width: 100%;
-      hight: 30px;
-      padding: 3px;
-      color: #999999;
-      background-color: #550077;
-      border: 3px solid white;
-    }
-    #stream:hover{
-      opacity: .7;
-      background-color: #aa55bb;
-      color: blue;
-      /*border: 3px solid #99aaff;
-      */
-    }
-    #streamButton{
-      displiay: block;
-      width: 15%;
-      hight: 100%;
-      margin-top: 3px;
-      margin-left: 20px;
-      background-color: orange;
-    }
-    .icon{
-      width: 0%;
-      text-align: center;
-      background-color: black;
-    }
-    #top-center-title{
-      color: orange;
-      margin-left: 10px;
-      margin-top: 30px;
-    }
-    #bottom-center-title{
-      color: orange;
-      margin-left: 10px;
-      margin-top: 30px;
-    }
-    .right-colum{
-      width: 25%;
-    }
-    .right-box{
-      width: 100%;
-      background-color: #ffffff;
-    }
-    #user{
-      color: lightgreen;
-    }
-    #offline{
-      color: #aaaa00;
-    }
-    #picture{
-      width: 50px;
-      height: 50px;
-    }
-    #right-button{
-      font-family: Vollkorn SC;
-      width: 100%;
-      background-color: #550077;
-    }
-    #right-button:hover{
-      opacity: .8;
-      color: white;
-      border: 3px solid #ccaa00;
-      background-color: #666666;
-    }
-    footer{
-      width: 100%;
-    }
+#stream{
+  font-family: Vollkorn SC;
+  width: 100%;
+  hight: 30px;
+  padding: 3px;
+  color: #999999;
+  background-color: #550077;
+  border: 3px solid white;
+}
+#stream:hover{
+  opacity: 1;
+  color: #00cc22;
+  background-color: #bb44cc;
+  /*border: 3px solid #99aaff;
+  */
+}
+#streamButton{
+  displiay: block;
+  width: 15%;
+  hight: 100%;
+  margin-top: 3px;
+  margin-left: 20px;
+  background-color: orange;
+}
+.icon{
+  width: 20%;
+  text-align: center;
+  background-color: black;
+}
+#top-center-title{
+  color: orange;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+#bottom-center-title{
+  color: orange;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.right-colum{
+  width: 30%;
+}
+.right-box{
+  width: 100%;
+  background-color: #ffffff;
+}
+#user{
+  color: lightgreen;
+}
+#offline{
+  color: #aaaa00;
+}
+#picture{
+  width: 50px;
+  height: 50px;
+}
+#right-button{
+  font-family: Vollkorn SC;
+  width: 100%;
+  background-color: #550077;
+}
+#right-button:hover{
+  opacity: .8;
+  color: white;
+  border: 3px solid #ccaa00;
+  background-color: #666666;
+}
+footer{
+  width: 100%;
+}
+<!--.grid{-->
+  <!--display: grid;-->
+  <!--grid-template-columns: 50%;-->
+  <!--gird-template-rows: repeat(3, 1fr);-->
+<!--}-->
       </style>
 </head>
 <body>
@@ -118,18 +123,15 @@
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Vollkorn SC">
 <div class="container">
-    <nav class="nav">
-        <nav><div class="title-box"><h1 class="title">Twitch Streams</h1></div></nav>
-        <div class="left-colum">
-            <div type="button" id="left-box"></div>
-        </div>
-        <div class="right-colum">
-            <div class="right-box"></div>
-        </div>
-        <div class="icon"></div>
-
+    <nav><div class="title-box"><h1 class="title">Twitch Streams</h1></div></nav>
+    <div class="row">
+        <div class="col-6 left-colum"><div type="button" id="left-box"></div></div>
+        <div class="w-100"></div>
+        <icon class="col-2 contain"></icon>
+        <div class="w-100"></div>
+        <div class="col-4 right-colum"><div class="right-box"></div></div>
         <footer><h4 style='text-align: center;color:orange;'>Created by Thomas V</h4></footer>
-    </nav>
+    </div>
 
 </div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
