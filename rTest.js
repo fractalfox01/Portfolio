@@ -1,7 +1,6 @@
 let f1 = true;
 let f2 = false;
 let f3 = false;
-let abt = $("#about");
 let flags = [true, false, false, false, false, false, false, false, false, false, false, false, false]
 let num = -100;
 var doc = document.documentElement;
@@ -9,7 +8,7 @@ var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 // document.getElementById("mover").style.marginLeft = "-100vw";
 let aa = document.getElementsByClassName("mover");
 window.addEventListener('scroll', function(){
-    $("#about").text(doc.scrollTop - doc.clientTop);
+    $("#about").text(window.pageYOffset);
     if(window.pageYOffset > 2250 && flags[0]){
         flags[0] = true;
         flags[1] = true;
