@@ -9,14 +9,14 @@ var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 let aa = document.getElementsByClassName("mover");
 window.addEventListener('scroll', function(){
 
-    if(window.pageYOffset > 500 && flags[0]){
+    if(window.pageYOffset > 300 && flags[0]){
         flags[0] = true;
         flags[1] = true;
         console.log("here");
         console.log(aa.length.toString());
         aa[0].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 550 && flags[1]){
+    if(window.pageYOffset > 350 && flags[1]){
         flags[1] = true;
         flags[2] = true;
         aa[0].style.marginLeft = "-100vw";
