@@ -8,7 +8,7 @@ var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 // document.getElementById("mover").style.marginLeft = "-100vw";
 let aa = document.getElementsByClassName("mover");
 window.addEventListener('scroll', function(){
-    $("#about").text(window.pageYOffset);
+    document.getElementById("about").innerHtml = window.pageYOffset;
     if(window.pageYOffset > 2250 && flags[0]){
         flags[0] = true;
         flags[1] = true;
