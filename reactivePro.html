@@ -26,7 +26,7 @@
         #wrapper{
             margin-left: 0vw;
             margin-right: 0vw;
-            height: 300vh;
+            height: 500vh;
             width: 100vw;
             background-image: url("https://c1.staticflickr.com/4/3182/3052194640_0394efbbf7_b.jpg");
             background-repeat: no-repeat;
@@ -63,6 +63,26 @@
         #frame3{
             position: absolute;
             margin-top: 200vh;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("https://c1.staticflickr.com/4/3182/3052194640_0394efbbf7_b.jpg");
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            z-index: -2;
+        }
+        #frame4{
+            position: absolute;
+            margin-top: 300vh;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("https://c1.staticflickr.com/4/3182/3052194640_0394efbbf7_b.jpg");
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            z-index: -2;
+        }
+        #frame5{
+            position: absolute;
+            margin-top: 400vh;
             width: 100vw;
             height: 100vh;
             background-image: url("https://c1.staticflickr.com/4/3182/3052194640_0394efbbf7_b.jpg");
@@ -184,7 +204,10 @@
             padding: 5px;
         }
         .mover{
-            margin-left: -100vw;
+            margin-left: 1vw;
+        }
+        .moverIn{
+
         }
         .progress-box-outer{
             align: inline-block;
@@ -238,11 +261,38 @@
         .python{
             width: 30vw;
         }
+        #pythonInfo{
+            margin-top: 190vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 40vh;
+            background-color: blue;
+            opacity: 0;
+        }
         .wordpress{
             width: 30vw;
         }
+        #wordpressInfo{
+            margin-top: 197.5vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 40vh;
+            background-color: blue;
+            opacity: 0;
+        }
         .linux{
             width: 80vw;
+        }
+        #linuxInfo{
+            margin-top: 205vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 40vh;
+            background-color: blue;
+            opacity: 0;
         }
         .hTml{
             width: 50vw;
@@ -306,22 +356,23 @@
         <div id="aboutme">
             <p id="aboutText">Hello, and Welcome!</p>
             <p id="aboutText">Thank you for stopping by!</p>
-            <p id="aboutmain">I'm a freelance website developer/designer and current owner of CodeRealms LLC. As-well as offering website services I also have experience in Python script and application programming.</p>
+            <p id="aboutmain">I'm a freelance website developer/designer and current owner of CodeRealms LLC. As-well as offering website services I also have experience in a number of other programming languages and services, such as: both front and back-end languages, Apache web servers, Amazon AWS ec2 instances, Nodejs,  .</p>
         </div>
+        <!-- Start of skills Area -->
         <div id="mySkills">
             <p id="skillsText">Skills</p>
             <div class="progress-box-outer p-top mover">
-                <div class="progress-box-inner python">
+                <div class="progress-box-inner python moverIn">
                     Python<span class="bar">3 Years</span>
                 </div>
             </div>
             <div class="progress-box-outer p-2 mover">
-                <div class="progress-box-inner wordpress">
+                <div class="progress-box-inner wordpress moverIn">
                     Wordpress<span class="bar">3 years</span>
                 </div>
             </div>
             <div class="progress-box-outer p-3 mover">
-                <div class="progress-box-inner linux">
+                <div class="progress-box-inner linux moverIn">
                     Linux<span class="bar">8 years</span>
                 </div>
             </div>
@@ -356,8 +407,13 @@
                 </div>
             </div>
         </div>
+        <div id="pythonInfo"></div>
+        <div id="wordpressInfo"></div>
+        <div id="linuxInfo"></div>
         <div id="frame2"></div>
         <div id="frame3"></div>
+        <div id="frame4"></div>
+        <div id="frame5"></div>
     </div>
     <div id="footer">Created And Designed By Thomas Vandivier</div>
 
@@ -365,5 +421,5 @@
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.3/svg.min.js"></script>
 </body>
-<script type="text/javascript" src="https://fractalfox01.github.io/Portfolio/rTest.js"></script>
+<script type="text/javascript" src="rTest.js"></script>
 </html>
