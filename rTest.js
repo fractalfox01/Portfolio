@@ -7,7 +7,7 @@ let num = -100;
 var doc = document.documentElement;
 var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 // document.getElementById("mover").style.marginLeft = "-100vw";
-abt.innerHtml = window.pageYOffset;
+abt.innerHtml(window.pageYOffset);
 let aa = document.getElementsByClassName("mover");
 window.addEventListener('scroll', function(){
 
