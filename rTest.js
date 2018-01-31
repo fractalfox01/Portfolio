@@ -9,32 +9,32 @@ var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 let aa = document.getElementsByClassName("mover");
 window.addEventListener('scroll', function(){
 
-    if(window.pageYOffset > 250 && flags[0]){
+    if(window.pageYOffset > 1250 && flags[0]){
         flags[0] = true;
         flags[1] = true;
         console.log("here");
         console.log(aa.length.toString());
         aa[0].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 300 && flags[1]){
+    if(window.pageYOffset > 1300 && flags[1]){
         flags[1] = true;
         flags[2] = true;
         aa[0].style.marginLeft = "-100vw";
         aa[1].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 350 && flags[2]){
+    if(window.pageYOffset > 1350 && flags[2]){
         flags[2] = true;
         flags[3] = true;
         aa[1].style.marginLeft = "-100vw";
         aa[2].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 400 && flags[3]){
+    if(window.pageYOffset > 1400 && flags[3]){
         flags[3] = true;
         flags[4] = true;
         aa[2].style.marginLeft = "-100vw";
         aa[3].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 450 && flags[4]){
+    if(window.pageYOffset > 1450 && flags[4]){
         flags[4] = true;
         flags[5] = true;
         aa[3].style.marginLeft = "-100vw";
@@ -52,13 +52,13 @@ window.addEventListener('scroll', function(){
         aa[5].style.marginLeft = "-100vw";
         aa[6].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 600 && flags[7]){
+    if(window.pageYOffset > 1400 && flags[7]){
         flags[7] = true;
         flags[8] = true;
         aa[6].style.marginLeft = "-100vw";
         aa[7].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 650 && flags[8]){
+    if(window.pageYOffset > 1450 && flags[8]){
         flags[8] = true;
         flags[9] = true;
         aa[7].style.marginLeft = "-100vw";
