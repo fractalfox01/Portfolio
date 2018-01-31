@@ -2,13 +2,13 @@ let f1 = true;
 let f2 = false;
 let f3 = false;
 let flags = [true, false, false, false, false, false, false, false, false, false, false, false, false]
-let num = -100;
+let num = window.innerHeight;
 var doc = document.documentElement;
 var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 // document.getElementById("mover").style.marginLeft = "-100vw";
 let aa = document.getElementsByClassName("mover");
 window.addEventListener('scroll', function(){
-    document.getElementById("about").innerHTML = window.pageYOffset + "";
+    document.getElementById("about").innerHTML = num + "";
     if(window.pageYOffset > 2250 && flags[0]){
         flags[0] = true;
         flags[1] = true;
