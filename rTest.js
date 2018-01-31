@@ -9,26 +9,26 @@ var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 let aa = document.getElementsByClassName("mover");
 window.addEventListener('scroll', function(){
 
-    if(window.pageYOffset > 300 && flags[0]){
+    if(window.pageYOffset > 700 && flags[0]){
         flags[0] = true;
         flags[1] = true;
         console.log("here");
         console.log(aa.length.toString());
         aa[0].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 350 && flags[1]){
+    if(window.pageYOffset > 750 && flags[1]){
         flags[1] = true;
         flags[2] = true;
         aa[0].style.marginLeft = "-100vw";
         aa[1].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 600 && flags[2]){
+    if(window.pageYOffset > 800 && flags[2]){
         flags[2] = true;
         flags[3] = true;
         aa[1].style.marginLeft = "-100vw";
         aa[2].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 650 && flags[3]){
+    if(window.pageYOffset > 850 && flags[3]){
         flags[3] = true;
         flags[4] = true;
         aa[2].style.marginLeft = "-100vw";
