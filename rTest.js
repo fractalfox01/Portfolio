@@ -9,56 +9,56 @@ var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 let aa = document.getElementsByClassName("mover");
 window.addEventListener('scroll', function(){
 
-    if(window.pageYOffset > 700 && flags[0]){
+    if(window.pageYOffset > 100 && flags[0]){
         flags[0] = true;
         flags[1] = true;
         console.log("here");
         console.log(aa.length.toString());
         aa[0].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 750 && flags[1]){
+    if(window.pageYOffset > 200 && flags[1]){
         flags[1] = true;
         flags[2] = true;
         aa[0].style.marginLeft = "-100vw";
         aa[1].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 800 && flags[2]){
+    if(window.pageYOffset > 300 && flags[2]){
         flags[2] = true;
         flags[3] = true;
         aa[1].style.marginLeft = "-100vw";
         aa[2].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 850 && flags[3]){
+    if(window.pageYOffset > 400 && flags[3]){
         flags[3] = true;
         flags[4] = true;
         aa[2].style.marginLeft = "-100vw";
         aa[3].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 1000 && flags[4]){
+    if(window.pageYOffset > 500 && flags[4]){
         flags[4] = true;
         flags[5] = true;
         aa[3].style.marginLeft = "-100vw";
         aa[4].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 1050 && flags[5]){
+    if(window.pageYOffset > 600 && flags[5]){
         flags[5] = true;
         flags[6] = true;
         aa[4].style.marginLeft = "-100vw";
         aa[5].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 1100 && flags[6]){
+    if(window.pageYOffset > 800 && flags[6]){
         flags[6] = true;
         flags[7] = true;
         aa[5].style.marginLeft = "-100vw";
         aa[6].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 1150 && flags[7]){
+    if(window.pageYOffset > 900 && flags[7]){
         flags[7] = true;
         flags[8] = true;
         aa[6].style.marginLeft = "-100vw";
         aa[7].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 1200 && flags[8]){
+    if(window.pageYOffset > 1000 && flags[8]){
         flags[8] = true;
         flags[9] = true;
         aa[7].style.marginLeft = "-100vw";
