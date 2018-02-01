@@ -51,26 +51,26 @@ window.addEventListener('scroll', function(){
         console.log("here");
         console.log(aa.length.toString());
         aa[0].style.marginLeft = "1vw";
-        python.opacity = "1";
+        python.opacity = ".8";
     }
-//    if(window.pageYOffset > 2050 && flags[1]){
-//        f1 = false;
-//        flags[1] = true;
-//        flags[2] = true;
-//        aa[0].style.marginLeft = "-100vw";
-//        android.opacity = "0";
-//        apache.opacity = "0";
-//        java.opacity = "0";
-//        cSharp.opacity = "0";
-//        bash.opacity = "0";
-//        js.opacity = "0";
-//        boot.opacity = "0";
-//        htmlCss.opacity = "0";
-//        linux.opacity = "0";
-//        python.opacity = "0";
-//        wordpress.opacity = ".8";
-//        aa[1].style.marginLeft = "1vw";
-//    }
+    if(window.pageYOffset > 2550 && flags[1]){
+        f1 = false;
+        flags[1] = true;
+        flags[2] = true;
+        aa[0].style.marginLeft = "-100vw";
+        android.opacity = "0";
+        apache.opacity = "0";
+        java.opacity = "0";
+        cSharp.opacity = "0";
+        bash.opacity = "0";
+        js.opacity = "0";
+        boot.opacity = "0";
+        htmlCss.opacity = "0";
+        linux.opacity = "0";
+        python.opacity = "0";
+        wordpress.opacity = ".8";
+        aa[1].style.marginLeft = "1vw";
+    }
 //    if(window.pageYOffset > 2100 && flags[2]){
 //        f2 = false;
 //        flags[2] = true;
