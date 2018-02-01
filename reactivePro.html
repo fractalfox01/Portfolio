@@ -107,7 +107,7 @@
             width: 100vw;
             height: 5vh;
             background-color: none;
-            z-index: 1;
+            z-index: 3;
         }
         #about{
             display: inline-block;
@@ -120,6 +120,7 @@
             font-size: 3vh;
             color: #000;
             opacity: .65;
+
         }
         #skills{
             display: inline-block;
@@ -170,12 +171,12 @@
             border-image: url("https://pixnio.com/free-images/textures-and-patterns/wall-texture/brick-wall-texture-pictures/texture-red-stone-wall-725x544.jpg") 10;
             z-index: 0;
         }
-        #aboutText{
+        .aboutText{
             color: #0f7;
             font-size: 5vh;
             text-align: center;
         }
-        #aboutmain{
+        .aboutmain{
             color: #0fc;
             font-size: 3vh;
             text-align: justify;
@@ -183,7 +184,7 @@
         #mySkills{
             position: absolute;
             margin-top: 160vh;
-            margin-left: 8vw;
+            margin-left: 10vw;
             width: 80vw;
             height: 70vh;
             background-color: none;
@@ -449,9 +450,15 @@
         </svg>
         <div id="image"></div>
         <div id="aboutme">
-            <p id="aboutText">Hello, and Welcome!</p>
-            <p id="aboutText">Thank you for stopping by!</p>
-            <p id="aboutmain">I'm a freelance website developer/designer and current owner of CodeRealms LLC. As-well as offering website services I also have experience in a number of other programming languages and services, such as: both front and back-end languages, Apache web servers, Amazon AWS ec2 instances, Nodejs,  .</p>
+            <p class="aboutText">Hello, and Welcome!</p>
+            <p class="aboutText">Thank you for stopping by!</p>
+            <p class="aboutmain">I'm a freelance website developer/designer and current owner of CodeRealms LLC. As well as offering website services I also have experience in a number of other programming languages and services, such as:</p>
+            <ul class="aboutmain">
+                <li>both front and back-end languages</li>
+                <li>Apache web servers</li>
+                <li>Amazon AWS ec2 instances</li>
+                <li>Nodejs</li>
+            </ul>
         </div>
         <!-- Start of skills Area -->
         <div id="mySkills">

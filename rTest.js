@@ -19,11 +19,42 @@ let java = document.getElementById("javaInfo").style;
 let android = document.getElementById("androidInfo").style;
 let cSharp = document.getElementById("cSharpInfo").style;
 let apache = document.getElementById("apacheInfo").style;
+let about = document.getElementById("about");
+let skills = document.getElementById('skills');
+let projects = document.getElementById('projects');
+let img = document.getElementById("image");
+img.addEventListener('click', function(){
+    console.log('clicker');
+},false);
+projects.addEventListener('click', function(){
+    window.scrollTo(0, 2001);
+    for(var i = 0; i < 11; i++){
+        aa[i].style.marginLeft = "1vw";
+    }
+    python.opacity = "0";
+    apache.opacity = "0";
+    java.opacity = "0";
+    cSharp.opacity = "0";
+    bash.opacity = "0";
+    js.opacity = "0";
+    boot.opacity = "0";
+    htmlCss.opacity = "0";
+    linux.opacity = "0";
+    wordpress.opacity = "0";
+
+},false);
+skills.addEventListener('click', function(){
+    window.scrollTo(0,1173);
+},false);
+about.addEventListener('click', function(){
+    window.scrollTo(0, 200);
+}, false);
 window.addEventListener('scroll', function(){
-    console.log(winH + " <--");
-    $("#about").text(winH);
     if(window.pageYOffset > 1100 && window.pageYOffset < 1195){
-        android.opacity = "0";
+        for(var i = 0; i < 11; i++){
+            aa[i].style.marginLeft = "1vw";
+        }
+        python.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
@@ -33,7 +64,6 @@ window.addEventListener('scroll', function(){
         htmlCss.opacity = "0";
         linux.opacity = "0";
         wordpress.opacity = "0";
-        python.opacity = "0";
     }
     if(window.pageYOffset > 1220 && flags[0]){
         android.opacity = "0";
@@ -226,7 +256,10 @@ window.addEventListener('scroll', function(){
         aa[9].style.marginLeft = "-100vw";
         aa[10].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 1800){
+    if(window.pageYOffset > 1800 && flags[10]){
+        for(var j = 1; j < 11; j++){
+            flags[j] = false;
+        }
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
