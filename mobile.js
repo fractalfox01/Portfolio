@@ -1,7 +1,7 @@
 let f1 = true;
 let f2 = true;
 let f3 = true;
-let flags = [true, false, false, false, false, false, false, false, false, false, false, false, false]
+let flags = [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
 let winH = window.innerHeight;
 var doc = document.documentElement;
 var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
@@ -11,11 +11,16 @@ let bb = document.getElementsByClassName("moverIn");
 let python = document.getElementById("pythonInfo").style;
 let wordpress = document.getElementById("wordpressInfo").style;
 let linux = document.getElementById("linuxInfo").style;
+let htmlCss = document.getElementById("hTmlInfo").style;
+let boot = document.getElementById("bootstrapInfo").style;
+let js = document.getElementById("javascriptInfo").style;
+let bash = document.getElementById("bashInfo").style;
+let java = document.getElementById("javaInfo").style;
+let android = document.getElementById("androidInfo").style;
+let cSharp = document.getElementById("cSharpInfo").style;
+let apache = document.getElementById("apacheInfo").style;
 window.addEventListener('scroll', function(){
     console.log(winH + " <--");
-
-
-
     $("#about").text(winH);
     if(window.pageYOffset > 1800 && window.pageYOffset < 2000){
         android.opacity = "0";
