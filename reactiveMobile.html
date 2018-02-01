@@ -147,12 +147,12 @@
         }
         #image{
             margin-top: 25vh;
-            margin-left: 32vw;
+            margin-left: 35vw;
             position: absolute;
-            width: 35vw;
-            height: 40vh;
+            width: 30vw;
+            height: 45vh;
             background-image: url("./me.jpg");
-            background-size: 35vw 40vh;
+            background-size: 30vw 45vh;
             background-position: center;
             border-radius: 50%;
             z-index: 0;
@@ -249,6 +249,12 @@
         .p-9{
             background-position: 0 60vh;
         }
+        .p-10{
+            background-position: 0 55vh;
+        }
+        .p-11{
+            background-position: 0 50vh;
+        }
         .progress-box-inner{
             text-shadow: -1px 0px 1px #ffffff;
             font-family: Oswald, serif;
@@ -259,6 +265,11 @@
             background-color: #888;
             color: #fff;
         }
+        .infoText{
+            font-size: 3vh;
+            text-align: center;
+            color: #0f0;
+        }
         .python{
             width: 30vw;
         }
@@ -267,8 +278,9 @@
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
-            height: 40vh;
-            background-color: blue;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
             opacity: 0;
         }
         .wordpress{
@@ -279,8 +291,9 @@
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
-            height: 40vh;
-            background-color: blue;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
             opacity: 0;
         }
         .linux{
@@ -291,33 +304,114 @@
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
-            height: 40vh;
-            background-color: blue;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
             opacity: 0;
         }
         .hTml{
             width: 50vw;
         }
+        #hTmlInfo{
+            margin-top: 212.5vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
+            opacity: 0;
+        }
         .bootstrap{
             width: 15vw;
+        }
+        #bootstrapInfo{
+            margin-top: 220vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
+            opacity: 0;
         }
         .javascript{
             width: 15vw;
         }
+        #javascriptInfo{
+            margin-top: 227vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
+            opacity: 0;
+        }
         .bash{
             width: 80vw;
+        }
+        #bashInfo{
+            margin-top: 234vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
+            opacity: 0;
         }
         .java{
             width: 15vw;
         }
+        #javaInfo{
+            margin-top: 242vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
+            opacity: 0;
+        }
         .android{
             width: 15vw;
+        }
+        #androidInfo{
+            margin-top: 249vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
+            opacity: 0;
         }
         .cSharp{
             width: 20vw;
         }
+        #cSharpInfo{
+            margin-top: 257vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
+            opacity: 0;
+        }
         .apache{
             width: 50vw;
+        }
+        #apacheInfo{
+            margin-top: 265vh;
+            margin-left: 15vw;
+            position: absolute;
+            width: 70vw;
+            height: 50vh;
+            background-color: #000067;
+            border: 1vw black solid;
+            opacity: 0;
         }
         .bar{
             float: right;
@@ -407,10 +501,28 @@
                 Android<span class="bar">< 1 year</span>
             </div>
         </div>
+        <div class="progress-box-outer p-10 mover">
+            <div class="progress-box-inner cSharp">
+                c#<span class="bar">< 2 years</span>
+            </div>
+        </div>
+        <div class="progress-box-outer p-11 mover">
+            <div class="progress-box-inner apache">
+                Apache<span class="bar">< 5 years</span>
+            </div>
+        </div>
     </div>
-    <div id="pythonInfo"></div>
-    <div id="wordpressInfo"></div>
-    <div id="linuxInfo"></div>
+    <div id="pythonInfo"><p class="infoText">Python</p></div>
+    <div id="wordpressInfo"><p class="infoText">Wordpress</p></div>
+    <div id="linuxInfo"><p class="infoText">Linux</p></div>
+    <div id="hTmlInfo"><p class="infoText">Html/CSS</p></div>
+    <div id="bootstrapInfo"><p class="infoText">Bootstrap</p></div>
+    <div id="javascriptInfo"><p class="infoText">Javascript</p></div>
+    <div id="bashInfo"><p class="infoText">Bash</p></div>
+    <div id="javaInfo"><p class="infoText">Java</p></div>
+    <div id="androidInfo"><p class="infoText">Android</p></div>
+    <div id="cSharpInfo"><p class="infoText">c#</p></div>
+    <div id="apacheInfo"><p class="infoText">Apache</p></div>
     <div id="frame2"></div>
     <div id="frame3"></div>
     <div id="frame4"></div>
