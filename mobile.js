@@ -22,7 +22,7 @@ let apache = document.getElementById("apacheInfo").style;
 window.addEventListener('scroll', function(){
     console.log(winH + " <--");
     $("#about").text(window.pageYOffset);
-    if(window.pageYOffset > 1800 && window.pageYOffset < 2000){
+    if(window.pageYOffset > 2400 && window.pageYOffset < 2500){
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
@@ -35,7 +35,7 @@ window.addEventListener('scroll', function(){
         wordpress.opacity = "0";
         python.opacity = "0";
     }
-    if(window.pageYOffset > 2000 && flags[0]){
+    if(window.pageYOffset > 2500 && flags[0]){
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
