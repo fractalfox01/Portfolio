@@ -21,7 +21,7 @@ let cSharp = document.getElementById("cSharpInfo").style;
 let apache = document.getElementById("apacheInfo").style;
 window.addEventListener('scroll', function(){
     console.log(winH + " <--");
-    $("#about").text(winH);
+    $("#about").text(window.pageYOffset);
     if(window.pageYOffset > 1800 && window.pageYOffset < 2000){
         android.opacity = "0";
         apache.opacity = "0";
