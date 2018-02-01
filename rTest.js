@@ -27,7 +27,7 @@ img.addEventListener('click', function(){
     console.log('clicker');
 },false);
 projects.addEventListener('click', function(){
-    window.scrollTo(0, 2001);
+    window.scrollTo(30, 2001);
     for(var i = 0; i < 11; i++){
         aa[i].style.marginLeft = "1vw";
     }
@@ -44,10 +44,10 @@ projects.addEventListener('click', function(){
 
 },false);
 skills.addEventListener('click', function(){
-    window.scrollTo(0,1173);
+    window.scrollTo(30,1173);
 },false);
 about.addEventListener('click', function(){
-    window.scrollTo(0, 200);
+    window.scrollTo(30, 425);
 }, false);
 window.addEventListener('scroll', function(){
     if(window.pageYOffset > 1100 && window.pageYOffset < 1195){
