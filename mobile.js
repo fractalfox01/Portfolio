@@ -53,7 +53,7 @@ window.addEventListener('scroll', function(){
         aa[0].style.marginLeft = "1vw";
         python.opacity = ".8";
     }
-    if(window.pageYOffset > 2550 && flags[1]){
+    if(window.pageYOffset > 2600 && flags[1]){
         f1 = false;
         flags[1] = true;
         flags[2] = true;
