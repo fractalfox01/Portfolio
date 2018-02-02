@@ -114,23 +114,24 @@
         #about{
             display: inline-block;
             margin-top: .5vh;
-            margin-left: 17vw;
-            width: 15vw;
+            margin-left: 10vw;
+            width: 10vw;
             height: 4vh;
             background-color: #fff;
+            border-radius: 1vh;
             text-align: center;
             font-size: 3vh;
             color: #000;
             opacity: .65;
-
         }
         #skills{
             display: inline-block;
             margin-top: .5vh;
             margin-left: 10vw;
-            width: 15vw;
+            width: 10vw;
             height: 4vh;
             background-color: #fff;
+            border-radius: 1vh;
             text-align: center;
             font-size: 3vh;
             color: #000;
@@ -140,9 +141,23 @@
             display: inline-block;
             margin-top: .5vh;
             margin-left: 10vw;
-            width: 15vw;
+            width: 10vw;
             height: 4vh;
             background-color: #fff;
+            border-radius: 1vh;
+            text-align: center;
+            font-size: 3vh;
+            color: #000;
+            opacity: .65;
+        }
+        #links{
+            display: inline-block;
+            margin-top: .5vh;
+            margin-left: 10vw;
+            width: 10vw;
+            height: 4vh;
+            background-color: #fff;
+            border-radius: 1vh;
             text-align: center;
             font-size: 3vh;
             color: #000;
@@ -165,7 +180,7 @@
             margin-top: 70vh;
             margin-left: 8vw;
             width: 80vw;
-            height: 70vh;
+            height: 86vh;
             /* background-color: #999; */
             background-image: url("./wood1.jpg");
             background-repeat: no-repeat;
@@ -308,6 +323,17 @@
         .wordpress{
             width: 30vw;
         }
+        #wordImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 8vw;
+            height: 8vh;
+            background-image: url("./wordpress.jpg");
+            background-size: 8vw 8vh;
+            background-position: center;
+            opacity: 1;
+        }
         #wordpressInfo{
             margin-top: 197.5vh;
             margin-left: 15vw;
@@ -320,6 +346,17 @@
         }
         .linux{
             width: 80vw;
+        }
+        #linuxImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 8vw;
+            height: 8vh;
+            background-image: url("./linux.jpg");
+            background-size: 8vw 8vh;
+            background-position: center;
+            opacity: 1;
         }
         #linuxInfo{
             margin-top: 205vh;
@@ -334,6 +371,28 @@
         .hTml{
             width: 50vw;
         }
+        #htmlImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 8vw;
+            height: 8vh;
+            background-image: url("./html.jpg");
+            background-size: 8vw 8vh;
+            background-position: center;
+            opacity: 1;
+        }
+        #cssImg{
+            margin-top: .5vh;
+            margin-left: 32vw;
+            position: absolute;
+            width: 7vw;
+            height: 8vh;
+            background-image: url("./css.jpg");
+            background-size: 7vw 8vh;
+            background-position: center;
+            opacity: 1;
+        }
         #hTmlInfo{
             margin-top: 212.5vh;
             margin-left: 15vw;
@@ -346,6 +405,17 @@
         }
         .bootstrap{
             width: 15vw;
+        }
+        #bootstrapImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 7vw;
+            height: 8vh;
+            background-image: url("./bootstrap1.jpg");
+            background-size: 7vw 8vh;
+            background-position: center;
+            opacity: 1;
         }
         #bootstrapInfo{
             margin-top: 220vh;
@@ -360,6 +430,17 @@
         .javascript{
             width: 15vw;
         }
+        #javascriptImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 7vw;
+            height: 8vh;
+            background-image: url("./javascript.jpg");
+            background-size: 7vw 8vh;
+            background-position: center;
+            opacity: 1;
+        }
         #javascriptInfo{
             margin-top: 227vh;
             margin-left: 15vw;
@@ -372,6 +453,17 @@
         }
         .bash{
             width: 80vw;
+        }
+        #bashImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 7vw;
+            height: 8vh;
+            background-image: url("./bash.jpg");
+            background-size: 7vw 8vh;
+            background-position: center;
+            opacity: 1;
         }
         #bashInfo{
             margin-top: 234vh;
@@ -447,6 +539,7 @@
             <div id="about">About</div>
             <div id="skills">Skills</div>
             <div id="projects">Projects</div>
+            <div id="links">Links</div>
         </div>
         <!-- <div id="header">
         <div id="name">Thomas VanDivier</div>
@@ -549,12 +642,31 @@
             <p class="info">The most useful thing I've created using the language is a GUI application (covered in the '<a id="link" href="">Projects</a>' area).</p>
             <p class="info">I also have misc. Python scripts I've written since; Being stored at my Github account (linked in the ''<a id="link" href="">Links</a>' area).</p>
         </div>
-        <div id="wordpressInfo"><p class="infoText">Wordpress</p></div>
-        <div id="linuxInfo"><p class="infoText">Linux</p></div>
-        <div id="hTmlInfo"><p class="infoText">Html/CSS</p></div>
-        <div id="bootstrapInfo"><p class="infoText">Bootstrap</p></div>
-        <div id="javascriptInfo"><p class="infoText">Javascript</p></div>
-        <div id="bashInfo"><p class="infoText">Bash</p></div>
+        <div id="wordpressInfo">
+            <div id="wordImg"></div>
+            <p class="infoText">Wordpress</p>
+        </div>
+        <div id="linuxInfo">
+            <div id="linuxImg"></div>
+            <p class="infoText">Linux</p>
+        </div>
+        <div id="hTmlInfo">
+            <div id="htmlImg"></div>
+            <div id="cssImg"></div>
+            <p class="infoText">Html/CSS</p>
+        </div>
+        <div id="bootstrapInfo">
+            <div id="bootstrapImg"></div>
+            <p class="infoText">Bootstrap</p>
+        </div>
+        <div id="javascriptInfo">
+            <div id="javascriptImg"></div>
+            <p class="infoText">Javascript</p>
+        </div>
+        <div id="bashInfo">
+            <div id="bashImg"></div>
+            <p class="infoText">Bash</p>
+        </div>
         <div id="javaInfo"><p class="infoText">Java</p></div>
         <div id="androidInfo"><p class="infoText">Android</p></div>
         <div id="cSharpInfo"><p class="infoText">c#</p></div>

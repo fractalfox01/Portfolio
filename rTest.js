@@ -22,9 +22,19 @@ let apache = document.getElementById("apacheInfo").style;
 let about = document.getElementById("about");
 let skills = document.getElementById('skills');
 let projects = document.getElementById('projects');
+let links = document.getElementById('links');
 let img = document.getElementById("image");
 img.addEventListener('click', function(){
     console.log('clicker');
+},false);
+links.addEventListener('click', function(){
+    window.scrollTo(30, 2500);
+},false);
+links.addEventListener('mouseover', function(event){
+    event.target.style.backgroundColor = "rgb(0,224,255)";
+},false);
+links.addEventListener('mouseout', function(event){
+    event.target.style.backgroundColor = "rgb(227,227,227)";
 },false);
 projects.addEventListener('click', function(){
     window.scrollTo(30, 2001);
@@ -43,12 +53,30 @@ projects.addEventListener('click', function(){
     wordpress.opacity = "0";
 
 },false);
+projects.addEventListener('mouseover', function(event){
+    event.target.style.backgroundColor = "rgb(0,224,255)";
+},false);
+projects.addEventListener('mouseout', function(event){
+    event.target.style.backgroundColor = "rgb(227,227,227)";
+},false);
 skills.addEventListener('click', function(){
     window.scrollTo(30,1173);
+},false);
+skills.addEventListener('mouseover', function(event){
+    event.target.style.backgroundColor = "rgb(0,224,255)";
+},false);
+skills.addEventListener('mouseout', function(event){
+    event.target.style.backgroundColor = "rgb(227,227,227)";
 },false);
 about.addEventListener('click', function(){
     window.scrollTo(30, 425);
 }, false);
+about.addEventListener('mouseover', function(event){
+    event.target.style.backgroundColor = "rgb(0,224,255)";
+},false);
+about.addEventListener('mouseout', function(event){
+    event.target.style.backgroundColor = "rgb(227,227,227)";
+},false);
 window.addEventListener('scroll', function(){
     if(window.pageYOffset > 1100 && window.pageYOffset < 1195){
         for(var i = 0; i < 11; i++){
@@ -87,7 +115,7 @@ window.addEventListener('scroll', function(){
         f1 = false;
         flags[1] = true;
         flags[2] = true;
-        aa[0].style.marginLeft = "-100vw";
+//        aa[0].style.marginLeft = "-100vw";
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
@@ -105,7 +133,7 @@ window.addEventListener('scroll', function(){
         f2 = false;
         flags[2] = true;
         flags[3] = true;
-        aa[1].style.marginLeft = "-100vw";
+//        aa[1].style.marginLeft = "-100vw";
         linux.opacity = ".8";
         android.opacity = "0";
         apache.opacity = "0";
@@ -134,7 +162,7 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         wordpress.opacity = "0";
         python.opacity = "0";
-        aa[2].style.marginLeft = "-100vw";
+//        aa[2].style.marginLeft = "-100vw";
         aa[3].style.marginLeft = "1vw";
     }
     if(window.pageYOffset > 1400 && flags[4]){
@@ -151,7 +179,7 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         wordpress.opacity = "0";
         python.opacity = "0";
-        aa[3].style.marginLeft = "-100vw";
+//        aa[3].style.marginLeft = "-100vw";
         aa[4].style.marginLeft = "1vw";
     }
     if(window.pageYOffset > 1450 && flags[5]){
@@ -168,7 +196,7 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         wordpress.opacity = "0";
         python.opacity = "0";
-        aa[4].style.marginLeft = "-100vw";
+//        aa[4].style.marginLeft = "-100vw";
         aa[5].style.marginLeft = "1vw";
     }
     if(window.pageYOffset > 1500 && flags[6]){
@@ -185,7 +213,7 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         wordpress.opacity = "0";
         python.opacity = "0";
-        aa[5].style.marginLeft = "-100vw";
+//        aa[5].style.marginLeft = "-100vw";
         aa[6].style.marginLeft = "1vw";
     }
     if(window.pageYOffset > 1550 && flags[7]){
@@ -202,7 +230,7 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         wordpress.opacity = "0";
         python.opacity = "0";
-        aa[6].style.marginLeft = "-100vw";
+//        aa[6].style.marginLeft = "-100vw";
         aa[7].style.marginLeft = "1vw";
     }
     if(window.pageYOffset > 1600 && flags[8]){
@@ -219,7 +247,7 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         wordpress.opacity = "0";
         python.opacity = "0";
-        aa[7].style.marginLeft = "-100vw";
+//        aa[7].style.marginLeft = "-100vw";
         aa[8].style.marginLeft = "1vw";
     }
     if(window.pageYOffset > 1650 && flags[8]){
@@ -236,7 +264,7 @@ window.addEventListener('scroll', function(){
         python.opacity = "0";
         flags[9] = true;
         flags[10] = true;
-        aa[8].style.marginLeft = "-100vw";
+//        aa[8].style.marginLeft = "-100vw";
         aa[9].style.marginLeft = "1vw";
     }
     if(window.pageYOffset > 1700 && flags[10]){
@@ -253,7 +281,7 @@ window.addEventListener('scroll', function(){
         python.opacity = "0";
         flags[10] = true;
         flags[11] = true;
-        aa[9].style.marginLeft = "-100vw";
+//        aa[9].style.marginLeft = "-100vw";
         aa[10].style.marginLeft = "1vw";
     }
     if(window.pageYOffset > 1800 && flags[10]){
@@ -271,7 +299,7 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         wordpress.opacity = "0";
         python.opacity = "0";
-        aa[10].style.marginLeft = "-100vw";
+//        aa[10].style.marginLeft = "-100vw";
     }
 })
 console.log("working");
