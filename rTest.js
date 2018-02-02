@@ -28,7 +28,7 @@ img.addEventListener('click', function(){
     console.log('clicker');
 },false);
 links.addEventListener('click', function(){
-    window.scrollTo(30, 2500);
+    window.scrollTo(30, 3000);
 },false);
 links.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -37,7 +37,7 @@ links.addEventListener('mouseout', function(event){
     event.target.style.backgroundColor = "rgb(227,227,227)";
 },false);
 projects.addEventListener('click', function(){
-    window.scrollTo(30, 2001);
+    window.scrollTo(30, 2220);
     for(var i = 0; i < 11; i++){
         aa[i].style.marginLeft = "1vw";
     }
@@ -284,7 +284,7 @@ window.addEventListener('scroll', function(){
 //        aa[9].style.marginLeft = "-100vw";
         aa[10].style.marginLeft = "1vw";
     }
-    if(window.pageYOffset > 1800 && flags[10]){
+    if(window.pageYOffset > 2000 && flags[10]){
         for(var j = 1; j < 11; j++){
             flags[j] = false;
         }
