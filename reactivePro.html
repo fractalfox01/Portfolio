@@ -8,8 +8,17 @@
         body{
             background-color: #ccc;
         }
-        #links a:link, a:hover, a:visited, a:active {
+        #link a:link{
             color: #00ff00;
+        }
+        a:visited{
+            color: #00ff00;
+        }
+        a:hover{
+            color: #aaaa00;
+        }
+        a:active{
+            color: #ooooff;
         }
         #header{
             position: fixed;
@@ -319,6 +328,7 @@
             background-color: #000067;
             border: 1vw black solid;
             opacity: 0;
+            z-index: 3;
         }
         .wordpress{
             width: 30vw;
@@ -351,10 +361,10 @@
             margin-top: .5vh;
             margin-left: 22vw;
             position: absolute;
-            width: 8vw;
+            width: 7vw;
             height: 8vh;
             background-image: url("./linux.jpg");
-            background-size: 8vw 8vh;
+            background-size: 7vw 8vh;
             background-position: center;
             opacity: 1;
         }
@@ -386,10 +396,10 @@
             margin-top: .5vh;
             margin-left: 32vw;
             position: absolute;
-            width: 7vw;
+            width: 6vw;
             height: 8vh;
             background-image: url("./css.jpg");
-            background-size: 7vw 8vh;
+            background-size: 6vw 8vh;
             background-position: center;
             opacity: 1;
         }
@@ -478,6 +488,17 @@
         .java{
             width: 15vw;
         }
+        #javaImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 8vw;
+            height: 8vh;
+            background-image: url("./java.jpg");
+            background-size: 8vw 8vh;
+            background-position: center;
+            opacity: 1;
+        }
         #javaInfo{
             margin-top: 242vh;
             margin-left: 15vw;
@@ -490,6 +511,17 @@
         }
         .android{
             width: 15vw;
+        }
+        #androidImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 8vw;
+            height: 8vh;
+            background-image: url("./android.jpg");
+            background-size: 8vw 8vh;
+            background-position: center;
+            opacity: 1;
         }
         #androidInfo{
             margin-top: 249vh;
@@ -504,6 +536,17 @@
         .cSharp{
             width: 20vw;
         }
+        #cSharpImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 8vw;
+            height: 8vh;
+            background-image: url("./cSharp.jpg");
+            background-size: 8vw 8vh;
+            background-position: center;
+            opacity: 1;
+        }
         #cSharpInfo{
             margin-top: 257vh;
             margin-left: 15vw;
@@ -516,6 +559,17 @@
         }
         .apache{
             width: 50vw;
+        }
+        #apacheImg{
+            margin-top: .5vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 8vw;
+            height: 8vh;
+            background-image: url("./apache.jpg");
+            background-size: 8vw 8vh;
+            background-position: center;
+            opacity: 1;
         }
         #apacheInfo{
             margin-top: 265vh;
@@ -668,15 +722,19 @@
             <p class="infoText">Bash</p>
         </div>
         <div id="javaInfo">
+            <div id="javaImg"></div>
             <p class="infoText">Java</p>
         </div>
         <div id="androidInfo">
+            <div id="androidImg"></div>
             <p class="infoText">Android</p>
         </div>
         <div id="cSharpInfo">
+            <div id="cSharpImg"></div>
             <p class="infoText">c#</p>
         </div>
         <div id="apacheInfo">
+            <div id="apacheImg"></div>
             <p class="infoText">Apache</p>
         </div>
         <div id="frame2"></div>
