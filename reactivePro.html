@@ -8,7 +8,9 @@
         body{
             background-color: #ccc;
         }
-
+        #links a:link, a:hover, a:visited, a:active {
+            color: #00ff00;
+        }
         #header{
             position: fixed;
             margin-left: 0vw;
@@ -281,6 +283,17 @@
         .python{
             width: 30vw;
         }
+        #pyImg{
+            margin-top: 2vh;
+            margin-left: 22vw;
+            position: absolute;
+            width: 8vw;
+            height: 8vh;
+            background-image: url("./python.jpg");
+            background-size: 8vw 8vh;
+            background-position: center;
+            opacity: 1;
+        }
         #pythonInfo{
             margin-top: 190vh;
             margin-left: 15vw;
@@ -526,7 +539,15 @@
                 </div>
             </div>
         </div>
-        <div id="pythonInfo"><p class="infoText">Python</p><p class="info">I have around three years experience in Python. I first started learning Python while in preparation for a Python course at CCC (Coconino Community College).</p><p class="info">During the course I became involve in coding challenges through sites like Codefights, Codewars, etc.. I extremely enjoy the language, You have the opportunity to write a lot less code when compared to other languages. For that reason, I think python is an ideal language for scripting automation processes.</p><p class="info">The most useful thing I've created using the language is a GUI application (covered in the 'Projects' area).</p></div>
+        <div id="pythonInfo">
+            <div id="pyImg"></div>
+            <p class="infoText">Python</p>
+            <p class="info">I have around three years experience in Python. I first started learning Python while in preparation for a Python course at CCC (Coconino Community College).</p>
+            <p class="info">During the course I became involve in coding challenges through sites like Codefights, Codewars, etc.. I extremely enjoy the language, You have the opportunity to write a lot less code when compared to other languages. For
+            that reason, I think python is an ideal language for scripting automation of processes.</p>
+            <p class="info">The most useful thing I've created using the language is a GUI application (covered in the '<a id="link" href="">Projects</a>' area).</p>
+            <p class="info">I also have misc. Python scripts I've written since; Being stored at my Github account (linked in the ''<a id="link" href="">Links</a>' area).</p>
+        </div>
         <div id="wordpressInfo"><p class="infoText">Wordpress</p></div>
         <div id="linuxInfo"><p class="infoText">Linux</p></div>
         <div id="hTmlInfo"><p class="infoText">Html/CSS</p></div>
