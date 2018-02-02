@@ -2,6 +2,7 @@ let f1 = true;
 let f2 = true;
 let f3 = true;
 let flags = [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
+let progMargin = "0vw";
 let winH = window.innerHeight;
 var doc = document.documentElement;
 var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
@@ -80,7 +81,7 @@ about.addEventListener('mouseout', function(event){
 window.addEventListener('scroll', function(){
     if(window.pageYOffset > 1100 && window.pageYOffset < 1195){
         for(var i = 0; i < 11; i++){
-            aa[i].style.marginLeft = "1vw";
+            aa[i].style.marginLeft = progMargin;
         }
         python.opacity = "0";
         apache.opacity = "0";
@@ -108,7 +109,7 @@ window.addEventListener('scroll', function(){
         flags[1] = true;
         console.log("here");
         console.log(aa.length.toString());
-        aa[0].style.marginLeft = "1vw";
+        aa[0].style.marginLeft = progMargin;
         python.opacity = ".8";
     }
     if(window.pageYOffset > 1250 && flags[1]){
@@ -127,7 +128,7 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         python.opacity = "0";
         wordpress.opacity = ".8";
-        aa[1].style.marginLeft = "1vw";
+        aa[1].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1300 && flags[2]){
         f2 = false;
@@ -145,7 +146,7 @@ window.addEventListener('scroll', function(){
         htmlCss.opacity = "0";
         wordpress.opacity = "0";
         python.opacity = "0";
-        aa[2].style.marginLeft = "1vw";
+        aa[2].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1350 && flags[3]){
         f3 = false;
@@ -163,7 +164,7 @@ window.addEventListener('scroll', function(){
         wordpress.opacity = "0";
         python.opacity = "0";
 //        aa[2].style.marginLeft = "-100vw";
-        aa[3].style.marginLeft = "1vw";
+        aa[3].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1400 && flags[4]){
         flags[4] = true;
@@ -180,7 +181,7 @@ window.addEventListener('scroll', function(){
         wordpress.opacity = "0";
         python.opacity = "0";
 //        aa[3].style.marginLeft = "-100vw";
-        aa[4].style.marginLeft = "1vw";
+        aa[4].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1450 && flags[5]){
         flags[5] = true;
@@ -197,7 +198,7 @@ window.addEventListener('scroll', function(){
         wordpress.opacity = "0";
         python.opacity = "0";
 //        aa[4].style.marginLeft = "-100vw";
-        aa[5].style.marginLeft = "1vw";
+        aa[5].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1500 && flags[6]){
         flags[6] = true;
@@ -214,7 +215,7 @@ window.addEventListener('scroll', function(){
         wordpress.opacity = "0";
         python.opacity = "0";
 //        aa[5].style.marginLeft = "-100vw";
-        aa[6].style.marginLeft = "1vw";
+        aa[6].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1550 && flags[7]){
         flags[7] = true;
@@ -231,7 +232,7 @@ window.addEventListener('scroll', function(){
         wordpress.opacity = "0";
         python.opacity = "0";
 //        aa[6].style.marginLeft = "-100vw";
-        aa[7].style.marginLeft = "1vw";
+        aa[7].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1600 && flags[8]){
         flags[8] = true;
@@ -248,7 +249,7 @@ window.addEventListener('scroll', function(){
         wordpress.opacity = "0";
         python.opacity = "0";
 //        aa[7].style.marginLeft = "-100vw";
-        aa[8].style.marginLeft = "1vw";
+        aa[8].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1650 && flags[8]){
         cSharp.opacity = ".8";
@@ -265,7 +266,7 @@ window.addEventListener('scroll', function(){
         flags[9] = true;
         flags[10] = true;
 //        aa[8].style.marginLeft = "-100vw";
-        aa[9].style.marginLeft = "1vw";
+        aa[9].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1700 && flags[10]){
         apache.opacity = ".8";
@@ -282,7 +283,7 @@ window.addEventListener('scroll', function(){
         flags[10] = true;
         flags[11] = true;
 //        aa[9].style.marginLeft = "-100vw";
-        aa[10].style.marginLeft = "1vw";
+        aa[10].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 2000 && flags[10]){
         for(var j = 1; j < 11; j++){
