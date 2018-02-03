@@ -1,3 +1,4 @@
+window.scrollTo(30,0);
 let f1 = true;
 let f2 = true;
 let f3 = true;
@@ -25,6 +26,10 @@ let skills = document.getElementById('skills');
 let projects = document.getElementById('projects');
 let links = document.getElementById('links');
 let img = document.getElementById("image");
+let hrefProjects = document.getElementById("hrefProjects");
+let hrefLinks = document.getElementById("hrefLinks");
+let hrefUbuntu = document.getElementById("hrefUbuntu");
+
 img.addEventListener('click', function(){
     console.log('clicker');
 },false);
@@ -111,6 +116,8 @@ window.addEventListener('scroll', function(){
         console.log(aa.length.toString());
         aa[0].style.marginLeft = progMargin;
         python.opacity = ".8";
+        wordpress.zIndex = "0";
+        python.zIndex = "3";
     }
     if(window.pageYOffset > 1250 && flags[1]){
         f1 = false;
@@ -128,6 +135,9 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         python.opacity = "0";
         wordpress.opacity = ".8";
+        python.zIndex = "0";
+        linux.zIndex = "0";
+        wordpress.zIndex = "3";
         aa[1].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1300 && flags[2]){
@@ -136,6 +146,9 @@ window.addEventListener('scroll', function(){
         flags[3] = true;
 //        aa[1].style.marginLeft = "-100vw";
         linux.opacity = ".8";
+        wordpress.zIndex = "0";
+        htmlCss.zIndex = "0";
+        linux.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";

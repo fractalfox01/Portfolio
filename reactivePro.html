@@ -8,7 +8,10 @@
         body{
             background-color: #ccc;
         }
-        #link a:link{
+        .link{
+            color: #aaaa00;
+        }
+        .link a:link{
             color: #00ff00;
         }
         a:visited{
@@ -328,7 +331,6 @@
             background-color: #000067;
             border: 1vw black solid;
             opacity: 0;
-            z-index: 3;
         }
         .wordpress{
             width: 30vw;
@@ -610,6 +612,66 @@
             opacity: .8;
             z-index: -1;
         }
+        #proj1{
+            position: absolute;
+            margin-top: 320vh;
+            margin-left: 20vw;
+            width: 8vw;
+            height: 10vh;
+            background-color: #a4a4d4;
+            border: 1vh solid rgb(50,121,187);
+            border-radius: 3vh;
+            opacity: .8;
+            z-index: 0;
+        }
+        #proj1:hover{
+            background-color: #a4a4ff;
+        }
+        #proj2{
+            position: absolute;
+            margin-top: 320vh;
+            margin-left: 31vw;
+            width: 8vw;
+            height: 10vh;
+            background-color: #a4a4d4;
+            border: 1vh solid rgb(50,121,187);
+            border-radius: 3vh;
+            opacity: .8;
+            z-index: 0;
+        }
+        #proj2:hover{
+            background-color: #a4a4ff;
+        }
+        #proj3{
+            position: absolute;
+            margin-top: 320vh;
+            margin-left: 42vw;
+            width: 8vw;
+            height: 10vh;
+            background-color: #a4a4d4;
+            border: 1vh solid rgb(50,121,187);
+            border-radius: 3vh;
+            opacity: .8;
+            z-index: 0;
+        }
+        #proj3:hover{
+            background-color: #a4a4ff;
+        }
+        #proj4{
+            position: absolute;
+            margin-top: 320vh;
+            margin-left: 53vw;
+            width: 8vw;
+            height: 10vh;
+            background-color: #a4a4d4;
+            border: 1vh solid rgb(50,121,187);
+            border-radius: 3vh;
+            opacity: .65;
+            z-index: 0;
+        }
+        #proj4:hover{
+            background-color: #a4a4ff;
+        }
     </style>
 <head>
 <body>
@@ -719,8 +781,8 @@
             <p class="info">I have around three years experience in Python. I first started learning Python while in preparation for a Python course at CCC (Coconino Community College).</p>
             <p class="info">During the course I became involve in coding challenges through sites like Codefights, Codewars, etc.. I found the language has a simple syntax, You have the opportunity to write a lot less code when compared to other languages. For
             that reason, I think python is an ideal language for scripting automation of processes.</p>
-            <p class="info">The most useful thing I've created using the language is a GUI application (covered in the '<a id="link" href="">Projects</a>' area).</p>
-            <p class="info">I also have misc. Python scripts I've written since; Being stored at my Github account (Found in the ''<a id="link" href="">Links</a>' area).</p>
+            <p class="info">The most useful thing I've created using the language is a GUI application (covered in the '<a id="hrefProjects" class="link" href="">Projects</a>' area).</p>
+            <p class="info">I also have misc. Python scripts I've written since; Being stored at my Github account (Found in the ''<a id="hrefLinks" class="link" href="">Links</a>' area).</p>
         </div>
         <div id="wordpressInfo">
             <div id="wordImg"></div>
@@ -733,11 +795,22 @@
         <div id="linuxInfo">
             <div id="linuxImg"></div>
             <p class="infoText">Linux</p>
+            <p class="info">I first got into Linux around 8 years ago, my first encounter? <a id="hrefUbuntu" class="link" href="">Ubuntu</a>! what else would it be, right!</p>
+            <p class="info">At first I was just interested in a computer that could do more, for 'free'. I had next to no practical tech know-how. I just knew I was sick of what I had. It was limited, and I had no access to anything. Not really a good environment if you're curious about how things work.</p>
+            <p class="info">So I started out like any normal person does. Looking around, poking things here and there, diving into online tutorials and How-To's. Broke thing's, severely. And learned a lot throughout the process.</p>
+            <p class="info">Once I started collage I was drawn towards the Linux courses. I was extremely fortunate in joining the course when I did and lucked out on an incredible instructor.</p>
+            <p class="info">The college offers two courses. I learned an incredible amount of helpful things in each. This is where I finally got a chance to dive into TCP/IP and communication protocols.</p>
+            <p class="info">Through out the course's we touched on many topics. The second course was truly challenging. topics covered ranged from.</p>
         </div>
         <div id="hTmlInfo">
             <div id="htmlImg"></div>
             <div id="cssImg"></div>
             <p class="infoText">Html/CSS</p>
+            <p class="info">HTML & CSS are pretty straight forward. Easy syntax, great documentation. In the last few years these two languages have come a long, long way. Close to anything you can think of that you want to do, has either already been done or there's something close enough to modify that you can make work.</p>
+            <p class="info">Everything I can think about these two leads back to documentation and the fact that they've already been widely used and written about.</p>
+            <p class="info">I started learning both through book's and a quick web server a friend had written up with Visual Basic .NET</p>
+            <p class="info">These were the early day's in my programming journey and I still had no oriented goal for using any of it, I just knew it was valuable and it didn't drive me to boredom.</p>
+            <p class="info">Later on, I eventually found uses for everything I had been learning. when I started building my personal home study site, I had a pretty good idea of what I wanted to do, What I was able to do and, how to go about doing it thanks to the earlier time I had invested.</p>
         </div>
         <div id="bootstrapInfo">
             <div id="bootstrapImg"></div>
@@ -768,6 +841,10 @@
             <p class="infoText">Apache</p>
         </div>
         <div id="frame3"></div>
+        <div id="proj1"></div>
+        <div id="proj2"></div>
+        <div id="proj3"></div>
+        <div id="proj4"></div>
         <div id="projectsText">Projects</div>
         <div id="myProjects"></div>
         <div id="frame4"></div>
