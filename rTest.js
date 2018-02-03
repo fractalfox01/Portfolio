@@ -29,6 +29,8 @@ let img = document.getElementById("image");
 let hrefProjects = document.getElementById("hrefProjects");
 let hrefLinks = document.getElementById("hrefLinks");
 let hrefUbuntu = document.getElementById("hrefUbuntu");
+let proj1 = document.getElementById("proj1").style;
+
 
 img.addEventListener('click', function(){
     console.log('clicker');
