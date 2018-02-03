@@ -32,6 +32,7 @@ let hrefUbuntu = document.getElementById("hrefUbuntu");
 let proj1 = document.getElementById("proj1").style;
 
 
+
 img.addEventListener('click', function(){
     console.log('clicker');
 },false);
@@ -168,6 +169,9 @@ window.addEventListener('scroll', function(){
         flags[3] = true;
         flags[4] = true;
         htmlCss.opacity = ".8";
+        linux.zIndex = "0";
+        boot.zIndex = "0";
+        htmlCss.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
@@ -185,6 +189,9 @@ window.addEventListener('scroll', function(){
         flags[4] = true;
         flags[5] = true;
         boot.opacity = ".8";
+        htmlCss.zIndex = "0";
+        js.zIndex = "0";
+        boot.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
@@ -202,6 +209,9 @@ window.addEventListener('scroll', function(){
         flags[5] = true;
         flags[6] = true;
         js.opacity = ".8";
+        boot.zIndex = "0";
+        bash.zIndex = "0";
+        js.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
@@ -219,6 +229,9 @@ window.addEventListener('scroll', function(){
         flags[6] = true;
         flags[7] = true;
         bash.opacity = ".8";
+        js.zIndex = "0";
+        java.zIndex = "0";
+        bash.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
@@ -236,6 +249,9 @@ window.addEventListener('scroll', function(){
         flags[7] = true;
         flags[8] = true;
         java.opacity = ".8";
+        bash.zIndex = "0";
+        android.zIndex = "0";
+        java.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
         cSharp.opacity = "0";
@@ -253,6 +269,9 @@ window.addEventListener('scroll', function(){
         flags[8] = true;
         flags[9] = true;
         android.opacity = ".8";
+        java.zIndex = "0";
+        cSharp.zIndex = "0";
+        android.zIndex = "3";
         apache.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
@@ -268,6 +287,9 @@ window.addEventListener('scroll', function(){
     }
     if(window.pageYOffset > 1650 && flags[8]){
         cSharp.opacity = ".8";
+        android.zIndex = "0";
+        apache.zIndex = "0";
+        cSharp.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
@@ -285,6 +307,8 @@ window.addEventListener('scroll', function(){
     }
     if(window.pageYOffset > 1700 && flags[10]){
         apache.opacity = ".8";
+        cSharp.zIndex = "0";
+        apache.zIndex = "3";
         android.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
