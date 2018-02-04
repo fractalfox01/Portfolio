@@ -1,4 +1,6 @@
 window.scrollTo(30,0);
+
+let projColorFlag = true;
 let proj1Flag = true;
 let proj2Flag = true;
 let proj3Flag = true;
@@ -32,7 +34,10 @@ let img = document.getElementById("image");
 let hrefProjects = document.getElementById("hrefProjects");
 let hrefLinks = document.getElementById("hrefLinks");
 let hrefUbuntu = document.getElementById("hrefUbuntu");
-
+let project1 = document.getElementById("proj1");
+let project2 = document.getElementById("proj2");
+let project3 = document.getElementById("proj3");
+let project4 = document.getElementById("proj4");
 
 function linearEase(start, stop, percent){
   if((start + ((stop - start) * percent))>stop){
@@ -133,88 +138,171 @@ about.addEventListener('mouseout', function(event){
     event.target.style.backgroundColor = "rgb(227,227,227)";
 },false);
 
-document.getElementById("proj1").addEventListener('click', function(){
+//Project 1 Event Listeners
+project1.addEventListener('mouseover', function(){
+    if(projColorFlag){
+        p1.backgroundColor = "#0f0";
+    }
+},false);
+project1.addEventListener('mouseout', function(){
+    if(projColorFlag){
+        p1.backgroundColor = "#a4a4d4"
+    };
+},false);
+project1.addEventListener('click', function(){
     if(proj1Flag){
+        p1.backgroundColor = "#a4a4d4";
+        projColorFlag = false;
         proj1Flag = false;
         p1.width = "50vw";
         p1.height = "50vh";
         p1.marginLeft = "45vw";
         p1.opacity = "1";
         p2.opacity = "0";
+        p2.marginLeft = "-20vw";
         p3.opacity = "0";
+        p3.marginLeft = "-20vw";
         p4.opacity = "0";
+        p4.marginLeft = "-20vw";
     }else{
+        projColorFlag = true;
         proj1Flag = true;
         p1.width = "12vw";
         p1.height = "10vh";
         p1.marginLeft = "32vw";
         p1.opacity = ".65";
         p2.opacity = ".65";
+        p2.marginLeft = pos[1]+"vw";
         p3.opacity = ".65";
+        p3.marginLeft = pos[2]+"vw";
         p4.opacity = ".65";
+        p4.marginLeft = pos[3]+"vw";
     }
 })
-document.getElementById("proj2").addEventListener('click', function(){
+// End Project 1 Event Listeners---------------------------------------------
+// Start Project 2 Event Listeners-------------------------------------------
+project2.addEventListener('mouseover', function(){
+    if(projColorFlag){
+        p2.backgroundColor = "#0f0";
+    }
+},false);
+project2.addEventListener('mouseout', function(){
+    if(projColorFlag){
+        p2.backgroundColor = "#a4a4d4"
+    };
+},false);
+project2.addEventListener('click', function(){
     if(proj2Flag){
+        p2.backgroundColor = "#a4a4d4";
+        projColorFlag = false;
         proj2Flag = false;
         p2.width = "50vw";
         p2.height = "50vh";
         p2.marginLeft = "45vw";
         p2.opacity = "1";
         p1.opacity = "0";
+        p1.marginLeft = "-20vw";
         p3.opacity = "0";
+        p3.marginLeft = "-20vw";
         p4.opacity = "0";
+        p4.marginLeft = "-20vw";
     }else{
+        projColorFlag = true;
         proj2Flag = true;
         p2.width = "12vw";
         p2.height = "10vh";
         p2.marginLeft = "55vw";
         p2.opacity = ".65";
         p1.opacity = ".65";
+        p1.marginLeft = pos[0]+"vw";
         p3.opacity = ".65";
+        p3.marginLeft = pos[2]+"vw";
         p4.opacity = ".65";
+        p4.marginLeft = pos[3]+"vw";
     }
 })
-document.getElementById("proj3").addEventListener('click', function(){
+// End Project 2 Event Listeners---------------------------------------------
+// Start Project 3 Event Listeners-------------------------------------------
+project3.addEventListener('mouseover', function(){
+    if(projColorFlag){
+        p3.backgroundColor = "#0f0";
+    }
+},false);
+project3.addEventListener('mouseout', function(){
+    if(projColorFlag){
+        p3.backgroundColor = "#a4a4d4"
+    };
+},false);
+project3.addEventListener('click', function(){
     if(proj3Flag){
+        p3.backgroundColor = "#a4a4d4";
+        projColorFlag = false;
         proj3Flag = false;
         p3.width = "50vw";
         p3.height = "50vh";
         p3.marginLeft = "45vw";
         p3.opacity = "1";
         p1.opacity = "0";
+        p1.marginLeft = "-20vw";
         p2.opacity = "0";
+        p2.marginLeft = "-20vw";
         p4.opacity = "0";
+        p4.marginLeft = "-20vw";
     }else{
+        projColorFlag = true;
         proj3Flag = true;
         p3.width = "12vw";
         p3.height = "10vh";
         p3.marginLeft = "75vw";
         p3.opacity = ".65";
         p1.opacity = ".65";
+        p1.marginLeft = pos[0]+"vw";
         p2.opacity = ".65";
+        p2.marginLeft = pos[1]+"vw";
         p4.opacity = ".65";
+        p4.marginLeft = pos[3]+"vw";
     }
 })
-document.getElementById("proj4").addEventListener('click', function(){
+// End Project 3 Event Listeners---------------------------------------------
+// Start Project 4 Event Listeners-------------------------------------------
+project4.addEventListener('mouseover', function(){
+    if(projColorFlag){
+        p4.backgroundColor = "#0f0";
+    }
+},false);
+project4.addEventListener('mouseout', function(){
+    if(projColorFlag){
+        p4.backgroundColor = "#a4a4d4"
+    };
+},false);
+project4.addEventListener('click', function(){
     if(proj4Flag){
+        p4.backgroundColor = "a4a4d4";
+        projColorFlag = false;
         proj4Flag = false;
         p4.width = "50vw";
         p4.height = "50vh";
         p4.marginLeft = "45vw";
         p4.opacity = "1";
         p1.opacity = "0";
+        p1.marginLeft = "-20vw";
         p2.opacity = "0";
+        p2.marginLeft = "-20vw";
         p3.opacity = "0";
+        p3.marginLeft = "-20vw";
     }else{
+        projColorFlag = true;
         proj4Flag = true;
         p4.width = "12vw";
         p4.height = "10vh";
         p4.marginLeft = "95vw";
         p4.opacity = ".65";
         p1.opacity = ".65";
+        p1.marginLeft = pos[0]+"vw";
         p2.opacity = ".65";
+        p2.marginLeft = pos[1]+"vw";
         p3.opacity = ".65";
+        p3.marginLeft = pos[2]+"vw";
     }
 })
 
