@@ -186,6 +186,15 @@ project1.addEventListener('click', function(){
         p3.marginLeft = "-20vw";
         p4.opacity = "0";
         p4.marginLeft = "-20vw";
+
+        p5.opacity = "0";
+        p5.marginLeft = "-20vw";
+        p6.opacity = "0";
+        p6.marginLeft = "-20vw";
+        p7.opacity = "0";
+        p7.marginLeft = "-20vw";
+        p8.opacity = "0";
+        p8.marginLeft = "-20vw";
     }else{
         projColorFlag = true;
         proj1Flag = true;
@@ -199,6 +208,15 @@ project1.addEventListener('click', function(){
         p3.marginLeft = pos[2]+"vw";
         p4.opacity = ".65";
         p4.marginLeft = pos[3]+"vw";
+
+        p5.opacity = ".65";
+        p5.marginLeft = pos[0]+"vw";
+        p6.opacity = ".65";
+        p6.marginLeft = pos[1]+"vw";
+        p7.opacity = ".65";
+        p7.marginLeft = pos[2]+"vw";
+        p8.opacity = ".65";
+        p8.marginLeft = pos[3]+"vw";
     }
 })
 // End Project 1 Event Listeners---------------------------------------------
@@ -228,6 +246,15 @@ project2.addEventListener('click', function(){
         p3.marginLeft = "-20vw";
         p4.opacity = "0";
         p4.marginLeft = "-20vw";
+
+        p5.opacity = "0";
+        p5.marginLeft = "-20vw";
+        p6.opacity = "0";
+        p6.marginLeft = "-20vw";
+        p7.opacity = "0";
+        p7.marginLeft = "-20vw";
+        p8.opacity = "0";
+        p8.marginLeft = "-20vw";
     }else{
         projColorFlag = true;
         proj2Flag = true;
@@ -241,6 +268,15 @@ project2.addEventListener('click', function(){
         p3.marginLeft = pos[2]+"vw";
         p4.opacity = ".65";
         p4.marginLeft = pos[3]+"vw";
+
+        p5.opacity = ".65";
+        p5.marginLeft = pos[0]+"vw";
+        p6.opacity = ".65";
+        p6.marginLeft = pos[1]+"vw";
+        p7.opacity = ".65";
+        p7.marginLeft = pos[2]+"vw";
+        p8.opacity = ".65";
+        p8.marginLeft = pos[3]+"vw";
     }
 })
 // End Project 2 Event Listeners---------------------------------------------
@@ -270,6 +306,15 @@ project3.addEventListener('click', function(){
         p2.marginLeft = "-20vw";
         p4.opacity = "0";
         p4.marginLeft = "-20vw";
+
+        p5.opacity = "0";
+        p5.marginLeft = "-20vw";
+        p6.opacity = "0";
+        p6.marginLeft = "-20vw";
+        p7.opacity = "0";
+        p7.marginLeft = "-20vw";
+        p8.opacity = "0";
+        p8.marginLeft = "-20vw";
     }else{
         projColorFlag = true;
         proj3Flag = true;
@@ -283,6 +328,15 @@ project3.addEventListener('click', function(){
         p2.marginLeft = pos[1]+"vw";
         p4.opacity = ".65";
         p4.marginLeft = pos[3]+"vw";
+
+        p5.opacity = ".65";
+        p5.marginLeft = pos[0]+"vw";
+        p6.opacity = ".65";
+        p6.marginLeft = pos[1]+"vw";
+        p7.opacity = ".65";
+        p7.marginLeft = pos[2]+"vw";
+        p8.opacity = ".65";
+        p8.marginLeft = pos[3]+"vw";
     }
 })
 // End Project 3 Event Listeners---------------------------------------------
@@ -312,6 +366,15 @@ project4.addEventListener('click', function(){
         p2.marginLeft = "-20vw";
         p3.opacity = "0";
         p3.marginLeft = "-20vw";
+
+        p5.opacity = "0";
+        p5.marginLeft = "-20vw";
+        p6.opacity = "0";
+        p6.marginLeft = "-20vw";
+        p7.opacity = "0";
+        p7.marginLeft = "-20vw";
+        p8.opacity = "0";
+        p8.marginLeft = "-20vw";
     }else{
         projColorFlag = true;
         proj4Flag = true;
@@ -325,13 +388,22 @@ project4.addEventListener('click', function(){
         p2.marginLeft = pos[1]+"vw";
         p3.opacity = ".65";
         p3.marginLeft = pos[2]+"vw";
+
+        p5.opacity = ".65";
+        p5.marginLeft = pos[0]+"vw";
+        p6.opacity = ".65";
+        p6.marginLeft = pos[1]+"vw";
+        p7.opacity = ".65";
+        p7.marginLeft = pos[2]+"vw";
+        p8.opacity = ".65";
+        p8.marginLeft = pos[3]+"vw";
     }
 })
     //--------------------------------------------------------------
     //Project 5 Event Listeners-----------------------------------
 project5.addEventListener('mouseover', function(){
     if(true){
-        p5.backgroundColor = "#0f0";
+        p5.backgroundColor = "#fff";
     }
 },false);
 project5.addEventListener('mouseout', function(){
@@ -361,8 +433,7 @@ project5.addEventListener('click', function(){
         p5.width = "15vw";
         p5.height = "20vh";
         p5.marginLeft = pos[0]+"vw";
-        p5.marginTop = "-1vh";
-        p5.marginTop = "345vh"
+        p5.marginTop = "345vh";
         p5.opacity = ".65";
         p6.opacity = ".65";
         p6.marginLeft = pos[1]+"vw";
@@ -374,131 +445,137 @@ project5.addEventListener('click', function(){
 })
 //End Project 5 Event Listeners---------------------------------------------
 // Start Project 6 Event Listeners-------------------------------------------
-//    project6.addEventListener('mouseover', function(){
-//        if(projColorFlag){
-//            p6.backgroundColor = "#fff";
-//        }
-//    },false);
-//    project2.addEventListener('mouseout', function(){
-//        if(projColorFlag){
-//            p6.backgroundColor = "#ddd"
-//        };
-//    },false);
-//    project6.addEventListener('click', function(){
-//        if(proj6Flag){
-//            p6.backgroundColor = "#ddd";
-//            projColorFlag = false;
-//            proj6Flag = false;
-//            p6.width = "50vw";
-//            p6.height = "50vh";
-//            p6.marginLeft = "45vw";
-//            p6.opacity = "1";
-//            p5.opacity = "0";
-//            p5.marginLeft = "-20vw";
-//            p7.opacity = "0";
-//            p7.marginLeft = "-20vw";
-//            p8.opacity = "0";
-//            p8.marginLeft = "-20vw";
-//        }else{
-//            projColorFlag = true;
-//            proj6Flag = true;
-//            p6.width = "15vw";
-//            p6.height = "20vh";
-//            p6.marginLeft = pos[1]+"vw";
-//            p6.opacity = ".65";
-//            p5.opacity = ".65";
-//            p5.marginLeft = pos[0]+"vw";
-//            p7.opacity = ".65";
-//            p7.marginLeft = pos[2]+"vw";
-//            p8.opacity = ".65";
-//            p8.marginLeft = pos[3]+"vw";
-//        }
-//    })
-//    // End Project 6 Event Listeners---------------------------------------------
-//    // Start Project 7 Event Listeners-------------------------------------------
-//    project7.addEventListener('mouseover', function(){
-//        if(projColorFlag){
-//            p7.backgroundColor = "#fff";
-//        }
-//    },false);
-//    project7.addEventListener('mouseout', function(){
-//        if(projColorFlag){
-//            p7.backgroundColor = "#ddd"
-//        };
-//    },false);
-//    project7.addEventListener('click', function(){
-//        if(proj7Flag){
-//            p7.backgroundColor = "#ddd";
-//            projColorFlag = false;
-//            proj7Flag = false;
-//            p7.width = "50vw";
-//            p7.height = "50vh";
-//            p7.marginLeft = "45vw";
-//            p7.opacity = "1";
-//            p5.opacity = "0";
-//            p5.marginLeft = "-20vw";
-//            p6.opacity = "0";
-//            p6.marginLeft = "-20vw";
-//            p8.opacity = "0";
-//            p8.marginLeft = "-20vw";
-//        }else{
-//            projColorFlag = true;
-//            proj7Flag = true;
-//            p7.width = "15vw";
-//            p7.height = "20vh";
-//            p7.marginLeft = pos[2]+"vw";
-//            p7.opacity = ".65";
-//            p5.opacity = ".65";
-//            p5.marginLeft = pos[0]+"vw";
-//            p6.opacity = ".65";
-//            p6.marginLeft = pos[1]+"vw";
-//            p8.opacity = ".65";
-//            p8.marginLeft = pos[3]+"vw";
-//        }
-//    })
-//    // End Project 7 Event Listeners---------------------------------------------
-//    // Start Project 8 Event Listeners-------------------------------------------
-//    project8.addEventListener('mouseover', function(){
-//        if(projColorFlag){
-//            p8.backgroundColor = "#fff";
-//        }
-//    },false);
-//    project8.addEventListener('mouseout', function(){
-//        if(projColorFlag){
-//            p8.backgroundColor = "#ddd"
-//        };
-//    },false);
-//    project8.addEventListener('click', function(){
-//        if(proj8Flag){
-//            p8.backgroundColor = "#ddd";
-//            projColorFlag = false;
-//            proj8Flag = false;
-//            p8.width = "50vw";
-//            p8.height = "50vh";
-//            p8.marginLeft = "45vw";
-//            p8.opacity = "1";
-//            p5.opacity = "0";
-//            p5.marginLeft = "-20vw";
-//            p6.opacity = "0";
-//            p6.marginLeft = "-20vw";
-//            p7.opacity = "0";
-//            p7.marginLeft = "-20vw";
-//        }else{
-//            projColorFlag = true;
-//            proj8Flag = true;
-//            p8.width = "15vw";
-//            p8.height = "20vh";
-//            p8.marginLeft = pos[3]+"vw";
-//            p8.opacity = ".65";
-//            p5.opacity = ".65";
-//            p5.marginLeft = pos[0]+"vw";
-//            p6.opacity = ".65";
-//            p6.marginLeft = pos[1]+"vw";
-//            p7.opacity = ".65";
-//            p7.marginLeft = pos[2]+"vw";
-//        }
-//    })
-//    // End Project 8 Event Listeners---------------------------------------------
+project6.addEventListener('mouseover', function(){
+    if(projColorFlag){
+        p6.backgroundColor = "#fff";
+    }
+},false);
+project6.addEventListener('mouseout', function(){
+    if(projColorFlag){
+        p6.backgroundColor = "#ddd"
+    };
+},false);
+project6.addEventListener('click', function(){
+    if(proj6Flag){
+        p6.backgroundColor = "#ddd";
+        projColorFlag = false;
+        proj6Flag = false;
+        p6.width = "50vw";
+        p6.height = "50vh";
+        p6.marginLeft = "45vw";
+        p6.marginTop = "315vh";
+        p6.opacity = "1";
+        p5.opacity = "0";
+        p5.marginLeft = "-20vw";
+        p7.opacity = "0";
+        p7.marginLeft = "-20vw";
+        p8.opacity = "0";
+        p8.marginLeft = "-20vw";
+    }else{
+        projColorFlag = true;
+        proj6Flag = true;
+        p6.width = "15vw";
+        p6.height = "20vh";
+        p6.marginLeft = pos[1]+"vw";
+        p6.marginTop = "345vh";
+        p6.opacity = ".65";
+        p5.opacity = ".65";
+        p5.marginLeft = pos[0]+"vw";
+        p7.opacity = ".65";
+        p7.marginLeft = pos[2]+"vw";
+        p8.opacity = ".65";
+        p8.marginLeft = pos[3]+"vw";
+    }
+})
+// End Project 6 Event Listeners---------------------------------------------
+// Start Project 7 Event Listeners-------------------------------------------
+project7.addEventListener('mouseover', function(){
+    if(projColorFlag){
+        p7.backgroundColor = "#fff";
+    }
+},false);
+project7.addEventListener('mouseout', function(){
+    if(projColorFlag){
+        p7.backgroundColor = "#ddd"
+    };
+},false);
+project7.addEventListener('click', function(){
+    if(proj7Flag){
+        p7.backgroundColor = "#ddd";
+        projColorFlag = false;
+        proj7Flag = false;
+        p7.width = "50vw";
+        p7.height = "50vh";
+        p7.marginLeft = "45vw";
+        p7.marginTop = "315vh";
+        p7.opacity = "1";
+        p5.opacity = "0";
+        p5.marginLeft = "-20vw";
+        p6.opacity = "0";
+        p6.marginLeft = "-20vw";
+        p8.opacity = "0";
+        p8.marginLeft = "-20vw";
+    }else{
+        projColorFlag = true;
+        proj7Flag = true;
+        p7.width = "15vw";
+        p7.height = "20vh";
+        p7.marginLeft = pos[2]+"vw";
+        p7.marginTop = "345vh";
+        p7.opacity = ".65";
+        p5.opacity = ".65";
+        p5.marginLeft = pos[0]+"vw";
+        p6.opacity = ".65";
+        p6.marginLeft = pos[1]+"vw";
+        p8.opacity = ".65";
+        p8.marginLeft = pos[3]+"vw";
+    }
+})
+// End Project 7 Event Listeners---------------------------------------------
+// Start Project 8 Event Listeners-------------------------------------------
+project8.addEventListener('mouseover', function(){
+    if(projColorFlag){
+        p8.backgroundColor = "#fff";
+    }
+},false);
+project8.addEventListener('mouseout', function(){
+    if(projColorFlag){
+        p8.backgroundColor = "#ddd"
+    };
+},false);
+project8.addEventListener('click', function(){
+    if(proj8Flag){
+        p8.backgroundColor = "#ddd";
+        projColorFlag = false;
+        proj8Flag = false;
+        p8.width = "50vw";
+        p8.height = "50vh";
+        p8.marginLeft = "45vw";
+        p8.marginTop = "315vh";
+        p8.opacity = "1";
+        p5.opacity = "0";
+        p5.marginLeft = "-20vw";
+        p6.opacity = "0";
+        p6.marginLeft = "-20vw";
+        p7.opacity = "0";
+        p7.marginLeft = "-20vw";
+    }else{
+        projColorFlag = true;
+        proj8Flag = true;
+        p8.width = "15vw";
+        p8.height = "20vh";
+        p8.marginLeft = pos[3]+"vw";
+        p8.marginTop = "345vh";
+        p8.opacity = ".65";
+        p5.opacity = ".65";
+        p5.marginLeft = pos[0]+"vw";
+        p6.opacity = ".65";
+        p6.marginLeft = pos[1]+"vw";
+        p7.opacity = ".65";
+        p7.marginLeft = pos[2]+"vw";
+    }
+})
+// End Project 8 Event Listeners---------------------------------------------
 
 window.addEventListener('scroll', function(){
     if(window.pageYOffset > 1100 && window.pageYOffset < 1195){
