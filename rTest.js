@@ -11,6 +11,24 @@ let proj6Flag = true;
 let proj7Flag = true;
 let proj8Flag = true;
 
+let frame = document.getElementById("frame").style;
+
+let frameAbout = document.getElementById("frameAbout").style;
+
+let frameSkills = document.getElementById("frameSkills").style;
+//
+let frameProjects = document.getElementById("frameProjects").style;
+//
+let frameLinks = document.getElementById("frameLinks").style;
+
+window.addEventListener('load', function(){
+    frame.marginLeft = "0vw";
+    frameAbout.marginLeft = "106vw";
+    frameSkills.marginLeft = "105vw";
+    frameProjects.marginLeft = "103.5vw";
+    frameLinks.marginLeft = "106vw";
+    console.log(document.getElementById("frameProjects").name);
+})
 let f2 = true;
 let f3 = true;
 let flags = [true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true, false, false, false, false, false]
@@ -49,6 +67,8 @@ let project5 = document.getElementById("proj5");
 let project6 = document.getElementById("proj6");
 let project7 = document.getElementById("proj7");
 let project8 = document.getElementById("proj8");
+
+
 
 function linearEase(start, stop, percent){
   if((start + ((stop - start) * percent))>stop){
