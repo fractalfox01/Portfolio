@@ -131,6 +131,11 @@ img.addEventListener('click', function(){
 },false);
 links.addEventListener('click', function(){
     window.scrollTo(30, 3000);
+    frame.marginLeft = "100vw";
+    frameAbout.marginLeft = "106vw";
+    frameSkills.marginLeft = "105vw";
+    frameProjects.marginLeft = "103.5vw";
+    frameLinks.marginLeft = "6vw";
 },false);
 links.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -154,6 +159,12 @@ projects.addEventListener('click', function(){
     linux.opacity = "0";
     wordpress.opacity = "0";
 
+    frame.marginLeft = "100vw";
+    frameAbout.marginLeft = "106vw";
+    frameSkills.marginLeft = "105vw";
+    frameProjects.marginLeft = "3.5vw";
+    frameLinks.marginLeft = "106vw";
+
 },false);
 projects.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -163,6 +174,11 @@ projects.addEventListener('mouseout', function(event){
 },false);
 skills.addEventListener('click', function(){
     window.scrollTo(30,1173);
+    frame.marginLeft = "100vw";
+    frameAbout.marginLeft = "106vw";
+    frameSkills.marginLeft = "5vw";
+    frameProjects.marginLeft = "103.5vw";
+    frameLinks.marginLeft = "106vw";
 },false);
 skills.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -172,6 +188,11 @@ skills.addEventListener('mouseout', function(event){
 },false);
 about.addEventListener('click', function(){
     window.scrollTo(30, 425);
+    frame.marginLeft = "100vw";
+    frameAbout.marginLeft = "6vw";
+    frameSkills.marginLeft = "105vw";
+    frameProjects.marginLeft = "103.5vw";
+    frameLinks.marginLeft = "106vw";
 }, false);
 about.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -598,10 +619,22 @@ project8.addEventListener('click', function(){
 // End Project 8 Event Listeners---------------------------------------------
 
 window.addEventListener('scroll', function(){
+    if(window.pageYOffset >1000 && window.pageYOffset < 1100){
+        frame.marginLeft = "100vw";
+        frameAbout.marginLeft = "106vw";
+        frameSkills.marginLeft = "5vw";
+        frameProjects.marginLeft = "103.5vw";
+        frameLinks.marginLeft = "106vw";
+    }
     if(window.pageYOffset > 1100 && window.pageYOffset < 1195){
         for(var i = 0; i < 11; i++){
             aa[i].style.marginLeft = progMargin;
         }
+        frame.marginLeft = "100vw";
+        frameAbout.marginLeft = "106vw";
+        frameSkills.marginLeft = "5vw";
+        frameProjects.marginLeft = "103.5vw";
+        frameLinks.marginLeft = "106vw";
         python.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
@@ -626,8 +659,6 @@ window.addEventListener('scroll', function(){
         wordpress.opacity = "0";
         flags[0] = true;
         flags[1] = true;
-        frameSkills.marginLeft = "105vw";
-        frame.marginLeft = "0vw";
         console.log("here");
         console.log(aa.length.toString());
         aa[0].style.marginLeft = progMargin;
@@ -639,9 +670,7 @@ window.addEventListener('scroll', function(){
         f1 = false;
         flags[1] = true;
         flags[2] = true;
-        frame.marginLeft = "100vw";
-        frameSkills.marginLeft = "5vw";
-        frameProjects.marginLeft = "103.5vw";
+
 //        aa[0].style.marginLeft = "-100vw";
         android.opacity = "0";
         apache.opacity = "0";
@@ -841,7 +870,6 @@ window.addEventListener('scroll', function(){
         aa[10].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1900 && flags[11]){
-        frameProjects.marginLeft = "3.5vw";
         for(var j = 1; j < 11; j++){
             flags[j] = false;
         }
@@ -938,5 +966,6 @@ window.addEventListener('scroll', function(){
           })
         }, 40);
     }
+
 })
 console.log("working");
