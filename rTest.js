@@ -205,11 +205,13 @@ about.addEventListener('mouseout', function(event){
 project1.addEventListener('mouseover', function(){
     if(projColorFlag){
         p1.backgroundColor = "#fff";
+        p1.border = ".5vh solid #0f0";
     }
 },false);
 project1.addEventListener('mouseout', function(){
     if(projColorFlag){
         p1.backgroundColor = "#ddd"
+        p1.border = ".5vh solid rgb(50,121,187)";
     };
 },false);
 project1.addEventListener('click', function(){
@@ -221,6 +223,7 @@ project1.addEventListener('click', function(){
         p1.height = "50vh";
         p1.marginLeft = "45vw";
         p1.opacity = "1";
+        p1.backgroundSize = "50vw 50vh";
         p2.opacity = "0";
         p2.marginLeft = "-20vw";
         p3.opacity = "0";
@@ -243,6 +246,7 @@ project1.addEventListener('click', function(){
         p1.height = "20vh";
         p1.marginLeft = pos[0]+"vw";
         p1.opacity = ".65";
+        p1.backgroundSize = "15vw 20vh";
         p2.opacity = ".65";
         p2.marginLeft = pos[1]+"vw";
         p3.opacity = ".65";
@@ -444,12 +448,14 @@ project4.addEventListener('click', function(){
     //Project 5 Event Listeners-----------------------------------
 project5.addEventListener('mouseover', function(){
     if(true){
-        p5.backgroundColor = "#fff";
+        p5.opacity = "1";
+        p5.border = ".5vh solid #0f0";
     }
 },false);
 project5.addEventListener('mouseout', function(){
     if(projColorFlag){
-        p5.backgroundColor = "#ddd"
+        p5.opacity = ".65"
+        p5.border = ".5vh solid rgb(50,121,187)";
     };
 },false);
 project5.addEventListener('click', function(){
@@ -462,6 +468,7 @@ project5.addEventListener('click', function(){
         p5.marginLeft = "45vw";
         p5.marginTop = "315vh";
         p5.opacity = "1";
+        p5.backgroundSize = "50vw 50vh";
         p6.opacity = "0";
         p6.marginLeft = "-20vw";
         p7.opacity = "0";
@@ -484,6 +491,7 @@ project5.addEventListener('click', function(){
         p5.height = "20vh";
         p5.marginLeft = pos[0]+"vw";
         p5.marginTop = "345vh";
+        p5.backgroundSize = "15vw 20vh";
         p5.opacity = ".65";
         p6.opacity = ".65";
         p6.marginLeft = pos[1]+"vw";
