@@ -619,12 +619,40 @@ project8.addEventListener('click', function(){
 // End Project 8 Event Listeners---------------------------------------------
 
 window.addEventListener('scroll', function(){
-    if(window.pageYOffset >1000 && window.pageYOffset < 1100){
+    if(window.pageYOffset < 300){
+        frame.marginLeft = "0vw";
+        frameAbout.marginLeft = "106vw";
+        frameSkills.marginLeft = "105vw";
+        frameProjects.marginLeft = "103.5vw";
+        frameLinks.marginLeft = "106vw";
+    }
+    if(window.pageYOffset >460 && window.pageYOffset < 1100){
+        frame.marginLeft = "100vw";
+        frameAbout.marginLeft = "6vw";
+        frameSkills.marginLeft = "105vw";
+        frameProjects.marginLeft = "103.5vw";
+        frameLinks.marginLeft = "106vw";
+    }
+    if(window.pageYOffset >1100 && window.pageYOffset < 2100){
         frame.marginLeft = "100vw";
         frameAbout.marginLeft = "106vw";
         frameSkills.marginLeft = "5vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "106vw";
+    }
+    if(window.pageYOffset > 2100 && window.pageYOffset < 3000){
+        frame.marginLeft = "100vw";
+        frameAbout.marginLeft = "106vw";
+        frameSkills.marginLeft = "105vw";
+        frameProjects.marginLeft = "3.5vw";
+        frameLinks.marginLeft = "106vw";
+    }
+    if(window.pageYOffset > 3000){
+        frame.marginLeft = "100vw";
+        frameAbout.marginLeft = "106vw";
+        frameSkills.marginLeft = "105vw";
+        frameProjects.marginLeft = "103.5vw";
+        frameLinks.marginLeft = "6vw";
     }
     if(window.pageYOffset > 1100 && window.pageYOffset < 1195){
         for(var i = 0; i < 11; i++){
