@@ -468,6 +468,15 @@ project5.addEventListener('click', function(){
         p7.marginLeft = "-20vw";
         p8.opacity = "0";
         p8.marginLeft = "-20vw";
+
+        p1.opacity = ".65";
+        p1.marginLeft = "-20vw";
+        p2.opacity = ".65";
+        p2.marginLeft = "-20vw";
+        p3.opacity = ".65";
+        p3.marginLeft = "-20vw";
+        p4.opacity = ".65";
+        p4.marginLeft = "-20vw";
     }else{
         projColorFlag = true;
         proj5Flag = true;
@@ -482,6 +491,15 @@ project5.addEventListener('click', function(){
         p7.marginLeft = pos[2]+"vw";
         p8.opacity = ".65";
         p8.marginLeft = pos[3]+"vw";
+
+        p1.opacity = ".65";
+        p1.marginLeft = pos[0]+"vw";
+        p2.opacity = ".65";
+        p2.marginLeft = pos[1]+"vw";
+        p3.opacity = ".65";
+        p3.marginLeft = pos[2]+"vw";
+        p4.opacity = ".65";
+        p4.marginLeft = pos[3]+"vw";
     }
 })
 //End Project 5 Event Listeners---------------------------------------------
@@ -512,6 +530,15 @@ project6.addEventListener('click', function(){
         p7.marginLeft = "-20vw";
         p8.opacity = "0";
         p8.marginLeft = "-20vw";
+
+        p1.opacity = ".65";
+        p1.marginLeft = "-20vw";
+        p2.opacity = ".65";
+        p2.marginLeft = "-20vw";
+        p3.opacity = ".65";
+        p3.marginLeft = "-20vw";
+        p4.opacity = ".65";
+        p4.marginLeft = "-20vw";
     }else{
         projColorFlag = true;
         proj6Flag = true;
@@ -526,6 +553,15 @@ project6.addEventListener('click', function(){
         p7.marginLeft = pos[2]+"vw";
         p8.opacity = ".65";
         p8.marginLeft = pos[3]+"vw";
+
+        p1.opacity = ".65";
+        p1.marginLeft = pos[0]+"vw";
+        p2.opacity = ".65";
+        p2.marginLeft = pos[1]+"vw";
+        p3.opacity = ".65";
+        p3.marginLeft = pos[2]+"vw";
+        p4.opacity = ".65";
+        p4.marginLeft = pos[3]+"vw";
     }
 })
 // End Project 6 Event Listeners---------------------------------------------
@@ -556,6 +592,15 @@ project7.addEventListener('click', function(){
         p6.marginLeft = "-20vw";
         p8.opacity = "0";
         p8.marginLeft = "-20vw";
+
+        p1.opacity = ".65";
+        p1.marginLeft = "-20vw";
+        p2.opacity = ".65";
+        p2.marginLeft = "-20vw";
+        p3.opacity = ".65";
+        p3.marginLeft = "-20vw";
+        p4.opacity = ".65";
+        p4.marginLeft = "-20vw";
     }else{
         projColorFlag = true;
         proj7Flag = true;
@@ -570,6 +615,15 @@ project7.addEventListener('click', function(){
         p6.marginLeft = pos[1]+"vw";
         p8.opacity = ".65";
         p8.marginLeft = pos[3]+"vw";
+
+        p1.opacity = ".65";
+        p1.marginLeft = pos[0]+"vw";
+        p2.opacity = ".65";
+        p2.marginLeft = pos[1]+"vw";
+        p3.opacity = ".65";
+        p3.marginLeft = pos[2]+"vw";
+        p4.opacity = ".65";
+        p4.marginLeft = pos[3]+"vw";
     }
 })
 // End Project 7 Event Listeners---------------------------------------------
@@ -600,6 +654,15 @@ project8.addEventListener('click', function(){
         p6.marginLeft = "-20vw";
         p7.opacity = "0";
         p7.marginLeft = "-20vw";
+
+        p1.opacity = ".65";
+        p1.marginLeft = "-20vw";
+        p2.opacity = ".65";
+        p2.marginLeft = "-20vw";
+        p3.opacity = ".65";
+        p3.marginLeft = "-20vw";
+        p4.opacity = ".65";
+        p4.marginLeft = "-20vw";
     }else{
         projColorFlag = true;
         proj8Flag = true;
@@ -614,6 +677,15 @@ project8.addEventListener('click', function(){
         p6.marginLeft = pos[1]+"vw";
         p7.opacity = ".65";
         p7.marginLeft = pos[2]+"vw";
+
+        p1.opacity = ".65";
+        p1.marginLeft = pos[0]+"vw";
+        p2.opacity = ".65";
+        p2.marginLeft = pos[1]+"vw";
+        p3.opacity = ".65";
+        p3.marginLeft = pos[2]+"vw";
+        p4.opacity = ".65";
+        p4.marginLeft = pos[3]+"vw";
     }
 })
 // End Project 8 Event Listeners---------------------------------------------
