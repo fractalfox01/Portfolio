@@ -626,6 +626,8 @@ window.addEventListener('scroll', function(){
         wordpress.opacity = "0";
         flags[0] = true;
         flags[1] = true;
+        frameSkills.marginLeft = "105vw";
+        frame.marginLeft = "0vw";
         console.log("here");
         console.log(aa.length.toString());
         aa[0].style.marginLeft = progMargin;
@@ -637,6 +639,9 @@ window.addEventListener('scroll', function(){
         f1 = false;
         flags[1] = true;
         flags[2] = true;
+        frame.marginLeft = "100vw";
+        frameSkills.marginLeft = "5vw";
+        frameProjects.marginLeft = "103.5vw";
 //        aa[0].style.marginLeft = "-100vw";
         android.opacity = "0";
         apache.opacity = "0";
@@ -836,6 +841,7 @@ window.addEventListener('scroll', function(){
         aa[10].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1900 && flags[11]){
+        frameProjects.marginLeft = "3.5vw";
         for(var j = 1; j < 11; j++){
             flags[j] = false;
         }
