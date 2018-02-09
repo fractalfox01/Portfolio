@@ -58,6 +58,8 @@ let img = document.getElementById("image");
 let hrefProjects = document.getElementById("hrefProjects");
 let hrefLinks = document.getElementById("hrefLinks");
 let hrefUbuntu = document.getElementById("hrefUbuntu");
+
+let projTitle = document.getElementById("projLink");
 let project1 = document.getElementById("proj1");
 let project2 = document.getElementById("proj2");
 let project3 = document.getElementById("proj3");
@@ -144,7 +146,7 @@ links.addEventListener('mouseout', function(event){
     event.target.style.backgroundColor = "rgb(227,227,227)";
 },false);
 projects.addEventListener('click', function(){
-    window.scrollTo(30, 2220);
+    window.scrollTo(30, 2280);
     for(var i = 0; i < 11; i++){
         aa[i].style.marginLeft = "1vw";
     }
@@ -204,26 +206,29 @@ about.addEventListener('mouseout', function(event){
 //Project 1 Event Listeners--------------------------------------------
 project1.addEventListener('mouseover', function(){
     if(projColorFlag){
-        p1.backgroundColor = "#fff";
+        p1.opacity = "1";
         p1.border = ".5vh solid #0f0";
     }
 },false);
 project1.addEventListener('mouseout', function(){
     if(projColorFlag){
-        p1.backgroundColor = "#ddd"
+        p1.opacity = ".65"
         p1.border = ".5vh solid rgb(50,121,187)";
     };
 },false);
 project1.addEventListener('click', function(){
     if(proj1Flag){
-        p1.backgroundColor = "#ddd";
+        p1.backgroundColor = "#aaa";
         projColorFlag = false;
         proj1Flag = false;
-        p1.width = "50vw";
-        p1.height = "50vh";
-        p1.marginLeft = "45vw";
+        projTitle.innerHTML = "HTML & CSS";
+        projTitle.style.marginLeft = "44vw";
+        projTitle.style.opacity = "1";
+        p1.width = "75vw";
+        p1.height = "60vh";
+        p1.marginLeft = "33vw";
         p1.opacity = "1";
-        p1.backgroundSize = "50vw 50vh";
+        p1.backgroundSize = "37.25vw 60vh, 37.25vw 60vh";
         p2.opacity = "0";
         p2.marginLeft = "-20vw";
         p3.opacity = "0";
@@ -242,11 +247,13 @@ project1.addEventListener('click', function(){
     }else{
         projColorFlag = true;
         proj1Flag = true;
+        projTitle.innerHTML = "";
+        projTitle.style.opacity = "0";
         p1.width = "15vw";
         p1.height = "20vh";
         p1.marginLeft = pos[0]+"vw";
         p1.opacity = ".65";
-        p1.backgroundSize = "15vw 20vh";
+        p1.backgroundSize = "7.4vw 20vh, 7.4vw 20vh";
         p2.opacity = ".65";
         p2.marginLeft = pos[1]+"vw";
         p3.opacity = ".65";
@@ -268,12 +275,14 @@ project1.addEventListener('click', function(){
 // Start Project 2 Event Listeners-------------------------------------------
 project2.addEventListener('mouseover', function(){
     if(projColorFlag){
-        p2.backgroundColor = "#fff";
+        p2.opacity = "1";
+        p2.border = ".5vh solid #0f0";
     }
 },false);
 project2.addEventListener('mouseout', function(){
     if(projColorFlag){
-        p2.backgroundColor = "#ddd"
+        p2.opacity = ".65";
+        p2.border = ".5vh solid rgb(50,121,187)";
     };
 },false);
 project2.addEventListener('click', function(){
@@ -281,10 +290,14 @@ project2.addEventListener('click', function(){
         p2.backgroundColor = "#ddd";
         projColorFlag = false;
         proj2Flag = false;
-        p2.width = "50vw";
-        p2.height = "50vh";
-        p2.marginLeft = "45vw";
+        projTitle.innerHTML = "WordPress Website";
+        projTitle.style.marginLeft = "42vw";
+        projTitle.style.opacity = "1";
+        p2.width = "75vw";
+        p2.height = "60vh";
+        p2.marginLeft = "33vw";
         p2.opacity = "1";
+        p2.backgroundSize = "40vw 60vh";
         p1.opacity = "0";
         p1.marginLeft = "-20vw";
         p3.opacity = "0";
@@ -303,10 +316,12 @@ project2.addEventListener('click', function(){
     }else{
         projColorFlag = true;
         proj2Flag = true;
+        projTitle.style.opacity = "0";
         p2.width = "15vw";
         p2.height = "20vh";
         p2.marginLeft = pos[1]+"vw";
         p2.opacity = ".65";
+        p2.backgroundSize = "15vw 20vh";
         p1.opacity = ".65";
         p1.marginLeft = pos[0]+"vw";
         p3.opacity = ".65";
@@ -341,9 +356,12 @@ project3.addEventListener('click', function(){
         p3.backgroundColor = "#ddd";
         projColorFlag = false;
         proj3Flag = false;
-        p3.width = "50vw";
-        p3.height = "50vh";
-        p3.marginLeft = "45vw";
+        projTitle.innerHTML = "Empty Project :(";
+        projTitle.style.marginLeft = "42vw";
+        projTitle.style.opacity = "1";
+        p3.width = "75vw";
+        p3.height = "60vh";
+        p3.marginLeft = "33vw";
         p3.opacity = "1";
         p1.opacity = "0";
         p1.marginLeft = "-20vw";
@@ -363,6 +381,7 @@ project3.addEventListener('click', function(){
     }else{
         projColorFlag = true;
         proj3Flag = true;
+        projTitle.style.opacity = "0";
         p3.width = "15vw";
         p3.height = "20vh";
         p3.marginLeft = pos[2]+"vw";
@@ -401,9 +420,12 @@ project4.addEventListener('click', function(){
         p4.backgroundColor = "#ddd";
         projColorFlag = false;
         proj4Flag = false;
-        p4.width = "50vw";
-        p4.height = "50vh";
-        p4.marginLeft = "45vw";
+        projTitle.innerHTML = "Empty Project :(";
+        projTitle.style.marginLeft = "42vw";
+        projTitle.style.opacity = "1";
+        p4.width = "75vw";
+        p4.height = "60vh";
+        p4.marginLeft = "33vw";
         p4.opacity = "1";
         p1.opacity = "0";
         p1.marginLeft = "-20vw";
@@ -426,6 +448,7 @@ project4.addEventListener('click', function(){
         p4.width = "15vw";
         p4.height = "20vh";
         p4.marginLeft = pos[3]+"vw";
+        projTitle.style.opacity = "0";
         p4.opacity = ".65";
         p1.opacity = ".65";
         p1.marginLeft = pos[0]+"vw";
@@ -450,6 +473,7 @@ project5.addEventListener('mouseover', function(){
     if(true){
         p5.opacity = "1";
         p5.border = ".5vh solid #0f0";
+
     }
 },false);
 project5.addEventListener('mouseout', function(){
@@ -460,15 +484,18 @@ project5.addEventListener('mouseout', function(){
 },false);
 project5.addEventListener('click', function(){
     if(proj5Flag){
-        p5.backgroundColor = "#ddd";
+        p5.backgroundColor = "#999";
         projColorFlag = false;
         proj5Flag = false;
-        p5.width = "50vw";
-        p5.height = "50vh";
-        p5.marginLeft = "45vw";
+        projTitle.innerHTML = "Python Subnetting Tool";
+        projTitle.style.marginLeft = "40vw";
+        projTitle.style.opacity = "1";
+        p5.width = "75vw";
+        p5.height = "60vh";
+        p5.marginLeft = "33vw";
         p5.marginTop = "315vh";
         p5.opacity = "1";
-        p5.backgroundSize = "50vw 50vh";
+        p5.backgroundSize = "50vw 60vh";
         p6.opacity = "0";
         p6.marginLeft = "-20vw";
         p7.opacity = "0";
@@ -487,6 +514,7 @@ project5.addEventListener('click', function(){
     }else{
         projColorFlag = true;
         proj5Flag = true;
+        projTitle.style.opacity = "0";
         p5.width = "15vw";
         p5.height = "20vh";
         p5.marginLeft = pos[0]+"vw";
@@ -527,9 +555,12 @@ project6.addEventListener('click', function(){
         p6.backgroundColor = "#ddd";
         projColorFlag = false;
         proj6Flag = false;
-        p6.width = "50vw";
-        p6.height = "50vh";
-        p6.marginLeft = "45vw";
+        projTitle.innerHTML = "Empty Project :(";
+        projTitle.style.marginLeft = "42vw";
+        projTitle.style.opacity = "1";
+        p6.width = "75vw";
+        p6.height = "60vh";
+        p6.marginLeft = "33vw";
         p6.marginTop = "315vh";
         p6.opacity = "1";
         p5.opacity = "0";
@@ -550,6 +581,7 @@ project6.addEventListener('click', function(){
     }else{
         projColorFlag = true;
         proj6Flag = true;
+        projTitle.style.opacity = "0";
         p6.width = "15vw";
         p6.height = "20vh";
         p6.marginLeft = pos[1]+"vw";
@@ -589,9 +621,12 @@ project7.addEventListener('click', function(){
         p7.backgroundColor = "#ddd";
         projColorFlag = false;
         proj7Flag = false;
-        p7.width = "50vw";
-        p7.height = "50vh";
-        p7.marginLeft = "45vw";
+        projTitle.innerHTML = "Empty Project :(";
+        projTitle.style.marginLeft = "42vw";
+        projTitle.style.opacity = "1";
+        p7.width = "75vw";
+        p7.height = "60vh";
+        p7.marginLeft = "33vw";
         p7.marginTop = "315vh";
         p7.opacity = "1";
         p5.opacity = "0";
@@ -612,6 +647,7 @@ project7.addEventListener('click', function(){
     }else{
         projColorFlag = true;
         proj7Flag = true;
+        projTitle.style.opacity = "0";
         p7.width = "15vw";
         p7.height = "20vh";
         p7.marginLeft = pos[2]+"vw";
@@ -651,9 +687,12 @@ project8.addEventListener('click', function(){
         p8.backgroundColor = "#ddd";
         projColorFlag = false;
         proj8Flag = false;
-        p8.width = "50vw";
-        p8.height = "50vh";
-        p8.marginLeft = "45vw";
+        projTitle.innerHTML = "Empty Project :(";
+        projTitle.style.marginLeft = "42vw";
+        projTitle.style.opacity = "1";
+        p8.width = "75vw";
+        p8.height = "60vh";
+        p8.marginLeft = "33vw";
         p8.marginTop = "315vh";
         p8.opacity = "1";
         p5.opacity = "0";
@@ -674,6 +713,7 @@ project8.addEventListener('click', function(){
     }else{
         projColorFlag = true;
         proj8Flag = true;
+        projTitle.style.opacity = "0";
         p8.width = "15vw";
         p8.height = "20vh";
         p8.marginLeft = pos[3]+"vw";
