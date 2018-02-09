@@ -696,6 +696,26 @@
             opacity: .8;
             z-index: -1;
         }
+        .testText{
+            margin-left: 35vw;
+            margin-top: -40vh;
+            color: #0f0;
+            line-height: 2vh;
+        }
+        .tT{
+            margin-left: 35vw;
+            margin-top: 0vh;
+            color: #0f0;
+            line-height: 2vh;
+        }
+        .proj1Text{
+            margin-top: 32vh;
+            margin-left: 2vw;
+            text-align: left;
+            line-height: 2vh;
+            color: #fff;
+            font-size: 3vh;
+        }
         #proj1{
             position: absolute;
             margin-top: 315vh;
@@ -709,9 +729,7 @@
             border: .5vh solid rgb(50,121,187);
             border-radius: 1vh;
             opacity: .8;
-            text-align: center;
-            color: #fff;
-            font-size: 4vh;
+
             z-index: 0;
         }
         #proj2{
@@ -720,9 +738,10 @@
             margin-left: -20vw;
             width: 15vw;
             height: 20vh;
-            background-image: url("./spiraledthoughts(0).jpg");
-            background-repeat: no-repeat;
-            background-size: 15vw 20vh;
+            background-image: url("./spiraledthoughts(0).jpg"), url("./ST-Cisco.jpg");
+            background-repeat: no-repeat, no-repeat;
+            background-size: 5vw 20vh, 10vw 20vh;
+            background-position: left, right;
             border: .5vh solid rgb(50,121,187);
             border-radius: 1vh;
             opacity: .8;
@@ -1042,7 +1061,7 @@
             <p class="infoText">Apache</p>
         </div>
         <div id="frame3"></div>
-        <div id="proj1"></div>
+        <div id="proj1"><div class="proj1Text"></div></div>
         <div id="proj2"></div>
         <div id="proj3">Project 3</div>
         <div id="proj4">Project 4</div>

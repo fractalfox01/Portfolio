@@ -102,6 +102,7 @@ function animateIt(options){
   update();
 }
 //
+let p1Text = document.getElementsByClassName("proj1Text");
 let p1 = document.getElementById("proj1").style;
 let p2 = document.getElementById("proj2").style;
 let p3 = document.getElementById("proj3").style;
@@ -218,7 +219,7 @@ project1.addEventListener('mouseout', function(){
 },false);
 project1.addEventListener('click', function(){
     if(proj1Flag){
-        p1.backgroundColor = "#aaa";
+        p1.backgroundColor = "#00a";
         projColorFlag = false;
         proj1Flag = false;
         projTitle.innerHTML = "HTML & CSS";
@@ -228,7 +229,9 @@ project1.addEventListener('click', function(){
         p1.height = "60vh";
         p1.marginLeft = "33vw";
         p1.opacity = "1";
-        p1.backgroundSize = "37.25vw 60vh, 37.25vw 60vh";
+        p1.backgroundSize = "30vw 30vh, 30vw 30vh";
+        p1.backgroundPosition = "top left 5vw, bottom right 5vw";
+        p1Text[0].innerHTML = "<h1>Simon Game</h1><p>a simple tribute the the popular game Simon.</p><p>You can try the game and view the source code at <a href='https://codepen.io/Encoded_Void/pen/BJWPYz/'>codepen.io</a></p><h1 class='testText'>Twitch Streamer</h1><p class='tT'>A Twitch Stream Viewer.</p>";
         p2.opacity = "0";
         p2.marginLeft = "-20vw";
         p3.opacity = "0";
@@ -253,7 +256,9 @@ project1.addEventListener('click', function(){
         p1.height = "20vh";
         p1.marginLeft = pos[0]+"vw";
         p1.opacity = ".65";
-        p1.backgroundSize = "7.4vw 20vh, 7.4vw 20vh";
+        p1.backgroundSize = "7.5vw 20vh, 7.5vw 20vh";
+        p1.backgroundPosition = "left, right";
+        p1Text[0].innerHTML = "";
         p2.opacity = ".65";
         p2.marginLeft = pos[1]+"vw";
         p3.opacity = ".65";
@@ -297,7 +302,7 @@ project2.addEventListener('click', function(){
         p2.height = "60vh";
         p2.marginLeft = "33vw";
         p2.opacity = "1";
-        p2.backgroundSize = "40vw 60vh";
+        p2.backgroundSize = "25vw 60vh, 50vw 60vh";
         p1.opacity = "0";
         p1.marginLeft = "-20vw";
         p3.opacity = "0";
@@ -321,7 +326,7 @@ project2.addEventListener('click', function(){
         p2.height = "20vh";
         p2.marginLeft = pos[1]+"vw";
         p2.opacity = ".65";
-        p2.backgroundSize = "15vw 20vh";
+        p2.backgroundSize = "5vw 20vh, 10vw 20vh";
         p1.opacity = ".65";
         p1.marginLeft = pos[0]+"vw";
         p3.opacity = ".65";
