@@ -496,6 +496,7 @@ project5.addEventListener('click', function(){
         p5.marginTop = "315vh";
         p5.opacity = "1";
         p5.backgroundSize = "50vw 60vh";
+        p5.backgroundPosition = "center";
         p6.opacity = "0";
         p6.marginLeft = "-20vw";
         p7.opacity = "0";
