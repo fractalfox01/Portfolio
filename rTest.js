@@ -229,9 +229,10 @@ project1.addEventListener('click', function(){
         p1.height = "60vh";
         p1.marginLeft = "33vw";
         p1.opacity = "1";
-        p1.backgroundSize = "30vw 30vh, 30vw 30vh";
-        p1.backgroundPosition = "top left 5vw, bottom right 5vw";
-        p1Text[0].innerHTML = "<h1>Simon Game</h1><p>a simple tribute the the popular game Simon.</p><p>You can try the game and view the source code at <a href='https://codepen.io/Encoded_Void/pen/BJWPYz/'>codepen.io</a></p><h1 class='testText'>Twitch Streamer</h1><p class='tT'>A Twitch Stream Viewer.</p>";
+        p1.backgroundImage = "url('./simonGame.jpg'), url('./twitchImage.jpg'), url('./TwitchLive.jpg')"
+        p1.backgroundSize = "30vw 30vh, 30vw 30vh , 15vw 30vh";
+        p1.backgroundPosition = "top left 5vw, bottom 0vh right 5vw, top 0vh right 0vw";
+        p1Text[0].innerHTML = "<h1 style='color: #0f0'>Simon Game</h1><p>A simple tribute to the popular game Simon.</p><p>You can try the game and view the source code at <a href='https://codepen.io/Encoded_Void/pen/BJWPYz/'>codepen.io</a></p><p>(Turn on sound for best experience)</p><h1 class='testText'>Twitch Streamer</h1><p class='tT'>A Twitch Stream Viewer.</p><p class='tT'>View the streamer and source code <a href='https://codepen.io/Encoded_Void/pen/qVrjmX'>Here</a>.</p>";
         p2.opacity = "0";
         p2.marginLeft = "-20vw";
         p3.opacity = "0";
