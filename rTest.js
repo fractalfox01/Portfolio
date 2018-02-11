@@ -230,9 +230,9 @@ project1.addEventListener('click', function(){
         p1.marginLeft = "33vw";
         p1.opacity = "1";
         p1.backgroundImage = "url('./simonGame.jpg'), url('./twitchImage.jpg'), url('./TwitchLive.jpg')"
-        p1.backgroundSize = "30vw 30vh, 30vw 30vh , 15vw 30vh";
-        p1.backgroundPosition = "top left 5vw, bottom 0vh right 5vw, top 0vh right 0vw";
-        p1Text[0].innerHTML = "<h1 style='color: #0f0'>Simon Game</h1><p>A simple tribute to the popular game Simon.</p><p>You can try the game and view the source code at <a href='https://codepen.io/Encoded_Void/pen/BJWPYz/'>codepen.io</a></p><p>(Turn on sound for best experience)</p><h1 class='testText'>Twitch Streamer</h1><p class='tT'>A Twitch Stream Viewer.</p><p class='tT'>View the streamer and source code <a href='https://codepen.io/Encoded_Void/pen/qVrjmX'>Here</a>.</p>";
+        p1.backgroundSize = "35vw 30vh, 35vw 30vh , 15vw 30vh";
+        p1.backgroundPosition = "top left 1vw, bottom 0vh right 1vw, top 0vh right 1vw";
+        p1Text[0].innerHTML = "<h1 style='color: #0f0'>Simon Game</h1><p>A simple tribute to the popular game Simon.</p><p>While going about writing the code for this game, I came across many problems. Some of them were important programming concepts that I didn't understand. Such as Promises and Callbacks. Other problems ranged from limitations of the chosen language to, how to structure the flow of the program. In the end I ended up going with a click driven structure. On each click a series of timeouts are triggered, the timeouts fired depend on the value of each click.</p><p>You can try the game and view the source code at <a target='_blank' href='https://codepen.io/Encoded_Void/pen/BJWPYz/'>codepen.io</a> (Turn on sound for best experience)</p><h1 class='testText'>Twitch Streamer</h1><p class='tT'>A Twitch Stream Viewer.</p><p class='tT'>This page makes an https call to twitches <a target='_blank' href='https://en.wikipedia.org/wiki/Application_programming_interface'>API</a> and, receives back a list of the current Top 10 Live channels on the left and 5 pre-selected channels on the right.</p><p class='tT'>View the streamer and source code <a target='_blank' href='https://codepen.io/Encoded_Void/pen/qVrjmX'>Here</a>.</p>";
         p2.opacity = "0";
         p2.marginLeft = "-20vw";
         p3.opacity = "0";
@@ -303,7 +303,9 @@ project2.addEventListener('click', function(){
         p2.height = "60vh";
         p2.marginLeft = "33vw";
         p2.opacity = "1";
-        p2.backgroundSize = "25vw 60vh, 50vw 60vh";
+        p2.backgroundColor = "#0aa";
+        p2.backgroundSize = "23vw 25vh, 30vw 60vh";
+        p2.backgroundPosition = "top left 0vw, top right 1vw";
         p1.opacity = "0";
         p1.marginLeft = "-20vw";
         p3.opacity = "0";
@@ -327,7 +329,9 @@ project2.addEventListener('click', function(){
         p2.height = "20vh";
         p2.marginLeft = pos[1]+"vw";
         p2.opacity = ".65";
+        p2.backgroundColor = "#aaa";
         p2.backgroundSize = "5vw 20vh, 10vw 20vh";
+        p2.backgroundPosition = "left, right";
         p1.opacity = ".65";
         p1.marginLeft = pos[0]+"vw";
         p3.opacity = ".65";
@@ -368,6 +372,7 @@ project3.addEventListener('click', function(){
         p3.width = "75vw";
         p3.height = "60vh";
         p3.marginLeft = "33vw";
+        p3.backgroundColor = "#0aa";
         p3.opacity = "1";
         p1.opacity = "0";
         p1.marginLeft = "-20vw";
@@ -503,6 +508,7 @@ project5.addEventListener('click', function(){
         p5.opacity = "1";
         p5.backgroundSize = "50vw 60vh";
         p5.backgroundPosition = "center";
+        p5.backgroundColor = "#0aa";
         p6.opacity = "0";
         p6.marginLeft = "-20vw";
         p7.opacity = "0";
