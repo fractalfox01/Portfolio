@@ -23,6 +23,9 @@
         a:active{
             color: #ooooff;
         }
+        p{
+            margin-bottom: -.5vh;
+        }
         #header{
             position: fixed;
             margin-left: 0vw;
@@ -281,8 +284,9 @@
             width: 80vw;
             height: 86vh;
             /* background-color: #999; */
-            background-image: url("./wood4.jpg");
+            background-image: url("./trees4.jpg");
             background-repeat: no-repeat;
+            background-size: 80vw 95vh;
             border: 2.5vw solid transparent;
             border-image: url("https://pixnio.com/free-images/textures-and-patterns/wall-texture/brick-wall-texture-pictures/texture-red-stone-wall-725x544.jpg") 10;
             z-index: 0;
@@ -296,21 +300,29 @@
         }
         .aboutText2{
             margin-left: 2vw;
-            color: #0fc;
+            color: #00ffaa;
             font-size: 4vh;
             text-align: justify;
         }
         .aboutmain{
             margin-left: 2vw;
-            color: #0fc;
+            color: #00ffaa;
             font-size: 3vh;
             line-height: 3vh;
             text-align: justify;
         }
-        .col-2{
+        .col-3{
             columns: 3;
             column-gap: 6vw;
             color: #55ec55;
+        }
+        .col-2{
+            columns: 2;
+            column-gap: 3vw;
+            color: #00ffaa;
+        }
+        .lineUp{
+            display: inline-block;
         }
         #mySkills{
             position: absolute;
@@ -426,7 +438,7 @@
             opacity: 1;
         }
         #pythonInfo{
-            margin-top: 190vh;
+            margin-top: 183vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -450,7 +462,7 @@
             opacity: 1;
         }
         #wordpressInfo{
-            margin-top: 197.5vh;
+            margin-top: 190vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -474,7 +486,7 @@
             opacity: 1;
         }
         #linuxInfo{
-            margin-top: 205vh;
+            margin-top: 197.5vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -509,7 +521,7 @@
             opacity: 1;
         }
         #hTmlInfo{
-            margin-top: 212.5vh;
+            margin-top: 205vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -533,7 +545,7 @@
             opacity: 1;
         }
         #bootstrapInfo{
-            margin-top: 220vh;
+            margin-top: 212.5vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -557,7 +569,7 @@
             opacity: 1;
         }
         #javascriptInfo{
-            margin-top: 227vh;
+            margin-top: 220vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -581,7 +593,7 @@
             opacity: 1;
         }
         #bashInfo{
-            margin-top: 234vh;
+            margin-top: 227vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -605,7 +617,7 @@
             opacity: 1;
         }
         #javaInfo{
-            margin-top: 242vh;
+            margin-top: 234vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -629,7 +641,7 @@
             opacity: 1;
         }
         #androidInfo{
-            margin-top: 249vh;
+            margin-top: 242vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -653,7 +665,7 @@
             opacity: 1;
         }
         #cSharpInfo{
-            margin-top: 257vh;
+            margin-top: 249vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -677,7 +689,7 @@
             opacity: 1;
         }
         #apacheInfo{
-            margin-top: 265vh;
+            margin-top: 257vh;
             margin-left: 15vw;
             position: absolute;
             width: 70vw;
@@ -727,7 +739,7 @@
         }
         .testText{
             margin-left: 38vw;
-            margin-top: -58vh;
+            margin-top: -55vh;
             color: #0f0;
             line-height: 2vh;
             word-wrap: break-word;
@@ -962,9 +974,9 @@
         <div id="image"></div>
         <div id="aboutme">
             <p class="aboutText1">Welcome to my online portfolio!</p>
-            <p class="aboutText2">The following page is a full summarization of my technical background. For any questions please view the <a target='_self' href='#frame5'>Links</a> section for contact information.</p>
+            <p class="aboutText2">The following page is a full summarization of my technical background. For any questions please see the <a target='_self' href='#frame5'>Links</a> section for contact information.</p>
             <p class="aboutmain">I'm a freelance website developer/designer and, owner of CodeRealms LLC. As-well-as website services I also have experience in a number of other programming languages and services, such as:</p>
-            <ul class="aboutmain col-2">
+            <ul class="aboutmain col-3">
                 <li>Both front and back-end languages</li>
                 <li>Apache web servers</li>
                 <li>Amazon AWS ec2 instances</li>
@@ -976,8 +988,13 @@
                 <li>Soldering and Schematics</li>
                 <li>Linux System Management</li>
             </ul>
-            <p class="aboutmain">I've taken a slower route then others in jumping into the programming world, not learning until after my K-12 years. Now I'm about 8 years into this passion, and loving it!</p>
-            <p class="aboutmain">While I have attended a few years of tech courses at CCC (Coconino Community College), A large portion of my education is self-taught and, admittedly contains gaps. I'm very eager to fill those gaps and spend most of my time working with things I've never used before.</p>
+            <div class="aboutmain col-2">
+                <p class="lineUp">I've taken a slower route then others in jumping into the programming world, not learning until after my K-12 years. Now I'm about 8 years into this passion, and loving it!</p>
+                <p class="lineUp">While I have attended a few years of tech courses at CCC (Coconino Community College), A large portion of my education is self-taught and, admittedly contains gaps. I'm very eager to fill those gaps and spend most of my time working with things I haven't used before, in an attempt of weeding out those missing gaps.</p>
+                <p class="lineUp">The majority of my time is spent on advancing my knowledge in Math, Physics, InfoSec, Programming Structure and Techniques, etc..</p>
+                <p class="lineUp">My passion for computer work, I think, is somewhat different than others. I don't fatigue easily from screen time. I can easily spend 12+ hours at a screen. That's not to say I don't stay active. I'm an avid hiker and try to take a portion of each day to get out and explore. But, I'm intrigued by the challenges that programming can introduce and, the power of good that can come from solving them.</p>
+                <p class="lineUp">While I have attended a few years of tech courses at CCC (Coconino Community College), A large portion of my education is self-taught and, admittedly contains gaps. I'm very eager to fill those gaps and spend most of my time working with things I've never used before, in an attempt to find those lost areas.</p>
+            </div>
         </div>
         <!-- Start of skills Area -->
         <div id="frame2"></div>
@@ -1063,8 +1080,8 @@
             <p class="info">At first I was just interested in a computer that could do more, for 'free'. I had next to no practical tech know-how. I just knew I was sick of what I had. It was limited, and I had no access to anything. Not really a good environment if you're curious about how things work.</p>
             <p class="info">So I started out like any normal person does. Looking around, poking things here and there, diving into online tutorials and How-To's. Broke thing's, severely. And learned a lot throughout the process.</p>
             <p class="info">Once I started collage I was drawn towards the Linux courses. I was extremely fortunate in joining the course when I did and lucked out on an incredible instructor.</p>
-            <p class="info">The college offers two courses. I learned an incredible amount of helpful things in each. This is where I finally got a chance to dive into TCP/IP and communication protocols.</p>
-            <p class="info">Through out the course's we touched on many topics. The second course was truly challenging. topics covered ranged from.</p>
+            <p class="info">The college offers two courses. I've learned an incredible amount of helpful things in each. This is where I finally got a chance to dive into TCP/IP and communication protocols.</p>
+            <p class="info">Through out the course's we touched on many topics. Both courses were truly challenging and brought me to a new level, particularly the second. Topics covered a width ranged, from basic scripting to designing, building, and securing a mock enterprise level network.</p>
         </div>
         <div id="hTmlInfo">
             <div id="htmlImg"></div>
