@@ -21,12 +21,15 @@ let frameProjects = document.getElementById("frameProjects").style;
 //
 let frameLinks = document.getElementById("frameLinks").style;
 
+//let frameEducation = document.getElementById('frameEducation');
+
 window.addEventListener('load', function(){
     frame.marginLeft = "0vw";
     frameAbout.marginLeft = "106vw";
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "106vw";
+//    frameEducation.marginLeft = "100vw";
     console.log(document.getElementById("frameProjects").name);
 })
 let f2 = true;
@@ -54,6 +57,7 @@ let about = document.getElementById("about");
 let skills = document.getElementById('skills');
 let projects = document.getElementById('projects');
 let links = document.getElementById('links');
+let education = document.getElementById('education');
 let img = document.getElementById("image");
 let hrefProjects = document.getElementById("hrefProjects");
 let hrefLinks = document.getElementById("hrefLinks");
@@ -139,6 +143,7 @@ links.addEventListener('click', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "6vw";
+//    frameEducation.marginLeft = "100vw";
 },false);
 links.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -146,6 +151,22 @@ links.addEventListener('mouseover', function(event){
 links.addEventListener('mouseout', function(event){
     event.target.style.backgroundColor = "rgb(227,227,227)";
 },false);
+
+education.addEventListener('click', function(){
+    window.scrollTo(30, 3000);
+    frame.marginLeft = "100vw";
+    frameAbout.marginLeft = "106vw";
+    frameSkills.marginLeft = "105vw";
+    frameProjects.marginLeft = "103.5vw";
+//    frameEducation.marginLeft = "6vw";
+},false);
+education.addEventListener('mouseover', function(event){
+    event.target.style.backgroundColor = "rgb(0,224,255)";
+},false);
+education.addEventListener('mouseout', function(event){
+    event.target.style.backgroundColor = "rgb(227,227,227)";
+},false);
+
 projects.addEventListener('click', function(){
     window.scrollTo(30, 2280);
     for(var i = 0; i < 11; i++){
@@ -167,6 +188,7 @@ projects.addEventListener('click', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "3.5vw";
     frameLinks.marginLeft = "106vw";
+//    frameEducation.marginLeft = "100vw";
 
 },false);
 projects.addEventListener('mouseover', function(event){
@@ -182,6 +204,7 @@ skills.addEventListener('click', function(){
     frameSkills.marginLeft = "5vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "106vw";
+//    frameEducation.marginLeft = "100vw";
 },false);
 skills.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -196,6 +219,7 @@ about.addEventListener('click', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "106vw";
+//    frameEducation.marginLeft = "100vw";
 }, false);
 about.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -758,6 +782,7 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "105vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "106vw";
+//        frameEducation.marginLeft = "100vw";
     }
     if(window.pageYOffset >460 && window.pageYOffset < 1100){
         frame.marginLeft = "100vw";
@@ -765,6 +790,7 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "105vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "106vw";
+//        frameEducation.marginLeft = "100vw";
     }
     if(window.pageYOffset >1100 && window.pageYOffset < 2100){
         frame.marginLeft = "100vw";
@@ -772,6 +798,7 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "5vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "106vw";
+//        frameEducation.marginLeft = "100vw";
     }
     if(window.pageYOffset > 2100 && window.pageYOffset < 3000){
         frame.marginLeft = "100vw";
@@ -779,6 +806,7 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "105vw";
         frameProjects.marginLeft = "3.5vw";
         frameLinks.marginLeft = "106vw";
+//        frameEducation.marginLeft = "100vw";
     }
     if(window.pageYOffset > 3000){
         frame.marginLeft = "100vw";
@@ -786,6 +814,7 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "105vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "6vw";
+//        frameEducation.marginLeft = "100vw";
     }
     if(window.pageYOffset > 1100 && window.pageYOffset < 1195){
         for(var i = 0; i < 11; i++){
@@ -796,6 +825,7 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "5vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "106vw";
+//        frameEducation.marginLeft = "100vw";
         python.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";

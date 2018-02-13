@@ -83,6 +83,14 @@
           z-index: 1;
           animation: c 10s infinite;
         }
+        .svgEdu{
+          position: absolute;
+          stroke-width: "10";
+          stroke-dasharray: 700;
+          stroke-dashoffset: 700;
+          z-index: 1;
+          animation: c 10s infinite;
+        }
         #frame{
             position: fixed;
             margin-top: 0vh;
@@ -120,6 +128,15 @@
             z-index: 1;
         }
         #frameLinks{
+            position: fixed;
+            margin-top: 4vh;
+            margin-left: 100vw;
+            width: 100vw;
+            height: 20vh;
+            background-color: none;
+            z-index: 1;
+        }
+        #frameEducation{
             position: fixed;
             margin-top: 4vh;
             margin-left: 100vw;
@@ -956,6 +973,16 @@
         <path class="svgLinks" d="M210, 50 L230 50 230 95 A35 10 0 0 1 240 120 L270 150 250 150 225 125 225 150 210 150 210 50" stroke="#fff" fill="none" stroke-width="5"/>
         <ellipse class="svgLinks" cx="240" cy="107" rx="17" ry="3" stroke="#fff" fill="none" stroke-width="3"/>
         <path class="svgLinks" d="M350, 80 L350 100 320 100 A8 5 0 0 0 330 115 L340 115 A15 10 0 0 1 320 152 L305 150 305 135 Q375 137, 305 125 Q285 115, 300 90 Q320 75, 350 80" stroke="#fff" fill="none" stroke-width="5"/>
+    </svg>
+
+    <svg id="frameEducation" width="50" height="40" viewBox="-25 40 800 300">
+        <path class="svgEdu" d="M20, 50 L40 50 40 120 70 120 70 150 20 150 20 49" stroke="#fff" fill="none" stroke-width="5"/>
+        <path class="svgEdu" d="M90, 110 L110 100 110 150 90 150 90 109" stroke="#fff" fill="none" stroke-width="5"/>
+        <circle class="svgEdu" cx="100" cy="75" r="10" stroke="#fff" fill="none" stroke-width="5"/>
+        <path class="svgEdu" d="M130, 100 L150 100 150 110 A7 3 0 0 1 190 110 L190 150 170 150 170 130 A3 1 0 0 0 150 130 L150 150 130 150 130 100" stroke="#fff" fill="none" stroke-width="5"/>
+        <path class="svgEdu" d="M210, 50 L230 50 230 95 A35 10 0 0 1 240 120 L270 150 250 150 225 125 225 150 210 150 210 50" stroke="#fff" fill="none" stroke-width="5"/>
+        <ellipse class="svgEdu" cx="240" cy="107" rx="17" ry="3" stroke="#fff" fill="none" stroke-width="3"/>
+        <path class="svgEdu" d="M350, 80 L350 100 320 100 A8 5 0 0 0 330 115 L340 115 A15 10 0 0 1 320 152 L305 150 305 135 Q375 137, 305 125 Q285 115, 300 90 Q320 75, 350 80" stroke="#fff" fill="none" stroke-width="5"/>
     </svg>
     <div id="wrapper">
         <div id="buttons">
