@@ -21,7 +21,7 @@ let frameProjects = document.getElementById("frameProjects").style;
 //
 let frameLinks = document.getElementById("frameLinks").style;
 
-//let frameEducation = document.getElementById('frameEducation');
+let frameEducation = document.getElementById("frameEducation").style;
 
 window.addEventListener('load', function(){
     frame.marginLeft = "0vw";
@@ -29,7 +29,6 @@ window.addEventListener('load', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "106vw";
-//    frameEducation.marginLeft = "100vw";
     console.log(document.getElementById("frameProjects").name);
 })
 let f2 = true;
@@ -57,7 +56,9 @@ let about = document.getElementById("about");
 let skills = document.getElementById('skills');
 let projects = document.getElementById('projects');
 let links = document.getElementById('links');
-let education = document.getElementById('education');
+
+let education = document.getElementById("education");
+
 let img = document.getElementById("image");
 let hrefProjects = document.getElementById("hrefProjects");
 let hrefLinks = document.getElementById("hrefLinks");
@@ -143,7 +144,6 @@ links.addEventListener('click', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "6vw";
-//    frameEducation.marginLeft = "100vw";
 },false);
 links.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -153,12 +153,13 @@ links.addEventListener('mouseout', function(event){
 },false);
 
 education.addEventListener('click', function(){
-    window.scrollTo(30, 3000);
+    window.scrollTo(30, 3200);
     frame.marginLeft = "100vw";
     frameAbout.marginLeft = "106vw";
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "103.5vw";
-//    frameEducation.marginLeft = "6vw";
+    frameLinks.marginLeft = "106vw";
+    frameEducation.marginLeft = "-2vw";
 },false);
 education.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -188,7 +189,6 @@ projects.addEventListener('click', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "3.5vw";
     frameLinks.marginLeft = "106vw";
-//    frameEducation.marginLeft = "100vw";
 
 },false);
 projects.addEventListener('mouseover', function(event){
@@ -204,7 +204,6 @@ skills.addEventListener('click', function(){
     frameSkills.marginLeft = "5vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "106vw";
-//    frameEducation.marginLeft = "100vw";
 },false);
 skills.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -219,7 +218,6 @@ about.addEventListener('click', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "106vw";
-//    frameEducation.marginLeft = "100vw";
 }, false);
 about.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -782,7 +780,6 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "105vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "106vw";
-//        frameEducation.marginLeft = "100vw";
     }
     if(window.pageYOffset >460 && window.pageYOffset < 1100){
         frame.marginLeft = "100vw";
@@ -790,7 +787,6 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "105vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "106vw";
-//        frameEducation.marginLeft = "100vw";
     }
     if(window.pageYOffset >1100 && window.pageYOffset < 2100){
         frame.marginLeft = "100vw";
@@ -798,7 +794,6 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "5vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "106vw";
-//        frameEducation.marginLeft = "100vw";
     }
     if(window.pageYOffset > 2100 && window.pageYOffset < 3000){
         frame.marginLeft = "100vw";
@@ -806,16 +801,23 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "105vw";
         frameProjects.marginLeft = "3.5vw";
         frameLinks.marginLeft = "106vw";
-//        frameEducation.marginLeft = "100vw";
     }
-    if(window.pageYOffset > 3000){
+    if(window.pageYOffset > 3000 && window.pageYOffset < 3200){
         frame.marginLeft = "100vw";
         frameAbout.marginLeft = "106vw";
         frameSkills.marginLeft = "105vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "6vw";
-//        frameEducation.marginLeft = "100vw";
+        frameEducation.marginLeft = "98vw";
     }
+    if(window.pageYOffset > 3200 && window.pageYOffset < 3400){
+            frame.marginLeft = "100vw";
+            frameAbout.marginLeft = "106vw";
+            frameSkills.marginLeft = "105vw";
+            frameProjects.marginLeft = "103.5vw";
+            frameLinks.marginLeft = "106vw";
+            frameEducation.marginLeft = "-2vw";
+        }
     if(window.pageYOffset > 1100 && window.pageYOffset < 1195){
         for(var i = 0; i < 11; i++){
             aa[i].style.marginLeft = progMargin;
@@ -825,7 +827,6 @@ window.addEventListener('scroll', function(){
         frameSkills.marginLeft = "5vw";
         frameProjects.marginLeft = "103.5vw";
         frameLinks.marginLeft = "106vw";
-//        frameEducation.marginLeft = "100vw";
         python.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
