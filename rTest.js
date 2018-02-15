@@ -144,6 +144,7 @@ links.addEventListener('click', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "6vw";
+    frameEducation.marginLeft = "98vw";
 },false);
 links.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -189,6 +190,7 @@ projects.addEventListener('click', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "3.5vw";
     frameLinks.marginLeft = "106vw";
+    frameEducation.marginLeft = "98vw";
 
 },false);
 projects.addEventListener('mouseover', function(event){
@@ -204,6 +206,7 @@ skills.addEventListener('click', function(){
     frameSkills.marginLeft = "5vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "106vw";
+    frameEducation.marginLeft = "98vw";
 },false);
 skills.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
@@ -218,6 +221,7 @@ about.addEventListener('click', function(){
     frameSkills.marginLeft = "105vw";
     frameProjects.marginLeft = "103.5vw";
     frameLinks.marginLeft = "106vw";
+    frameEducation.marginLeft = "98vw";
 }, false);
 about.addEventListener('mouseover', function(event){
     event.target.style.backgroundColor = "rgb(0,224,255)";
