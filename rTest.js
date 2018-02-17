@@ -860,7 +860,7 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         wordpress.opacity = "0";
     }
-    if(window.pageYOffset > 1220 && flags[0]){
+    if(window.pageYOffset > 1200 && flags[0]){
         android.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
