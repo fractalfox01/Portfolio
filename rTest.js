@@ -78,18 +78,19 @@ let project8 = document.getElementById("proj8");
 let carousel = $(".carousel");
 let goleft = $(".goleft");
 let goright = $(".goright");
-let deg = 144;
+let deg = 0;
+let xdeg = -5;
 $(document).ready(function(){
 
   goleft.on('click', function(){
     console.log("left");
     deg = deg - 72;
-    carousel.css("transform", "rotateY("+ (deg) +"deg)");
+    carousel.css("transform", "rotateX(" + xdeg + "deg) rotateY("+ (deg) +"deg)");
   });
   goright.on('click', function(){
     console.log("right");
     deg = deg + 72;
-    carousel.css("transform", "rotateY("+ (deg) +"deg)");
+    carousel.css("transform", "rotateX(" + xdeg + "deg) rotateY("+ (deg) +"deg)");
   });
 });
 
