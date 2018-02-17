@@ -75,6 +75,23 @@ let project6 = document.getElementById("proj6");
 let project7 = document.getElementById("proj7");
 let project8 = document.getElementById("proj8");
 
+let carousel = $(".carousel");
+let goleft = $(".goleft");
+let goright = $(".goright");
+let deg = 144;
+$(document).ready(function(){
+
+  goleft.on('click', function(){
+    console.log("left");
+    deg = deg - 72;
+    carousel.css("transform", "rotateY("+ (deg) +"deg)");
+  });
+  goright.on('click', function(){
+    console.log("right");
+    deg = deg + 72;
+    carousel.css("transform", "rotateY("+ (deg) +"deg)");
+  });
+});
 
 
 function linearEase(start, stop, percent){

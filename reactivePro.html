@@ -917,6 +917,78 @@
             font-size: 4vh;
             z-index: 0;
         }
+        .carousel{
+          position: absolute;
+          margin-top: 40vh;
+          margin-left: 50vw;
+          width: 1vw;
+          height: 1vh;
+          transform: rotateX(-5deg) rotateY(144deg);
+          transform-style: preserve-3d;
+          transition: transform 5s;
+          background-color: none;
+          z-index: 1;
+        }
+        .item{
+          position: inherit;
+          width: 25vw;
+          height: 20vh;
+          border-radius: 10vh;
+          margin-top: 0vh;
+          margin-left: 0vw;
+          text-align: center;
+        }
+        .l1{
+          margin-left: -12.5vw;
+          transform: rotateY(72deg) translateZ(300px);
+          background-color: blue;
+        }
+        .l2{
+          margin-left: -12.5vw;
+          transform: rotateY(144deg) translateZ(300px);
+          background-color: red;
+        }
+        .l3{
+          margin-left: -12.5vw;
+          transform: rotateY(216deg) translateZ(300px);
+          background-color: yellow;
+        }
+        .l4{
+          margin-left: -12.5vw;
+          transform: rotateY(288deg) translateZ(300px);
+          background-color: orange;
+        }
+        .l5{
+          margin-left: -12.5vw;
+          transform: rotateY(0deg) translateZ(300px);
+          background-color: green;
+        }
+        .goleft{
+          position: absolute;
+          margin-left: 30vh;
+          margin-top: 440vh;
+          font-size: 10vh;
+          text-align: center;
+          color: #0f0;
+          z-index: 4;
+        }
+        .goleft:hover{
+          cursor: pointer;
+          color: blue;
+        }
+        .goright{
+          position: absolute;
+          margin-top: 440vh;
+          margin-left: 170vh;
+          font-size: 10vh;
+          text-align: center;
+          color: #0f0;
+          z-index: 4;
+        }
+        .goright:hover{
+          cursor: pointer;
+          color: blue;
+        }
     </style>
 <head>
 <body>
@@ -1180,7 +1252,17 @@
         <div id="projectsText">Projects</div>
         <div id="myProjects"></div>
         <div id="frame4"></div>
-        <div id="frame5"></div>
+        <div id="frame5">
+            <div class="carousel">
+                <div class="item l1">Link 1</div>
+                <div class="item l2">Link 2</div>
+                <div class="item l3">Link 3</div>
+                <div class="item l4">Link 4</div>
+                <div class="item l5">Link 5</div>
+            </div>
+        </div>
+        <div class="goleft"><</div>
+        <div class="goright">></div>
         <div id="frame6"></div>
     </div>
     <div id="footer">Created And Designed By Thomas Vandivier</div>
