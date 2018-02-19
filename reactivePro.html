@@ -919,10 +919,11 @@
         }
         .carousel{
           position: absolute;
-          margin-top: 37vh;
+          display: black;
+          margin-top: 35vh;
           margin-left: 50vw;
-          width: 1vw;
-          height: 1vh;
+          width: 0vw;
+          height: 0vh;
           transform: rotateX(-5deg) rotateY(0deg);
           transform-style: preserve-3d;
           transition: transform 5s;
@@ -932,7 +933,7 @@
         .item{
           position: inherit;
           width: 25vw;
-          height: 20vh;
+          height: 30vh;
           border-radius: 10vh;
           margin-top: 0vh;
           margin-left: 0vw;
@@ -941,37 +942,38 @@
         .lA{
           margin-left: -12.5vw;
           transform: rotateY(72deg) translateZ(300px);
-          background-image: url("./linkedin-icon.jpg");
+          background-image: url("./star3.png");
           background-repeat: no-repeat;
-          background-size: 25vw 20vh;
+          background-size: 25vw 30vh;
+          z-index: 4;
         }
         .l2{
           margin-left: -12.5vw;
           transform: rotateY(144deg) translateZ(300px);
-          background-image: url("./trees1.jpg");
+          background-image: url("./star3.png");
           background-repeat: no-repeat;
-          background-size: 25vw 20vh;
+          background-size: 25vw 30vh;
         }
         .l3{
           margin-left: -12.5vw;
           transform: rotateY(216deg) translateZ(300px);
-          background-image: url("./wood2.jpg");
+          background-image: url("./star2.jpg");
           background-repeat: no-repeat;
-          background-size: 25vw 20vh;
+          background-size: 25vw 30vh;
         }
         .l4{
           margin-left: -12.5vw;
           transform: rotateY(288deg) translateZ(300px);
-          background-image: url("./wood3.jpg");
+          background-image: url("./star2.jpg");
           background-repeat: no-repeat;
-          background-size: 25vw 20vh;
+          background-size: 25vw 30vh;
         }
         .l5{
           margin-left: -12.5vw;
           transform: rotateY(0deg) translateZ(300px);
-          background-image: url("./blocks1.jpg");
+          background-image: url("./star2.jpg");
           background-repeat: no-repeat;
-          background-size: 25vw 20vh;
+          background-size: 25vw 30vh;
         }
         .goleft{
           position: absolute;
@@ -993,11 +995,15 @@
         }
         .goright{
           position: absolute;
-          margin-top: 440vh;
-          margin-left: 170vh;
+          margin-top: 415vh;
+          height: 60vh;
+          width: 5vw;
+          margin-left: 155vh;
           font-size: 10vh;
           text-align: center;
-          color: #0f0;
+          color: #fff;
+          background-color: #0cf;
+          opacity: .5;
           z-index: 4;
         }
         .goright:hover{
@@ -1277,7 +1283,7 @@
             </div>
         </div>
         <div class="goleft"><br/><br/><</div>
-        <div class="goright">></div>
+        <div class="goright"><br/><br/>></div>
         <div id="frame6"></div>
     </div>
     <div id="footer">Created And Designed By Thomas Vandivier</div>

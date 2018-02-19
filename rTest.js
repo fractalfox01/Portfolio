@@ -76,11 +76,14 @@ let project7 = document.getElementById("proj7");
 let project8 = document.getElementById("proj8");
 
 let carousel = $(".carousel");
+let jLink1 = $(".lA");
 let goleft = $(".goleft");
 let goright = $(".goright");
 let deg = 0;
 let xdeg = -5;
 $(document).ready(function(){
+
+//  jLink1.css("background-image", "url('./linkedin-icon.jpg')");
 
   goleft.on('click', function(){
     console.log("left");
