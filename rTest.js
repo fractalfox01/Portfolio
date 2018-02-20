@@ -170,6 +170,7 @@ function animateIt(options){
 //
 let p1Text = document.getElementsByClassName("proj1Text");
 let p1 = document.getElementById("proj1").style;
+let p2Text = document.getElementsByClassName("proj2Text");
 let p2 = document.getElementById("proj2").style;
 let p3 = document.getElementById("proj3").style;
 let p4 = document.getElementById("proj4").style;
@@ -390,9 +391,11 @@ project2.addEventListener('click', function(){
         p2.height = "60vh";
         p2.marginLeft = "33vw";
         p2.opacity = "1";
-        p2.backgroundColor = "#0aa";
-        p2.backgroundSize = "23vw 25vh, 30vw 60vh";
-        p2.backgroundPosition = "top left 0vw, top right 1vw";
+        p2.backgroundColor = "#09a";
+        p2.backgroundSize = "40vw 25vh, 30vw 60vh";
+        p2.backgroundPosition = "top left 2vw, top right 1vw";
+        p2Text[0].innerHTML = "<h2>Spiraled Thoughts - Web Site</h2><h4 style='color: #fff'>A website I built when my needs out-grew that of my LAN hosted site. There's not much to this site. It's pretty basic, Built on Wordpress' PHP/CMS framework.</h4> " +
+        "<h4 style='color: #fff'>WordPress is fairly easy to use, with not to bad of a learning curve. The down side is, if you want to know about anything going on 'code-wise' you're going to need to learn PHP.</h4>";
         p1.opacity = "0";
         p1.marginLeft = "-20vw";
         p3.opacity = "0";
@@ -419,6 +422,7 @@ project2.addEventListener('click', function(){
         p2.backgroundColor = "#aaa";
         p2.backgroundSize = "5vw 20vh, 10vw 20vh";
         p2.backgroundPosition = "left, right";
+        p2Text[0].innerHTML = "";
         p1.opacity = ".65";
         p1.marginLeft = pos[0]+"vw";
         p3.opacity = ".65";
