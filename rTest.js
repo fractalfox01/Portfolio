@@ -79,6 +79,12 @@ let carousel = $(".carousel");
 let jLink1 = $(".lA");
 let goleft = $(".goleft");
 let goright = $(".goright");
+
+let l2Box = $(".l2");
+let l2Text = $("#l2Text");
+let l3Box = $(".l3");
+let l4Box = $(".l4");
+
 let deg = 0;
 let xdeg = -5;
 $(document).ready(function(){
@@ -94,6 +100,40 @@ $(document).ready(function(){
     console.log("right");
     deg = deg + 72;
     carousel.css("transform", "rotateX(" + xdeg + "deg) rotateY("+ (deg) +"deg)");
+  });
+  l2Box.on('click', function(){
+    window.open("https://www.freecodecamp.org/fractalfox01");
+  });
+  l2Box.on('mouseover', function(){
+    l2Box.css('cursor', 'pointer');
+    l2Box.css('backgroundImage', 'url("./Images/freecodecamp-logo1.png")');
+    l2Box.css('opacity', ".85");
+    l2Text.css('color', "#0f0");
+  });
+  l2Box.on('mouseout', function(){
+    l2Box.css('cursor', 'default');
+    l2Box.css('backgroundImage', 'url("./Images/freecodecamp-logo.png")');
+    l2Box.css('opacity', "1");
+    l2Text.css('color', '#fff');
+  });
+  l3Box.on('click', function(){
+    window.open("https://www.linkedin.com/in/thomas-v-6517aa111")
+  });
+  l3Box.on('mouseover', function(){
+    l3Box.css("opacity", ".85").css("cursor", "pointer");
+  });
+  l3Box.on('mouseout', function(){
+    l3Box.css("opacity", "1").css("pointer", "default");
+  });
+
+  l4Box.on('click', function(){
+      window.open("https://github.com/fractalfox01/");
+  });
+  l4Box.on('mouseover', function(){
+    l4Box.css("opacity", ".85").css("cursor", "pointer");
+  });
+  l4Box.on('mouseout', function(){
+    l4Box.css("opacity", "1").css("pointer", "default");
   });
 });
 
@@ -276,7 +316,7 @@ project1.addEventListener('click', function(){
         p1.height = "60vh";
         p1.marginLeft = "33vw";
         p1.opacity = "1";
-        p1.backgroundImage = "url('./simonGame.jpg'), url('./twitchImage.jpg'), url('./TwitchLive.jpg')"
+        p1.backgroundImage = "url('./Images/simonGame.jpg'), url('./Images/twitchImage.jpg'), url('./Images/TwitchLive.jpg')"
         p1.backgroundSize = "35vw 30vh, 35vw 30vh , 15vw 30vh";
         p1.backgroundPosition = "top left 1vw, bottom 0vh right 1vw, top 0vh right 1vw";
         p1Text[0].innerHTML = "<h1 style='color: #0f0'>Simon Game</h1><p>A simple tribute to the popular game Simon.</p><p>While going about writing the code for this game, I came across many problems. Some of them were important programming concepts that I didn't quite understand. Such as Promises and Callbacks. Other problems ranged from limitations of the chosen language to, how to structure the flow of the program. In the end I ended up going with a click driven structure. On each click a series of timeouts are triggered, the timeouts fired depend on the value of each click.</p><p>You can try the game and view the source code at <a target='_blank' href='https://codepen.io/Encoded_Void/pen/BJWPYz/'>codepen.io</a> (Turn on sound for best experience)</p><h1 class='testText'>Twitch Streamer</h1><p class='tT'>A Twitch Stream Viewer.</p><p class='tT'>This page makes an https call to twitches <a target='_blank' href='https://dev.twitch.tv/api'>API</a> and, receives back a list of the current Top 10 Live channels on the left and 5 pre-selected channels on the right.</p><p class='tT'>View the streamer and source code <a target='_blank' href='https://codepen.io/Encoded_Void/pen/qVrjmX'>Here</a>.</p>";
