@@ -395,7 +395,9 @@ project2.addEventListener('click', function(){
         p2.backgroundSize = "40vw 25vh, 30vw 60vh";
         p2.backgroundPosition = "top left 2vw, top right 1vw";
         p2Text[0].innerHTML = "<h2>Spiraled Thoughts - Web Site</h2><h4 style='color: #fff'>A website I built when my needs out-grew that of my LAN hosted site. There's not much to this site. It's pretty basic, Built on Wordpress' PHP/CMS framework.</h4> " +
-        "<h4 style='color: #fff'>WordPress is fairly easy to use, with not to bad of a learning curve. The down side is, if you want to know about anything going on 'code-wise' you're going to need to learn PHP.</h4>";
+        "<h4 style='color: #fff'>WordPress is fairly easy to use, with not to bad of a learning curve. The down side is, if you want to know about anything going on 'code-wise' you're going to need to learn PHP. And, you're going to want to make sure you keep everything updated (which means regularly checking the health of your site).</h4> " +
+        "<h4 style='color: #fff'>As far as my own PHP experience, It's not extensive. Basically limited to Wordpress. I make large use of it's plug-ins, and haven't had to modify much to get what I want.</h4>" +
+        "<h4 style='color: #fff'>This site isn't regularly added to, as I'd rather be learning than updating a personal reference. However, I get great use from having it there and do regularly query it for info.</h4>";
         p1.opacity = "0";
         p1.marginLeft = "-20vw";
         p3.opacity = "0";
