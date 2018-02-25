@@ -175,6 +175,7 @@ let p2 = document.getElementById("proj2").style;
 let p3 = document.getElementById("proj3").style;
 let p4 = document.getElementById("proj4").style;
 
+let p5Text = document.getElementsByClassName("proj5Text");
 let p5 = document.getElementById("proj5").style;
 let p6 = document.getElementById("proj6").style;
 let p7 = document.getElementById("proj7").style;
@@ -394,6 +395,7 @@ project2.addEventListener('click', function(){
         p2.backgroundColor = "#09a";
         p2.backgroundSize = "40vw 25vh, 30vw 60vh";
         p2.backgroundPosition = "top left 2vw, top right 1vw";
+        p2Text[0].style.height = "35vh";
         p2Text[0].innerHTML = "<h2>Spiraled Thoughts - Web Site</h2><h4 style='color: #fff'>A website I built when my needs out-grew that of my LAN hosted site. There's not much to this site. It's pretty basic, Built on Wordpress' PHP/CMS framework.</h4> " +
         "<h4 style='color: #fff'>WordPress is fairly easy to use, with not to bad of a learning curve. The down side is, if you want to know about anything going on 'code-wise' you're going to need to learn PHP. And, you're going to want to make sure you keep everything updated (which means regularly checking the health of your site).</h4> " +
         "<h4 style='color: #fff'>As far as my own PHP experience, It's not extensive. Basically limited to Wordpress. I make large use of it's plug-ins, and haven't had to modify much to get what I want.</h4>" +
@@ -424,6 +426,7 @@ project2.addEventListener('click', function(){
         p2.backgroundColor = "#aaa";
         p2.backgroundSize = "5vw 20vh, 10vw 20vh";
         p2.backgroundPosition = "left, right";
+        p2Text[0].style.height = "0vh";
         p2Text[0].innerHTML = "";
         p1.opacity = ".65";
         p1.marginLeft = pos[0]+"vw";
@@ -599,9 +602,10 @@ project5.addEventListener('click', function(){
         p5.marginLeft = "33vw";
         p5.marginTop = "315vh";
         p5.opacity = "1";
-        p5.backgroundSize = "50vw 60vh";
-        p5.backgroundPosition = "center";
+        p5.backgroundSize = "30vw 60vh";
+        p5.backgroundPosition = "right";
         p5.backgroundColor = "#0aa";
+        p5Text[0].innerHTML = "<h2>Converter/Subnetting Tool</h2><h4>This is a tool I originally wrote to help me in a Cisco networking course. It started off as text based program, to be run from a command line. After using it for a while it became apparent I could benefit from it being in a GUI form. And there it is! my creation.</h4><h4>The program itself is fairly basic. There are two 'Frames' to switch between. The 'Converter' frame and, the 'Subnetting' frame.</h4><h4>While in the Converter frame, the user has an input area labeled 'Enter value to Convert', from here the user can enter a number in either Binary, Hexadecimal or, Decimal format. The user then selects the corresponding boxes on the right indicating what format is being converted and, additionally the desired output format.</h4>";
         p6.opacity = "0";
         p6.marginLeft = "-20vw";
         p7.opacity = "0";
@@ -627,6 +631,7 @@ project5.addEventListener('click', function(){
         p5.marginTop = "345vh";
         p5.backgroundSize = "15vw 20vh";
         p5.opacity = ".65";
+        p5Text[0].innerHTML = "";
         p6.opacity = ".65";
         p6.marginLeft = pos[1]+"vw";
         p7.opacity = ".65";

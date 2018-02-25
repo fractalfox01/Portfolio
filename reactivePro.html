@@ -791,6 +791,8 @@
             font-size: 2vh;
             word-wrap: break-word;
             width: 35vw;
+            <!--All proj[num]Text style height need to remain zero --> (0vh) in css. change occurs in js code-->
+            <!--hover area spills over otherwise-->
         }
         #proj1{
             position: absolute;
@@ -819,13 +821,14 @@
             font-size: 2vh;
             word-wrap: break-word;
             width: 20vw;
-            height: 35vh;
+            <!--height: 35vh;-->
         }
         #proj2{
             position: absolute;
             margin-top: 315vh;
             margin-left: -20vw;
             width: 15vw;
+
             height: 20vh;
             background-image: url("./Images/spiraledthoughts(0).jpg"), url("./Images/ST-Cisco.jpg");
             background-repeat: no-repeat, no-repeat;
@@ -868,6 +871,13 @@
             color: #00f;
             font-size: 4vh;
             z-index: 0;
+        }
+        .proj5Text{
+            margin-left: 2.5vw;
+            font-size: 2vh;
+            word-wrap: break-word;
+            width: 40vw;
+            color: #fff;
         }
         #proj5{
             position: absolute;
@@ -1357,7 +1367,9 @@
 
         <div id="projLink"></div>
 
-        <div id="proj5"></div>
+        <div id="proj5">
+            <div class="proj5Text"></div>
+        </div>
         <div id="proj6">Project 6</div>
         <div id="proj7">Project 7</div>
         <div id="proj8">Project 8</div>
