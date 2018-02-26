@@ -33,7 +33,8 @@ window.addEventListener('load', function(){
 })
 let f2 = true;
 let f3 = true;
-let flags = [true, false, false, false, false, false, false, false, false, false, false, false, true, false, false, true, false, false, false, false, false]
+//            0      1      2      3      4      5      6      7      8      9     10     11     12     13  |  14     15     16     17     18     19     20
+let flags = [true, false, false, false, false, false, false, false, false, false, false, false, false, true, false, false, false, false, false, false, false]
 let progMargin = "0vw";
 let winH = window.innerHeight;
 var doc = document.documentElement;
@@ -52,6 +53,7 @@ let java = document.getElementById("javaInfo").style;
 let android = document.getElementById("androidInfo").style;
 let cSharp = document.getElementById("cSharpInfo").style;
 let apache = document.getElementById("apacheInfo").style;
+let nodejs = document.getElementById("nodeInfo").style;
 let about = document.getElementById("about");
 let skills = document.getElementById('skills');
 let projects = document.getElementById('projects');
@@ -905,6 +907,7 @@ window.addEventListener('scroll', function(){
         frameLinks.marginLeft = "106vw";
         python.opacity = "0";
         apache.opacity = "0";
+        nodejs.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
         bash.opacity = "0";
@@ -917,6 +920,7 @@ window.addEventListener('scroll', function(){
     if(window.pageYOffset > 1200 && flags[0]){
         android.opacity = "0";
         apache.opacity = "0";
+        nodejs.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
         bash.opacity = "0";
@@ -942,6 +946,7 @@ window.addEventListener('scroll', function(){
 //        aa[0].style.marginLeft = "-100vw";
         android.opacity = "0";
         apache.opacity = "0";
+        nodejs.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
         bash.opacity = "0";
@@ -967,6 +972,7 @@ window.addEventListener('scroll', function(){
         linux.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
+        nodejs.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
         bash.opacity = "0";
@@ -987,6 +993,7 @@ window.addEventListener('scroll', function(){
         htmlCss.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
+        nodejs.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
         bash.opacity = "0";
@@ -1007,6 +1014,7 @@ window.addEventListener('scroll', function(){
         boot.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
+        nodejs.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
         bash.opacity = "0";
@@ -1027,6 +1035,7 @@ window.addEventListener('scroll', function(){
         js.zIndex = "3";
         android.opacity = "0";
         apache.opacity = "0";
+        nodejs.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
         bash.opacity = "0";
@@ -1046,6 +1055,7 @@ window.addEventListener('scroll', function(){
         java.zIndex = "0";
         bash.zIndex = "3";
         android.opacity = "0";
+        nodejs.opacity = "0";
         apache.opacity = "0";
         java.opacity = "0";
         cSharp.opacity = "0";
@@ -1066,6 +1076,7 @@ window.addEventListener('scroll', function(){
         android.zIndex = "0";
         java.zIndex = "3";
         android.opacity = "0";
+        nodejs.opacity = "0";
         apache.opacity = "0";
         cSharp.opacity = "0";
         bash.opacity = "0";
@@ -1081,6 +1092,7 @@ window.addEventListener('scroll', function(){
     if(window.pageYOffset > 1600 && flags[8]){
         flags[8] = true;
         flags[9] = true;
+        nodejs.opacity = "0";
         android.opacity = ".8";
         java.zIndex = "0";
         cSharp.zIndex = "0";
@@ -1099,6 +1111,7 @@ window.addEventListener('scroll', function(){
         aa[8].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1650 && flags[8]){
+        nodejs.opacity = "0";
         cSharp.opacity = ".8";
         android.zIndex = "0";
         apache.zIndex = "0";
@@ -1119,6 +1132,8 @@ window.addEventListener('scroll', function(){
         aa[9].style.marginLeft = progMargin;
     }
     if(window.pageYOffset > 1700 && flags[10]){
+        nodejs.zIndex = "0";
+        nodejs.opacity = "0";
         apache.opacity = ".8";
         cSharp.zIndex = "0";
         apache.zIndex = "3";
@@ -1137,11 +1152,9 @@ window.addEventListener('scroll', function(){
 //        aa[9].style.marginLeft = "-100vw";
         aa[10].style.marginLeft = progMargin;
     }
-    if(window.pageYOffset > 1900 && flags[11]){
-        for(var j = 1; j < 11; j++){
-            flags[j] = false;
-        }
-
+    if(window.pageYOffset > 1750 && flags[11]){
+        nodejs.opacity = ".8";
+        nodejs.zIndex = "3";
         apache.zIndex = "0";
         android.opacity = "0";
         apache.opacity = "0";
@@ -1154,12 +1167,34 @@ window.addEventListener('scroll', function(){
         linux.opacity = "0";
         wordpress.opacity = "0";
         python.opacity = "0";
+        flags[11] = false;
+        flags[12] = true;
 //        aa[10].style.marginLeft = "-100vw";
-
+        aa[11].style.marginLeft = progMargin;
     }
-    if((window.pageYOffset > 2100) && (window.pageYOffset < 2300) && flags[12]){
-        flags[12] = false;
-        flags[11] = true;
+    if(window.pageYOffset > 1800 && flags[12]){
+            for(var j = 1; j < 12; j++){
+                flags[j] = false;
+            }
+            nodejs.zIndex = "0";
+            nodejs.opacity = "0";
+            android.opacity = "0";
+            apache.opacity = "0";
+            java.opacity = "0";
+            cSharp.opacity = "0";
+            bash.opacity = "0";
+            js.opacity = "0";
+            boot.opacity = "0";
+            htmlCss.opacity = "0";
+            linux.opacity = "0";
+            wordpress.opacity = "0";
+            python.opacity = "0";
+    //        aa[10].style.marginLeft = "-100vw";
+
+        }
+    if((window.pageYOffset > 2100) && (window.pageYOffset < 2300) && flags[13]){
+        flags[13] = false;
+        flags[12] = true;
         setTimeout(function(){
           animateIt({
             element: p4,
