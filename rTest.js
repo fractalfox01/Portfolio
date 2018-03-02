@@ -399,7 +399,7 @@ project2.addEventListener('click', function(){
         p2.backgroundPosition = "top left 2vw, top right 1vw";
         p2Text[0].style.height = "35vh";
         p2Text[0].innerHTML = "<h2>Spiraled Thoughts - Web Site</h2><h4 style='color: #fff'>A website I built when my needs out-grew that of my LAN hosted site. There's not much to this site. It's pretty basic, Built on Wordpress' PHP/CMS framework.</h4> " +
-        "<h4 style='color: #fff'>WordPress is fairly easy to use, with not to bad of a learning curve. The down side is, if you want to know about anything going on 'code-wise' you're going to need to learn PHP. And, you're going to want to make sure you keep everything updated (which means regularly checking the health of your site).</h4> " +
+        "<h4 style='color: #fff'>WordPress is fairly easy to use, not a bad learning curve. The down side is, if you want to know about anything going on 'code-wise' you're going to need to learn PHP. And, you're going to want to make sure you keep everything updated (which means regularly checking the health of your site).</h4> " +
         "<h4 style='color: #fff'>As far as my own PHP experience, It's not extensive. Basically limited to Wordpress. I make large use of it's plug-ins, and haven't had to modify much to get what I want.</h4>" +
         "<h4 style='color: #fff'>This site isn't regularly added to, as I'd rather be learning than updating a personal reference. However, I get great use from having it there and do regularly query it for info.</h4>";
         p1.opacity = "0";
@@ -607,7 +607,13 @@ project5.addEventListener('click', function(){
         p5.backgroundSize = "30vw 60vh";
         p5.backgroundPosition = "right";
         p5.backgroundColor = "#0aa";
-        p5Text[0].innerHTML = "<h2>Converter/Subnetting Tool</h2><h4>This is a tool I originally wrote to help me in a Cisco networking course. It started off as text based program, to be run from a command line. After using it for a while it became apparent I could benefit from it being in a GUI form. And there it is! my creation.</h4><h4>The program itself is fairly basic. There are two 'Frames' to switch between. The 'Converter' frame and, the 'Subnetting' frame.</h4><h4>While in the Converter frame, the user has an input area labeled 'Enter value to Convert', from here the user can enter a number in either Binary, Hexadecimal or, Decimal format. The user then selects the corresponding boxes on the right indicating what format is being converted and, additionally the desired output format.</h4>";
+        p5Text[0].innerHTML = "<h2>Converter/Subnetting Tool</h2><p>This is a tool I originally wrote to help me in a Cisco networking course." +
+        " It started off as text based program, to be run from a command line. After using it for a while it became apparent I could benefit from" +
+        "it being in a GUI form. And there it is! my creation.<br/>The program itself is fairly basic. There are two frames to switch between. The " +
+        "Converter frame and the Sub-netting frame.<br/>While in the Converter frame, the user has an input area labeled 'Enter value to Convert', " +
+        "from here the user can enter a number in either Binary, Hexadecimal or, Decimal format. The user then selects the corresponding boxes on the " +
+        "right indicating what format is being converted and, additionally the desired output format.</p><p>When in the Subnetting frame the user has " +
+        "options to find; (number of host in network & mask of the network) given starting ip and ending ip or, (ending ip & mask) given starting ip and number of hosts.</p>";
         p6.opacity = "0";
         p6.marginLeft = "-20vw";
         p7.opacity = "0";
