@@ -44,6 +44,7 @@ body{
   margin-top: 100vh;
   margin-left: 5vw;
   width: 80vw;
+
   height: 70vh;
   background-color: none;
   /* background-image: url("./Images/trees2.jpg");
@@ -125,7 +126,7 @@ body{
 .progress-box-inner{
   text-shadow: -1px 0px 1px #ffffff;
   font-family: Oswald, serif;
-  padding-left: 5vw;
+  padding-left: 0vw;
   border: .5vw solid white;
   border-style: outset;
   box-shadow: 0px 0px 15px 3px #00ffaa;
@@ -190,7 +191,7 @@ body{
   opacity: 0;
 }
 .linux{
-  width: 80vw;
+  width: 75vw;
 }
 #linuxImg{
   margin-top: .5vh;
@@ -297,7 +298,7 @@ body{
   opacity: 0;
 }
 .bash{
-  width: 80vw;
+  width: 75vw;
 }
 #bashImg{
   margin-top: .5vh;
