@@ -87,7 +87,7 @@ body{
 #frameLinks{
   cursor: pointer;
   position: fixed;
-  margin-top: 26.5vh;
+  margin-top: 26.25vh;
   margin-left: 62vw;
   width: 13vw;
   z-index: 1;
@@ -95,7 +95,7 @@ body{
 #frameEducation{
   cursor: pointer;
   position: fixed;
-  margin-top: 27vh;
+  margin-top: 26.5vh;
   margin-left: 77vw;
   width: 17vw;
   z-index: 1;
