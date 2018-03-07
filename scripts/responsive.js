@@ -165,4 +165,28 @@ $(document).ready(function(){
     skill_android.css("opacity", "1");
   });
   // --------------------------------------------------------------------
+  // C Sharp interaction ------------------------------------------------
+  skill_cSharp.on('mouseover', function(){
+    skill_cSharp.css("opacity", ".75");
+  });
+  skill_cSharp.on('mouseout', function(){
+    skill_cSharp.css("opacity", "1");
+  });
+  // --------------------------------------------------------------------
+  // Apache interaction -------------------------------------------------
+  skill_apache.on('mouseover', function(){
+    skill_apache.css("opacity", ".75");
+  });
+  skill_apache.on('mouseout', function(){
+    skill_apache.css("opacity", "1");
+  });
+  // --------------------------------------------------------------------
+  // Node interaction ---------------------------------------------------
+  skill_node.on('mouseover', function(){
+    skill_node.css("opacity", ".75");
+  });
+  skill_node.on('mouseout', function(){
+    skill_node.css("opacity", "1");
+  });
+  // --------------------------------------------------------------------
 })
