@@ -33,7 +33,7 @@ let skill_node = $(".p-12");
 
 // Main Code Block: Jquery -----------------------------------------------
 $(document).ready(function(){
-  svgHeader_name.css("position", "fixed").css("marginTop", "10vh").css("marginLeft", "0vh").css("width", "100vw").css("height", "20vh").css("backgroundColor", "none").css("zIndex", "1");
+  svgHeader_name.css("position", "fixed").css("marginTop", "2vh").css("marginLeft", "0vh").css("width", "100vw").css("height", "20vh").css("backgroundColor", "none").css("zIndex", "1");
 
   // Svg Header Button: About -------------------------------------------
   svgHeader_about.on('mouseover', function(){

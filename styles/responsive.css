@@ -16,8 +16,6 @@ body{
   position: fixed;
   margin-top: 0vh;
   margin-left: 0vw;
-  width: var(--win-width);
-  height: 20vh;
   background-color: none;
   z-index: 1;
 }
