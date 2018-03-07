@@ -42,7 +42,7 @@ body{
 #mySkills{
   position: absolute;
   margin-top: 100vh;
-  margin-left: 5vw;
+  margin-left: 6vw;
   width: 80vw;
 
   height: 70vh;
@@ -66,15 +66,15 @@ body{
   cursor: pointer;
   position: fixed;
   margin-top: 26.5vh;
-  margin-left: 25vw;
+  margin-left: 22vw;
   width: 12vw;
   z-index: 1;
 }
 #frameProjects{
   cursor: pointer;
   position: fixed;
-  margin-top: 26.5vh;
-  margin-left: 45vw;
+  margin-top: 26vh;
+  margin-left: 40vw;
   width: 17vw;
   z-index: 1;
 }
@@ -82,15 +82,15 @@ body{
   cursor: pointer;
   position: fixed;
   margin-top: 26.5vh;
-  margin-left: 65vw;
-  width: 11vw;
+  margin-left: 62vw;
+  width: 13vw;
   z-index: 1;
 }
 #frameEducation{
   cursor: pointer;
   position: fixed;
   margin-top: 27vh;
-  margin-left: 79vw;
+  margin-left: 77vw;
   width: 17vw;
   z-index: 1;
 }

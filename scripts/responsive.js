@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   // Svg Header Button: About -------------------------------------------
   svgHeader_about.on('mouseover', function(){
-    svgHeader_about.css("backgroundColor", "#070").css("opacity", ".75");
+    svgHeader_about.css("backgroundColor", "#070").css("opacity", "1");
   });
   svgHeader_about.on('mouseout',function(){
     svgHeader_about.css("backgroundColor", "").css("opacity", "1");
@@ -31,7 +31,7 @@ $(document).ready(function(){
   // --------------------------------------------------------------------
   //Svg Header Button: Skills -------------------------------------------
   svgHeader_skills.on('mouseover', function(){
-    svgHeader_skills.css("backgroundColor", "#070").css("opacity", ".75");
+    svgHeader_skills.css("backgroundColor", "#070").css("opacity", "1");
   });
   svgHeader_skills.on('mouseout', function(){
     svgHeader_skills.css("backgroundColor", "").css("opacity", "1");
@@ -42,7 +42,7 @@ $(document).ready(function(){
   // --------------------------------------------------------------------
   // Svg Header Button: Projects ----------------------------------------
   svgHeader_projects.on('mouseover', function(){
-    svgHeader_projects.css("backgroundColor", "#070").css("opacity", ".75");
+    svgHeader_projects.css("backgroundColor", "#070").css("opacity", "1");
   });
   svgHeader_projects.on('mouseout', function(){
     svgHeader_projects.css("backgroundColor", "").css("opacity", "1");
@@ -53,7 +53,7 @@ $(document).ready(function(){
   // --------------------------------------------------------------------
   // Svg Header Button: Links -------------------------------------------
   svgHeader_links.on('mouseover', function(){
-    svgHeader_links.css("backgroundColor", "#070").css("opacity", ".75");
+    svgHeader_links.css("backgroundColor", "#070").css("opacity", "1");
   });
   svgHeader_links.on('mouseout', function(){
     svgHeader_links.css("backgroundColor", "").css("opacity", "1");
@@ -64,7 +64,7 @@ $(document).ready(function(){
   // --------------------------------------------------------------------
   // Svg Header Button: Education ---------------------------------------
   svgHeader_education.on('mouseover', function(){
-    svgHeader_education.css("backgroundColor", "#070").css("cpacity", ".75");
+    svgHeader_education.css("backgroundColor", "#070").css("opacity", "1");
   });
   svgHeader_education.on('mouseout', function(){
     svgHeader_education.css("backgroundColor", "").css("opacity", "1");
