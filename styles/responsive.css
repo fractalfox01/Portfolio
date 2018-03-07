@@ -57,41 +57,41 @@ body{
 #frameAbout{
   cursor: pointer;
   position: fixed;
-  margin-top: 27vh;
-  margin-left: 25vw;
-  width: 8vw;
+  margin-top: 26vh;
+  margin-left: 3vw;
+  width: 12vw;
   z-index: 1;
 }
 #frameSkills{
   cursor: pointer;
   position: fixed;
-  margin-top: 27.25vh;
-  margin-left: 35vw;
-  width: 8vw;
+  margin-top: 26.5vh;
+  margin-left: 25vw;
+  width: 12vw;
   z-index: 1;
 }
 #frameProjects{
   cursor: pointer;
   position: fixed;
-  margin-top: 27vh;
-  margin-left: 44vw;
-  width: 10vw;
+  margin-top: 26.5vh;
+  margin-left: 45vw;
+  width: 15vw;
   z-index: 1;
 }
 #frameLinks{
   cursor: pointer;
   position: fixed;
   margin-top: 27.25vh;
-  margin-left: 55vw;
-  width: 8vw;
+  margin-left: 65vw;
+  width: 11vw;
   z-index: 1;
 }
 #frameEducation{
   cursor: pointer;
   position: fixed;
   margin-top: 27vh;
-  margin-left: 65vw;
-  width: 10vw;
+  margin-left: 80vw;
+  width: 14vw;
   z-index: 1;
 }
 
