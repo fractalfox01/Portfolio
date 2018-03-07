@@ -75,13 +75,13 @@ body{
   position: fixed;
   margin-top: 26.5vh;
   margin-left: 45vw;
-  width: 15vw;
+  width: 17vw;
   z-index: 1;
 }
 #frameLinks{
   cursor: pointer;
   position: fixed;
-  margin-top: 27.25vh;
+  margin-top: 26.5vh;
   margin-left: 65vw;
   width: 11vw;
   z-index: 1;
@@ -90,8 +90,8 @@ body{
   cursor: pointer;
   position: fixed;
   margin-top: 27vh;
-  margin-left: 80vw;
-  width: 14vw;
+  margin-left: 79vw;
+  width: 17vw;
   z-index: 1;
 }
 
