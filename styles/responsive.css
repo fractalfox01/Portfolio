@@ -189,21 +189,20 @@ body{
 .python{
   width: 30vw;
 }
-
 #pyImg{
-  margin-top: 2vh;
-  margin-left: 22vw;
+  margin-top: 1.5vh;
+  margin-left: 23vw;
   position: absolute;
   width: 8vw;
   height: 8vh;
   background-image: url("../Images/python.jpg");
-  background-size: 7vw 8vh;
+  background-size: 8vw 8vh;
   background-position: center;
   opacity: 1;
 }
 #pythonInfo{
-  margin-top: 183vh;
-  margin-left: 15vw;
+  margin-top: 113vh;
+  margin-left: 10vw;
   position: absolute;
   width: 70vw;
   height: 50vh;

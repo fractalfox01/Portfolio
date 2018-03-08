@@ -29,10 +29,18 @@ let skill_cSharp = $(".p-10");
 let skill_apache = $(".p-11");
 let skill_node = $(".p-12");
 
+// Projects vars hidden -----------------------------
+let projects_pyText = $("#pythonInfo");
+let projects_py_Flag = true;
+
+
 // -----------------------------------------------------------------------
 
 // Main Code Block: Jquery -----------------------------------------------
 $(document).ready(function(){
+
+//  projects_pyText.css("backgroundColor", "#0f0");
+
   svgHeader_name.css("position", "fixed").css("marginTop", "2vh").css("marginLeft", "0vh").css("width", "100vw").css("height", "20vh").css("backgroundColor", "none").css("zIndex", "1");
 
   // Svg Header Button: About -------------------------------------------
@@ -100,6 +108,16 @@ $(document).ready(function(){
   skill_python.on('mouseout', function(){
     skill_python.css("opacity", "1");
   });
+  skill_python.on('click', function(){
+   if(projects_py_Flag){
+     projects_py_Flag = false;
+     projects_pyText.css("opacity", "1");
+   }else{
+     projects_py_Flag = true;
+     projects_pyText.css("opacity", "0");
+   }
+  });
+
   // --------------------------------------------------------------------
   // wordpress interaction ----------------------------------------------
   skill_wordpress.on('mouseover', function(){
@@ -189,4 +207,5 @@ $(document).ready(function(){
     skill_node.css("opacity", "1");
   });
   // --------------------------------------------------------------------
+  //============================ End ====================================
 })
