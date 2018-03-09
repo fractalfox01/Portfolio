@@ -205,10 +205,11 @@ body{
   margin-left: 10vw;
   position: absolute;
   width: 70vw;
-  height: 50vh;
+  height: 70vh;
   background-color: #000067;
   border: 1vw black solid;
   opacity: 0;
+  z-index: -1;
 }
 .wordpress{
   width: 30vw;

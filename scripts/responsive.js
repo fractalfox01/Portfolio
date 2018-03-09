@@ -111,11 +111,11 @@ $(document).ready(function(){
   skill_python.on('click', function(){
    if(projects_py_Flag){
      projects_py_Flag = false;
-     projects_pyText.css("opacity", "1");
+     projects_pyText.css("opacity", "1").css("zIndex", "0");
      console.log("Window W: " + window.innerWidth);
    }else{
      projects_py_Flag = true;
-     projects_pyText.css("opacity", "0");
+     projects_pyText.css("opacity", "0").css("zIndex", "-1");
    }
   });
 
