@@ -112,6 +112,7 @@ $(document).ready(function(){
    if(projects_py_Flag){
      projects_py_Flag = false;
      projects_pyText.css("opacity", "1");
+     console.log("Window W: " + window.innerWidth);
    }else{
      projects_py_Flag = true;
      projects_pyText.css("opacity", "0");
