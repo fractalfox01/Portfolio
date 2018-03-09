@@ -30,12 +30,30 @@ let skill_apache = $(".p-11");
 let skill_node = $(".p-12");
 
 // Projects vars hidden -----------------------------
-let projects_pyText = $("#pythonInfo");
-let projects_py_Flag = true;
-
-
+let skills_pyText = $("#pythonInfo");
+skills_pyText.data("flag", true);
+let skills_wpText = $("#wordpressInfo");
+skills_wpText.data("flag", true);
+let skills_linuxText = $("#linuxInfo");
+skills_linuxText.data("flag", true);
+let skills_htmlText = $("#hTmlInfo");
+skills_htmlText.data("flag", true);
+let skills_bootstrapText = $("#bootstrapInfo");
+skills_bootstrapText.data("flag", true);
 // -----------------------------------------------------------------------
 
+function skillInfoChange(e){
+  // Function displays associated skill info box.
+  if(e.data("flag")){
+
+    e.data("flag", false);
+    e.css("opacity", "1").css("zIndex", "0");
+  }else{
+
+    e.data("flag", true);
+    e.css("opacity", "0").css("zIndex", "-1");
+  }
+};
 // Main Code Block: Jquery -----------------------------------------------
 $(document).ready(function(){
 
@@ -109,14 +127,7 @@ $(document).ready(function(){
     skill_python.css("opacity", "1");
   });
   skill_python.on('click', function(){
-   if(projects_py_Flag){
-     projects_py_Flag = false;
-     projects_pyText.css("opacity", "1").css("zIndex", "0");
-     console.log("Window W: " + window.innerWidth);
-   }else{
-     projects_py_Flag = true;
-     projects_pyText.css("opacity", "0").css("zIndex", "-1");
-   }
+    skillInfoChange(skills_pyText);
   });
 
   // --------------------------------------------------------------------
@@ -127,6 +138,9 @@ $(document).ready(function(){
   skill_wordpress.on('mouseout', function(){
     skill_wordpress.css("opacity", "1");
   });
+  skill_wordpress.on('click', function(){
+    skillInfoChange(skills_wpText);
+  });
   // --------------------------------------------------------------------
   // Linux interaction --------------------------------------------------
   skill_linux.on('mouseover', function(){
@@ -134,6 +148,9 @@ $(document).ready(function(){
   });
   skill_linux.on('mouseout', function(){
     skill_linux.css("opacity", "1");
+  });
+  skill_linux.on('click', function(){
+    skillInfoChange(skills_linuxText);
   });
   // --------------------------------------------------------------------
   // Html/CSS interaction -----------------------------------------------
@@ -143,6 +160,9 @@ $(document).ready(function(){
   skill_html.on('mouseout', function(){
     skill_html.css("opacity", "1");
   });
+  skill_html.on('click', function(){
+    skillInfoChange(skills_htmlText);
+  });
   // --------------------------------------------------------------------
   // Bootstrap interaction ----------------------------------------------
   skill_bootstrap.on('mouseover', function(){
@@ -150,6 +170,9 @@ $(document).ready(function(){
   });
   skill_bootstrap.on('mouseout', function(){
     skill_bootstrap.css("opacity", "1");
+  });
+  skill_bootstrap.on('click', function(){
+    skillInfoChange(skills_bootstrapText);
   });
   // --------------------------------------------------------------------
   // Javascript interaction ---------------------------------------------
