@@ -491,7 +491,7 @@ body{
     border: 1vw black solid;
     opacity: 0;
 }
-@media only screen and (device-width: 500px){
+@media only screen and (device-width: 400px){
     #pythonInfo{
       margin-top: 115vh;
       margin-left: 10vw;
