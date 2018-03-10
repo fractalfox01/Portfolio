@@ -491,7 +491,7 @@ body{
     border: 1vw black solid;
     opacity: 0;
 }
-@media only screen and (device-width: 400px){
+@media only screen and (device-width < 360px){
     #pythonInfo{
       margin-top: 115vh;
       margin-left: 10vw;
@@ -532,6 +532,17 @@ body{
       width: 70vw;
       height: 100vh;
       background-color: #006700;
+      border: 1vw black solid;
+      opacity: 0;
+      z-index: -1;
+    }
+    #bootstrapInfo{
+      margin-top: 148vh;
+      margin-left: 10vw;
+      position: absolute;
+      width: 70vw;
+      height: 100vh;
+      background-color: #000067;
       border: 1vw black solid;
       opacity: 0;
       z-index: -1;
