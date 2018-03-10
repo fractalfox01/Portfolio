@@ -498,18 +498,18 @@ body{
       position: absolute;
       width: 70vw;
       height: 100vh;
-      background-color: #000067;
+      background-color: #006700;
       border: 1vw black solid;
       opacity: 0;
       z-index: -1;
     }
     #wordpressInfo{
-      margin-top: 125vh;
+      margin-top: 120vh;
       margin-left: 10vw;
       position: absolute;
       width: 70vw;
       height: 100vh;
-      background-color: #000067;
+      background-color: #006700;
       border: 1vw black solid;
       opacity: 0;
       z-index: -1;
@@ -520,7 +520,7 @@ body{
       position: absolute;
       width: 70vw;
       height: 100vh;
-      background-color: #000067;
+      background-color: #006700;
       border: 1vw black solid;
       opacity: 0;
       z-index: -1;
@@ -531,7 +531,7 @@ body{
       position: absolute;
       width: 70vw;
       height: 100vh;
-      background-color: #000067;
+      background-color: #006700;
       border: 1vw black solid;
       opacity: 0;
       z-index: -1;
