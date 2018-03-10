@@ -491,3 +491,49 @@ body{
     border: 1vw black solid;
     opacity: 0;
 }
+@media only screen and (max-width: 600px){
+    #pythonInfo{
+      margin-top: 115vh;
+      margin-left: 10vw;
+      position: absolute;
+      width: 70vw;
+      height: 100vh;
+      background-color: #000067;
+      border: 1vw black solid;
+      opacity: 0;
+      z-index: -1;
+    }
+    #wordpressInfo{
+      margin-top: 120vh;
+      margin-left: 10vw;
+      position: absolute;
+      width: 70vw;
+      height: 100vh;
+      background-color: #000067;
+      border: 1vw black solid;
+      opacity: 0;
+      z-index: -1;
+    }
+    #linuxInfo{
+      margin-top: 123vh;
+      margin-left: 10vw;
+      position: absolute;
+      width: 70vw;
+      height: 100vh;
+      background-color: #000067;
+      border: 1vw black solid;
+      opacity: 0;
+      z-index: -1;
+    }
+    #hTmlInfo{
+      margin-top: 131vh;
+      margin-left: 10vw;
+      position: absolute;
+      width: 70vw;
+      height: 100vh;
+      background-color: #000067;
+      border: 1vw black solid;
+      opacity: 0;
+      z-index: -1;
+    }
+}
