@@ -40,16 +40,33 @@ let skills_htmlText = $("#hTmlInfo");
 skills_htmlText.data("flag", true);
 let skills_bootstrapText = $("#bootstrapInfo");
 skills_bootstrapText.data("flag", true);
-// -----------------------------------------------------------------------
 
+let skills_javascriptText = $("#javascriptInfo");
+skills_javascriptText.data("flag", true);
+let skills_bashText = $("#bashInfo");
+skills_bashText.data("flag", true);
+let skills_javaText = $("#javaInfo");
+skills_javaText.data("flag", true);
+let skills_androidText = $("#androidInfo");
+skills_androidText.data("flag", true);
+let skills_cSharpText = $("#cSharpInfo");
+skills_cSharpText.data("flag", true);
+let skills_apacheText = $("#apacheInfo");
+skills_apacheText.data("flag", true);
+let skills_nodeText = $("#nodeInfo");
+skills_nodeText.data("flag", true);
+
+// -----------------------------------------------------------------------
+function skillClose(keep){
+
+};
 function skillInfoChange(e){
   // Function displays associated skill info box.
+  console.log(JSON.stringify(e));
   if(e.data("flag")){
-
     e.data("flag", false);
     e.css("opacity", "1").css("zIndex", "0");
   }else{
-
     e.data("flag", true);
     e.css("opacity", "0").css("zIndex", "-1");
   }
@@ -101,9 +118,7 @@ $(document).ready(function(){
   svgHeader_links.on('mouseout', function(){
     svgHeader_links.css("backgroundColor", "").css("opacity", "1");
   });
-  svgHeader_links.on('click', function(){
 
-  });
   // --------------------------------------------------------------------
   // Svg Header Button: Education ---------------------------------------
   svgHeader_education.on('mouseover', function(){
@@ -182,6 +197,9 @@ $(document).ready(function(){
   skill_javascript.on('mouseout', function(){
     skill_javascript.css("opacity", "1");
   });
+  skill_javascript.on('click', function(){
+    skillInfoChange(skills_javascriptText);
+  });
   // --------------------------------------------------------------------
   // Bash interaction ---------------------------------------------------
   skill_bash.on('mouseover', function(){
@@ -189,6 +207,9 @@ $(document).ready(function(){
   });
   skill_bash.on('mouseout', function(){
     skill_bash.css("opacity", "1");
+  });
+  skill_bash.on('click', function(){
+    skillInfoChange(skills_bashText);
   });
   // --------------------------------------------------------------------
   // java interaction ---------------------------------------------------
@@ -198,6 +219,9 @@ $(document).ready(function(){
   skill_java.on('mouseout', function(){
     skill_java.css("opacity", "1");
   });
+  skill_java.on('click', function(){
+    skillInfoChange(skills_javaText);
+  });
   // --------------------------------------------------------------------
   // Android interaction ------------------------------------------------
   skill_android.on('mouseover', function(){
@@ -205,6 +229,9 @@ $(document).ready(function(){
   });
   skill_android.on('mouseout', function(){
     skill_android.css("opacity", "1");
+  });
+  skill_android.on('click', function(){
+    skillInfoChange(skills_androidText);
   });
   // --------------------------------------------------------------------
   // C Sharp interaction ------------------------------------------------
@@ -214,6 +241,9 @@ $(document).ready(function(){
   skill_cSharp.on('mouseout', function(){
     skill_cSharp.css("opacity", "1");
   });
+  skill_cSharp.on('click', function(){
+    skillInfoChange(skills_cSharpText);
+  });
   // --------------------------------------------------------------------
   // Apache interaction -------------------------------------------------
   skill_apache.on('mouseover', function(){
@@ -222,6 +252,9 @@ $(document).ready(function(){
   skill_apache.on('mouseout', function(){
     skill_apache.css("opacity", "1");
   });
+  skill_apache.on('click', function(){
+    skillInfoChange(skills_apacheText);
+  });
   // --------------------------------------------------------------------
   // Node interaction ---------------------------------------------------
   skill_node.on('mouseover', function(){
@@ -229,6 +262,9 @@ $(document).ready(function(){
   });
   skill_node.on('mouseout', function(){
     skill_node.css("opacity", "1");
+  });
+  skill_node.on('click', function(){
+    skillInfoChange(skills_nodeText);
   });
   // --------------------------------------------------------------------
   //============================ End ====================================
