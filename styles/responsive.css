@@ -892,7 +892,7 @@ body{
     }
     #pythonInfo{
         position: absolute;
-        margin-top: 500px;
+        margin-top: 1250px;
         margin-left: 6vw;
         position: absolute;
         width: 80vw;
@@ -904,7 +904,7 @@ body{
     }
     #wordpressInfo{
         position: absolute;
-        margin-top: 1000px;
+        margin-top: 1320px;
         margin-left: 6vw;
         position: absolute;
         width: 80vw;
@@ -916,7 +916,7 @@ body{
     }
     #linuxInfo{
         position: absolute;
-        margin-top: 335.875;
+        margin-top: 2000px;
         margin-left: 6vw;
         position: absolute;
         width: 80vw;
