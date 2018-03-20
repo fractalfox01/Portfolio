@@ -891,7 +891,7 @@ body{
       color: #fff;
     }
     #pythonInfo{
-      margin-top: 420.875vh;
+      margin-top: 1230px;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -902,7 +902,7 @@ body{
       z-index: -1;
     }
     #wordpressInfo{
-      margin-top: 430.875vh;
+      margin-top: 1310px;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
