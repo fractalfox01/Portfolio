@@ -891,7 +891,7 @@ body{
       color: #fff;
     }
     #pythonInfo{
-      margin-top: 315.875vh;
+      margin-top: 355.875vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -902,7 +902,7 @@ body{
       z-index: -1;
     }
     #wordpressInfo{
-      margin-top: 329.875vh;
+      margin-top: 379.875vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -913,7 +913,7 @@ body{
       z-index: -1;
     }
     #linuxInfo{
-      margin-top: 343.875vh;
+      margin-top: 393.875vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -924,7 +924,7 @@ body{
       z-index: -1;
     }
     #hTmlInfo{
-      margin-top: 357.875vh;
+      margin-top: 407.875vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -935,7 +935,7 @@ body{
       z-index: -1;
     }
     #bootstrapInfo{
-      margin-top: 347.875vh;
+      margin-top: 417.875vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
