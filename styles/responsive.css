@@ -916,7 +916,7 @@ body{
     }
     #linuxInfo{
         position: absolute;
-        margin-top: 327.875;
+        margin-top: 335.875;
         margin-left: 6vw;
         position: absolute;
         width: 80vw;
@@ -927,7 +927,7 @@ body{
         z-index: -1;
     }
     #hTmlInfo{
-      margin-top: 457.875vh;
+      margin-top: 337.875vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
