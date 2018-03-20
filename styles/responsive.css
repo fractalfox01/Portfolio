@@ -839,10 +839,10 @@ body{
     }
     #aboutme{
         position: absolute;
-        margin-top: 90vh;
+        margin-top: 630px;
         margin-left: 0vw;
         width: 95vw;
-        height: 190vh;
+        height: 1200vh;
         /* background-color: #999; */
         background-image: url("../Images/trees4.jpg");
         background-repeat: no-repeat;
@@ -873,7 +873,7 @@ body{
     }
     #mySkills{
         position: absolute;
-        margin-top: 290vh;
+        margin-top: 1900px;
         margin-left: 6vw;
         width: 80vw;
         height: 70vh;
