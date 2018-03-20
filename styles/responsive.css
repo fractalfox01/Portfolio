@@ -18,15 +18,53 @@ body{
   background-color: none;
   z-index: 1;
 }
-.frame2{
+#frame2{
   position: absolute;
-  margin-top: 100vh;
-  width: var(--win-width);
-  height: 100vh;
-  background-image: url("../Images/wall.jpg");
-  background-repeat: no-repeat;
-  background-size: var(--win-width) 100vh;
-  z-index: -2;
+  margin-top: 0vh;
+}
+#buttons{
+  position: absolute;
+  margin-top: 7vh;
+}
+#frameAbout{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 11vh;
+  margin-left: 3vw;
+  width: 12vw;
+  z-index: 1;
+}
+#frameSkills{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 11.5vh;
+  margin-left: 22vw;
+  width: 12vw;
+  z-index: 1;
+}
+#frameProjects{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 11vh;
+  margin-left: 40vw;
+  width: 17vw;
+  z-index: 1;
+}
+#frameLinks{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 11.25vh;
+  margin-left: 62vw;
+  width: 13vw;
+  z-index: 1;
+}
+#frameEducation{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 11.5vh;
+  margin-left: 77vw;
+  width: 17vw;
+  z-index: 1;
 }
 .name{
   position: fixed;
@@ -38,15 +76,49 @@ body{
 }
 #image{
   position: absolute;
-  margin-top: 0vh;
-  margin-left: 33vw;
-  width: 30vw;
-  height: 40vh;
+  margin-top: 60vh;
+  margin-left: 50vw;
+  width: 25vw;
+  height: 30vh;
   shape-outside: url("../Images/me.jpg");
-  background-size: 30vw 40vh;
+  background-size: 25vw 30vh;
   float: center;
   border-radius: 25%;
   z-index: 0;
+}
+#aboutme{
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 8vw;
+  width: 80vw;
+  height: 88vh;
+  /* background-color: #999; */
+  background-image: url("./Images/trees4.jpg");
+  background-repeat: no-repeat;
+  background-size: 80vw 95vh;
+  border: 2.5vw solid transparent;
+  z-index: 0;
+}
+.aboutText1{
+  color: #3377ea;
+  font-size: 7vh;
+  line-height: 1vh;
+  text-align: center;
+
+}
+.aboutText2{
+  margin-left: 2vw;
+  color: #00ffaa;
+  font-size: 4vh;
+  text-align: justify;
+}
+.aboutmain{
+  margin-left: 1vw;
+  margin-right: 1vw;
+  color: #00ffaa;
+  font-size: 3vh;
+  line-height: 3vh;
+  text-align: justify;
 }
 #skillsText{
   margin-left: 5vw;
@@ -56,7 +128,7 @@ body{
 }
 #mySkills{
   position: absolute;
-  margin-top: 100vh;
+  margin-top: 150vh;
   margin-left: 6vw;
   width: 80vw;
 
@@ -69,46 +141,7 @@ body{
   border-image: url("https://pixnio.com/free-images/textures-and-patterns/wall-texture/brick-wall-texture-pictures/texture-red-stone-wall-725x544.jpg") 10; */
   z-index: 0;
 }
-#frameAbout{
-  cursor: pointer;
-  position: fixed;
-  margin-top: 18vh;
-  margin-left: 3vw;
-  width: 12vw;
-  z-index: 1;
-}
-#frameSkills{
-  cursor: pointer;
-  position: fixed;
-  margin-top: 18.5vh;
-  margin-left: 22vw;
-  width: 12vw;
-  z-index: 1;
-}
-#frameProjects{
-  cursor: pointer;
-  position: fixed;
-  margin-top: 18vh;
-  margin-left: 40vw;
-  width: 17vw;
-  z-index: 1;
-}
-#frameLinks{
-  cursor: pointer;
-  position: fixed;
-  margin-top: 18.25vh;
-  margin-left: 62vw;
-  width: 13vw;
-  z-index: 1;
-}
-#frameEducation{
-  cursor: pointer;
-  position: fixed;
-  margin-top: 18.5vh;
-  margin-left: 77vw;
-  width: 17vw;
-  z-index: 1;
-}
+
 
 /* skillsbar css */
 .progress-container{
@@ -708,7 +741,7 @@ body{
     }
 }
 
-@media only screen and (min-width: 375px){
+@media only screen and (device-width: 375px){
     #frame{
         position: fixed;
         margin-top: 0vh;
@@ -887,7 +920,7 @@ body{
         position: absolute;
         width: 80vw;
         height: 50vh;
-        background-color: #673367;
+        background-color: #670067;
         border: 1vw black solid;
         opacity: 0;
         z-index: -1;

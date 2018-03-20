@@ -142,6 +142,9 @@ $(document).ready(function(){
     skill_python.css("opacity", "1");
   });
   skill_python.on('click', function(){
+    var aa = skill_python.offsetTop;
+    aa += "vh";
+    skills_pyText.css("margin-top", aa);
     skillInfoChange(skills_pyText);
   });
 
