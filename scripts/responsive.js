@@ -56,6 +56,31 @@ skills_apacheText.data("flag", true);
 let skills_nodeText = $("#nodeInfo");
 skills_nodeText.data("flag", true);
 
+let pyMove = document.getElementById("pythonInfo").offsetTop;
+pyMove /= 4;
+let wpMove = document.getElementById("wordpressInfo").offsetTop;
+wpMove /= 4;
+wpMove = wpMove - 0;
+
+let linMove = document.getElementById("linuxInfo").offsetTop;
+linMove /= 4;
+linMove = linMove - 0;
+
+let htMove = document.getElementById("hTmlInfo").offsetTop;
+htMove /= 4;
+htMove = htMove - 0;
+
+let move = wpMove - pyMove;
+move /= 2;
+console.log("move is: " + move);
+pyMove += "vh";
+wpMove -= move;
+wpMove += "vh";
+linMove -= (move*2);
+linMove += "vh";
+htMove -= (move*3);
+htMove += "vh";
+
 // -----------------------------------------------------------------------
 function skillClose(keep){
 
@@ -73,7 +98,14 @@ function skillInfoChange(e){
 };
 // Main Code Block: Jquery -----------------------------------------------
 $(document).ready(function(){
-
+  console.log("python top: " + pyMove);
+  skills_pyText.css("margin-top", pyMove);
+  console.log("wordpress top: " + wpMove);
+  skills_wpText.css("margin-top", wpMove);
+  console.log("linux top: " + linMove);
+  skills_linuxText.css("margin-top", linMove);
+  console.log("html top: " + htMove);
+  skills_htmlText.css("margin-top", htMove);
 //  projects_pyText.css("backgroundColor", "#0f0");
 
   svgHeader_name.css("position", "fixed").css("marginTop", "2vh").css("marginLeft", "0vh").css("width", "100vw").css("height", "20vh").css("backgroundColor", "none").css("zIndex", "1");
@@ -142,9 +174,6 @@ $(document).ready(function(){
     skill_python.css("opacity", "1");
   });
   skill_python.on('click', function(){
-    var aa = skill_python.offsetTop;
-    aa += "vh";
-    skills_pyText.css("margin-top", aa);
     skillInfoChange(skills_pyText);
   });
 

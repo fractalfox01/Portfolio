@@ -76,26 +76,26 @@ body{
 }
 #image{
   position: absolute;
-  margin-top: 60vh;
-  margin-left: 50vw;
-  width: 25vw;
-  height: 30vh;
+  margin-top: 37vh;
+  margin-left: 30vw;
+  width: 40vw;
+  height: 50vh;
   shape-outside: url("../Images/me.jpg");
-  background-size: 25vw 30vh;
+  background-size: 40vw 50vh;
   float: center;
   border-radius: 25%;
   z-index: 0;
 }
 #aboutme{
   position: absolute;
-  margin-top: 20vh;
+  margin-top: 90vh;
   margin-left: 8vw;
   width: 80vw;
-  height: 88vh;
+  height: 115vh;
   /* background-color: #999; */
-  background-image: url("./Images/trees4.jpg");
+  background-image: url("../Images/trees4.jpg");
   background-repeat: no-repeat;
-  background-size: 80vw 95vh;
+  background-size: 80vw 115vh;
   border: 2.5vw solid transparent;
   z-index: 0;
 }
@@ -128,7 +128,7 @@ body{
 }
 #mySkills{
   position: absolute;
-  margin-top: 150vh;
+  margin-top: 220vh;
   margin-left: 6vw;
   width: 80vw;
 
@@ -602,13 +602,61 @@ body{
       width: 17vw;
       z-index: 1;
     }
+    #aboutme{
+      position: absolute;
+      margin-top: 90vh;
+      margin-left: 0vw;
+      width: 95vw;
+      height: 190vh;
+      /* background-color: #999; */
+      background-image: url("../Images/trees4.jpg");
+      background-repeat: no-repeat;
+      background-size: 95vw 190vh;
+      border: 2.5vw solid transparent;
+      z-index: 0;
+    }
+    .aboutText1{
+      color: #3377ea;
+      font-size: 4vh;
+      line-height: 3vh;
+      text-align: center;
+
+    }
+    .aboutText2{
+      margin-left: 0vw;
+      color: #00ffaa;
+      font-size: 4vh;
+      text-align: justify;
+    }
+    .aboutmain{
+      margin-left: 1vw;
+      margin-right: 1vw;
+      color: #00ffaa;
+      font-size: 3vh;
+      line-height: 3vh;
+      text-align: justify;
+    }
+    #mySkills{
+      position: absolute;
+      margin-top: 290vh;
+      margin-left: 6vw;
+      width: 80vw;
+      height: 70vh;
+      background-color: none;
+      /* background-image: url("./Images/trees2.jpg");
+      background-size: 80vw 70vh;
+      background-repeat: no-repeat;
+      border: 2.5vw solid transparent;
+      border-image: url("https://pixnio.com/free-images/textures-and-patterns/wall-texture/brick-wall-texture-pictures/texture-red-stone-wall-725x544.jpg") 10; */
+      z-index: 0;
+    }
     .info{
       margin-left: 1vw;
       font-size: 2.25vh;
       color: #fff;
     }
     #pythonInfo{
-      margin-top: 120vh;
+      margin-top: 191vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -619,7 +667,7 @@ body{
       z-index: -1;
     }
     #wordpressInfo{
-      margin-top: 129vh;
+      margin-top: 201.875vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -630,7 +678,7 @@ body{
       z-index: -1;
     }
     #linuxInfo{
-      margin-top: 138vh;
+      margin-top: 212.875vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -641,7 +689,7 @@ body{
       z-index: -1;
     }
     #hTmlInfo{
-      margin-top: 147.5vh;
+      margin-top: 224vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -652,7 +700,7 @@ body{
       z-index: -1;
     }
     #bootstrapInfo{
-      margin-top: 157vh;
+      margin-top: 235vh;
       margin-left: 6vw;
       position: absolute;
       width: 80vw;
@@ -926,5 +974,3 @@ body{
         z-index: -1;
     }
 }
-
-
