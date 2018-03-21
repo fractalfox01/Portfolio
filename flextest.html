@@ -17,7 +17,7 @@
         }
         #image{
           position: absolute;
-          margin-top: 27vh;
+          margin-top: 270px;
           margin-left: 30vw;
           width: 30vw;
           height: 40vh;
@@ -37,26 +37,26 @@
           display: inline-flex;
         }
         #aboutme{
-          margin-top: 500px;
+          margin-top: 570px;
           margin-left: 0vw;
-          width: 80vw;
-          height: 115vh;
+          width: 85vw;
+          height: 1000px;
           /* background-color: #999; */
-          background-image: url("../Images/trees4.jpg");
+          background-image: url("./Images/trees4.jpg");
           background-repeat: no-repeat;
-          background-size: 80vw 115vh;
+          background-size: 85vw 115vh;
           border: 2.5vw solid transparent;
           z-index: 0;
         }
         .aboutText1{
+          margin-left: 0px;
           color: #3377ea;
-          font-size: 7vh;
-          line-height: 1vh;
+          font-size: 45px;
           text-align: center;
-
         }
         .aboutText2{
-          margin-left: 2vw;
+          margin-left: 1vw;
+          margin-right: 1vw;
           color: #00ffaa;
           font-size: 4vh;
           text-align: justify;
@@ -69,45 +69,45 @@
           line-height: 3vh;
           text-align: justify;
         }
-        #first{
+        #firstName{
           position: fixed;
-          margin-left: 25vw;
+          margin-left: 20vw;
           background-color: none;
           z-index: 1;
         }
         #b1{
           position: fixed;
-          margin-top: 12vh;
+          margin-top: 20vh;
           margin-left: 0vw;
           z-index: 1;
         }
         #b2{
           position: fixed;
-          margin-top: 12vh;
+          margin-top: 20vh;
           margin-left: 20vw;
           z-index: 1;
         }
         #b3{
           position: fixed;
-          margin-top: 12vh;
+          margin-top: 20vh;
           margin-left: 40vw;
           z-index: 1;
         }
         #b4{
           position: fixed;
-          margin-top: 12vh;
+          margin-top: 20vh;
           margin-left: 60vw;
           z-index: 1;
         }
         #b5{
           position: fixed;
-          margin-top: 12vh;
+          margin-top: 20vh;
           margin-left: 80vw;
           z-index: 1;
         }
         #second{
           height: 500px;
-          background-color: red;
+          background-color: none;
         }
         #mySkills{
           position: absolute;
@@ -202,8 +202,23 @@
           cursor: pointer;
           background-position: 0 45vh;
         }
+        .info{
+          margin-left: 1vw;
+          font-size: 2.25vh;
+          color: #ccc;
+        }
+        .progress-box-inner{
+          text-shadow: -1px 0px 1px #ffffff;
+          font-family: Oswald, serif;
+          padding-left: 1vw;
+          border: .5vw solid white;
+          border-style: outset;
+          box-shadow: 0px 0px 15px 3px #00ffaa;
+          background-color: #888;
+          color: #00f;
+        }
         #third{
-          background-color: green;
+          background-color: none;
         }
         .name{
           position: fixed;
@@ -218,8 +233,9 @@
           .inner{
             margin: 0px;
             width: 280px;
-            height: 700px;
+            height: 1350px;
             display: inline-flex;
+            justify-content: space-between;
           }
           #image{
             position: absolute;
@@ -233,13 +249,51 @@
             border-radius: 15%;
             z-index: 0;
           }
-          #first{
+          #aboutme{
+            position: absolute;
+            margin-top: 375px;
+            margin-left: 0vw;
+            width: 80vw;
+            height: 70vh;
+            background-color: none;
+            z-index: 2;
+          }
+          .aboutText1{
+            color: #00eecf;
+            font-size: 4vh;
+            line-height: 3vh;
+            text-align: justify;
+          }
+          .aboutText2{
+            margin-left: 0vw;
+            color: #00ccad;
+            font-size: 4vh;
+            text-align: justify;
+          }
+          .aboutmain{
+            margin-left: 1vw;
+            margin-right: 1vw;
+            color: #00ffaa;
+            font-size: 3vh;
+            line-height: 3vh;
+            text-align: justify;
+          }
+          #firstName{
             position: fixed;
-            margin-left: 3vw;
-            width: 250px;
+            margin-left: 0vw;
+            width: 300px;
             height: 100px;
             background-color: none;
             z-index: 1;
+          }
+          #first{
+            height: 1350px;
+            background-color: none;
+            z-index: 0;
+          }
+          #second{
+            height: 700px;
+            background-color: none;
           }
           #buttons{
             display: flex;
@@ -289,14 +343,155 @@
             position: fixed;
             stroke-width: "10";
           }
+          #mySkills{
+            position: absolute;
+            margin-top: 0vh;
+            margin-left: 2vw;
+            width: 80vw;
+            height: 70vh;
+            background-color: none;
+            /* background-image: url("./Images/trees2.jpg");
+            background-size: 80vw 70vh;
+            background-repeat: no-repeat;
+            border: 2.5vw solid transparent;
+            border-image: url("https://pixnio.com/free-images/textures-and-patterns/wall-texture/brick-wall-texture-pictures/texture-red-stone-wall-725x544.jpg") 10; */
+            z-index: 0;
+          }
+          /* skillsbar css */
+          .progress-container{
+            margin: 0vw;
+            padding: 5px;
+          }
+          .mover{
+            margin-left: 0vw;
+          }
+          .moverIn{
+          }
+          .progress-box-outer{
+            align: inline-block;
+            margin-top: 2vh;
+            margin-left: 0vw;
+            width: 75vw;
+            padding: 8px;
+            background-color: #676767;
+            background-image: url("./Images/trees3.jpg");
+            background-size: 80vw 110vh;
+            border: 3px solid black;
+            border-style: inset;
+            box-shadow: 5px 5px 10px 4px #000000;
+          }
+          .bar{
+            float: right;
+            color: #fff;
+          }
+          .p-top{
+            cursor: pointer;
+            background-position: 0 100vh;
+          }
+          .p-2{
+            cursor: pointer;
+            background-position: 0 95vh;
+          }
+          .p-3{
+            cursor: pointer;
+            background-position: 0 90vh;
+          }
+          .p-4{
+            cursor: pointer;
+            background-position: 0 85vh;
+          }
+          .p-5{
+            cursor: pointer;
+            background-position: 0 80vh;
+          }
+          .p-6{
+            cursor: pointer;
+            background-position: 0 75vh;
+          }
+          .p-7{
+            cursor: pointer;
+            background-position: 0 70vh;
+          }
+          .p-8{
+            cursor: pointer;
+            background-position: 0 65vh;
+          }
+          .p-9{
+            cursor: pointer;
+            background-position: 0 60vh;
+          }
+          .p-10{
+            cursor: pointer;
+            background-position: 0 55vh;
+          }
+          .p-11{
+            cursor: pointer;
+            background-position: 0 50vh;
+          }
+          .p-12{
+            cursor: pointer;
+            background-position: 0 45vh;
+          }
+          .info{
+            margin-left: 1vw;
+            font-size: 2.25vh;
+            color: #ccc;
+          }
+          .progress-box-inner{
+            text-shadow: -1px 0px 1px #ffffff;
+            font-family: Oswald, serif;
+            padding-left: 1vw;
+            border: .5vw solid white;
+            border-style: outset;
+            box-shadow: 0px 0px 15px 3px #00ffaa;
+            background-color: #888;
+            color: #00f;
+          }
+          .python{
+            width: 50vw;
+          }
+          .wordpress{
+            width: 50vw;
+          }
+          .linux{
+            width: 73vw;
+          }
+          .hTml{
+            width: 60vw;
+          }
+          .bootstrap{
+            width: 38vw;
+          }
+          .javascript{
+            width: 38vw;
+          }
+          .bash{
+            width: 73vw;
+          }
+          .java{
+            width: 30vw;
+          }
+          .android{
+            width: 38vw;
+          }
+          .cSharp{
+            width: 43vw;
+          }
+          .apache{
+            width: 60vw;
+          }
+          .nodejs{
+            width: 33vw;
+          }
         }
 
     </style>
 </head>
 <body>
+
 <ul id="wrap">
-    <li class="inner">
-        <svg id="first" width="700" height="200" viewBox="-25 50 800 170">
+    <li class="inner" id="first">
+        <svg id="firstName" width="800" height="300" viewBox="-25 50 800 170">
             <path class="name" d="M10, 50 L95 50 95 60 55 60 55 140 45 140 45 60 10 60 10 50" stroke="#0f0" fill="none"
                   stroke-width="3"/>
             <path class="name"
@@ -323,7 +518,10 @@
                   d="M460 ,100 L 465 100 470 110 475 100 490 100 495 105 495 140 485 140 485 115 475 115 470 120 470 140 460 140 460 100"
                   stroke="#0f0" fill="none" stroke-width="3"/>
             <path class="name"
-                  d="M505, 50 L 515 50 530 50 535 55 550 70 550 120 535 140 505 140 505 50 515 60 525 60 540 75 540 120 532 130 515 130 515 60"
+                  d="M505, 50 L525 50 Q570 95, 525 140 L505 140 505 51"
+                  stroke="#0f0" fill="none" stroke-width="3"/>
+            <path class="name"
+                  d="M515, 65 L525 65 Q550 95, 525 125 L515 125 515 64"
                   stroke="#0f0" fill="none" stroke-width="3"/>
             <path class="name"
                   d="M560, 100 L 570 100 570 140 560 140 560 100 565 100 565 90 570 90 570 80 560 80 560 90 565 90"
@@ -477,54 +675,16 @@
                 </svg>
             </li>
             <img id="image" src="./Images/me.jpg"/>
-            <div id="aboutme">
-                <p class="aboutText1">Welcome to my online portfolio!</p>
-                <p class="aboutText2">The following page is a full summarization of my technical background. For any
-                    questions
-                    please see the <a target='_self' href='#frame5'>Links</a> section for contact information.</p>
-                <p class="aboutmain">I'm a freelance website developer/designer and, owner of CodeRealms LLC. As-well-as
-                    website
-                    services I also have experience in a number of other programming languages and services, such
-                    as:</p>
-                <ul class="aboutmain col-3">
-                    <li>Both front and back-end languages</li>
-                    <li>Apache web servers</li>
-                    <li>Amazon AWS ec2 instances</li>
-                    <li>Nodejs</li>
-                    <li>Cisco Router and Switch Configuration</li>
-                    <li>TCP/IP Protocols</li>
-                    <li>API Libraries</li>
-                    <li>Git and Github</li>
-                    <li>Soldering and Schematics</li>
-                    <li>Linux System Management</li>
-                </ul>
-                <div class="aboutmain col-2">
-                    <p class="lineUp">I've taken a slower route then others in jumping into the programming world, not
-                        learning
-                        until after my K-12 years. Now I'm about 8 years into this passion, and loving it!</p>
-                    <p class="lineUp">While I have attended a few years of tech courses at CCC (Coconino Community
-                        College), A large
-                        portion of my education is self-taught and, admittedly contains gaps. I'm very eager to fill
-                        those gaps and
-                        spend most of my time working with things I haven't used before, in an attempt of weeding out
-                        those missing
-                        gaps.</p>
-                    <p class="lineUp">The majority of my time is spent on advancing my knowledge in Math, Physics,
-                        InfoSec,
-                        Programming Structure and Techniques, etc..</p>
-                    <p class="lineUp">My passion for computer work, I think, is somewhat different than others. I don't
-                        fatigue
-                        easily from screen time. I can easily spend 12+ hours at a screen. That's not to say I don't
-                        stay active.
-                        I'm an avid hiker and try to take a portion of each day to get out and explore. But, I'm
-                        intrigued by the
-                        challenges that programming can introduce, and the power of good that can come from solving
-                        them. It seems
-                        to keep me energized while Im working.</p>
-                    <p class="lineUp"></p>
-                </div>
-            </div>
         </ul>
+        <div id="aboutme">
+            <p class="aboutText1">Welcome to my online portfolio!</p>
+            <p class="aboutText2">The following page is a full summarization of my technical background. For any
+                questions
+                please see the <a target='_self' href='#frame5'>Links</a> section for contact information.</p>
+            <p class="aboutmain">I'm a freelance website developer/designer and, owner of CodeRealms LLC. As-well-as
+                website services I also have experience in a number of other programming languages and services, such
+                as:</p>
+        </div>
     </li>
     <li class="inner" id="second">
         <div id="mySkills">
