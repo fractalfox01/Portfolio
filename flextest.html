@@ -782,10 +782,10 @@
           .goleft{
             position: absolute;
             margin-left: 0vh;
-            margin-top: 10vh;
-            height: 60vh;
+            margin-top: 20vh;
+            height: 40vh;
             width: 5vw;
-            font-size: 10vh;
+            font-size: 42px;
             text-align: center;
             color: #fff;
             background-color: #0cf;
@@ -799,11 +799,11 @@
           }
           .goright{
             position: absolute;
-            margin-top: 10vh;
-            height: 60vh;
+            margin-top: 20vh;
+            height: 40vh;
             width: 5vw;
             margin-left: 80vw;
-            font-size: 10vh;
+            font-size: 42px;
             text-align: center;
             color: #fff;
             background-color: #0cf;
@@ -814,6 +814,15 @@
             cursor: pointer;
             color: blue;
             opacity: .75;
+          }
+          .noselect {
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
           }
         }
 
@@ -1114,11 +1123,11 @@
     </li>
     <li class="inner" id="third">
         <div class="carousel">
-            <div class="item l1">
+            <div class="item l1 noselect">
                 <div id="l1Text">Contact Info:<br/><br/>E-mail<br/><a href="mailto:coderealmstom@gmail.com">coderealmstom@gmail.com</a>
                 </div>
             </div>
-            <div class="item l2">
+            <div class="item l2 noselect">
                 <div id="l2Text">Click to view my Freecodecamp profile</div>
             </div>
             <div class="item l3"></div>
