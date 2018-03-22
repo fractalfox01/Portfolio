@@ -132,7 +132,7 @@
           background-color: blue;
         }
         #second{
-          height: 500px;
+          height: 1000px;
           background-color: #eee;
         }
         #mySkills{
@@ -288,6 +288,137 @@
         .nodejs{
           width: 20vw;
         }
+        .carousel{
+          position: absolute;
+          display: black;
+          margin-top: 15vh;
+          margin-left: 50vw;
+          width: 0vw;
+          height: 0vh
+          transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+          transform-style: preserve-3d;
+          transition: transform 5s;
+          -moz-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+          -moz-transform-style: preserve-3d;
+          -webkit-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+          -webkit-transform-style: preserve-3d;
+          background-color: none;
+          z-index: 4;
+        }
+        .item{
+          position: inherit;
+          width: 25vw;
+          height: 40vh;
+          border-radius: 10vh;
+          margin-top: 0vh;
+          margin-left: 0vw;
+          text-align: center;
+        }
+        .l1{
+          margin-left: -12.5vw;
+          transform: rotateY(0deg) translateZ(300px);
+          background-image: url("./Images/star3.png");
+          background-repeat: no-repeat;
+          background-size: 25vw 40vh;
+        }
+        .l1:hover{
+          opacity: .85;
+        }
+        #l1Text{
+          position: inherit;
+          margin-top: 10vh;
+          color: rgb(255,255,255);
+          width: 25vw;
+          height: 30vh;
+          font-size: 4vh;
+          text-align: center;
+          background-color: none;
+        }
+        .l2{
+          margin-left: -12.5vw;
+          transform: rotateY(72deg) translateZ(300px);
+          background-image: url("./Images/freecodecamp-logo.png");
+          background-repeat: no-repeat;
+          background-size: 25vw 40vh;
+        }
+        .l2:hover{
+          opacity: .85;
+        }
+        #l2Text{
+          position: inherit;
+          margin-top: 30vh;
+          color: rgb(255,255,255);
+          width: 25vw;
+          height: 5vh;
+          font-size: 3.5vh;
+          text-align: center;
+        }
+        .l3{
+          margin-left: -12.5vw;
+          transform: rotateY(144deg) translateZ(300px);
+          background-image: url("./Images/lkn-logo.png");
+          background-repeat: no-repeat;
+          background-size: 25vw 40vh;
+        }
+        .l3:hover{
+          opacity: .85;
+        }
+        .l4{
+          margin-left: -12.5vw;
+          transform: rotateY(216deg) translateZ(300px);
+          background-image: url("./Images/github-logo1.jpg");
+          background-repeat: no-repeat;
+          background-size: 25vw 40vh;
+        }
+        .l4:hover{
+          opacity: .85;
+        }
+        .l5{
+          margin-left: -12.5vw;
+          transform: rotateY(288deg) translateZ(300px);
+          background-image: url("./Images/trees2.jpg");
+          background-repeat: no-repeat;
+          background-size: 25vw 40vh;
+        }
+        .l5:hover{
+          opacity: .85;
+        }
+        .goleft{
+          position: absolute;
+          margin-left: 100px;
+          margin-top: 0vh;
+          height: 60vh;
+          width: 5vw;
+          font-size: 10vh;
+          text-align: center;
+          color: #fff;
+          background-color: #0cf;
+          opacity: .5;
+          z-index: 3;
+        }
+        .goleft:hover{
+          cursor: pointer;
+          color: blue;
+          opacity: .75;
+        }
+        .goright{
+          position: absolute;
+          margin-top: 0vh;
+          height: 60vh;
+          width: 5vw;
+          margin-left: 85vw;
+          font-size: 10vh;
+          text-align: center;
+          color: #fff;
+          background-color: #0cf;
+          opacity: .5;
+          z-index: 2;
+        }
+        .goright:hover{
+          cursor: pointer;
+          color: blue;
+          opacity: .75;
+        }
         @media only screen and (max-width: 451px){
           #wrap{
             display: flex;
@@ -362,7 +493,8 @@
             background-color: #eee;
           }
           #third{
-            background-color: #eee;
+            background-color: #eee
+            ;
           }
           #buttons{
             display: flex;
@@ -552,6 +684,122 @@
           }
           .nodejs{
             width: 33vw;
+          }
+          .carousel{
+            position: absolute;
+            display: black;
+            margin-top: 25vh;
+            margin-left: 50vw;
+            width: 0vw;
+            height: 0vh
+            transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+            transform-style: preserve-3d;
+            -moz-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+            -moz-transform-style: preserve-3d;
+            -webkit-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+            -webkit-transform-style: preserve-3d;
+            transition: transform 5s;
+            background-color: none;
+            z-index: 4;
+          }
+          .item{
+            position: inherit;
+            width: 25vw;
+            height: 40vh;
+            border-radius: 10vh;
+            margin-top: 0vh;
+            margin-left: 0vw;
+            text-align: center;
+          }
+          .l1{
+            margin-left: -12.5vw;
+            transform: rotateY(0deg) translateZ(300px);
+            background-image: url("./Images/star3.png");
+            background-repeat: no-repeat;
+            background-size: 25vw 40vh;
+          }
+          #l1Text{
+            position: inherit;
+            margin-top: 10vh;
+            color: rgb(255,255,255);
+            width: 25vw;
+            height: 30vh;
+            font-size: 4vh;
+            text-align: center;
+            background-color: none;
+          }
+          .l2{
+            margin-left: -12.5vw;
+            transform: rotateY(72deg) translateZ(300px);
+            background-image: url("./Images/freecodecamp-logo.png");
+            background-repeat: no-repeat;
+            background-size: 25vw 40vh;
+          }
+          #l2Text{
+            position: inherit;
+            margin-top: 30vh;
+            color: rgb(255,255,255);
+            width: 25vw;
+            height: 5vh;
+            font-size: 3.5vh;
+            text-align: center;
+          }
+          .l3{
+            margin-left: -12.5vw;
+            transform: rotateY(144deg) translateZ(300px);
+            background-image: url("./Images/lkn-logo.png");
+            background-repeat: no-repeat;
+            background-size: 25vw 40vh;
+          }
+          .l4{
+            margin-left: -12.5vw;
+            transform: rotateY(216deg) translateZ(300px);
+            background-image: url("./Images/github-logo1.jpg");
+            background-repeat: no-repeat;
+            background-size: 25vw 40vh;
+          }
+          .l5{
+            margin-left: -12.5vw;
+            transform: rotateY(288deg) translateZ(300px);
+            background-image: url("./Images/trees2.jpg");
+            background-repeat: no-repeat;
+            background-size: 25vw 40vh;
+          }
+          .goleft{
+            position: absolute;
+            margin-left: 30vh;
+            margin-top: 0vh;
+            height: 60vh;
+            width: 5vw;
+            font-size: 10vh;
+            text-align: center;
+            color: #fff;
+            background-color: #0cf;
+            opacity: .5;
+            z-index: 2;
+          }
+          .goleft:hover{
+            cursor: pointer;
+            color: blue;
+            opacity: .75;
+          }
+          .goright{
+            position: absolute;
+            margin-top: 415vh;
+            height: 60vh;
+            width: 5vw;
+            margin-left: 155vh;
+            font-size: 10vh;
+            text-align: center;
+            color: #fff;
+            background-color: #0cf;
+            opacity: .5;
+            z-index: 2;
+          }
+          .goright:hover{
+            cursor: pointer;
+            color: blue;
+            opacity: .75;
           }
         }
 
@@ -850,7 +1098,22 @@
             </div>
         </div>
     </li>
-    <li class="inner" id="third"></li>
+    <li class="inner" id="third">
+        <div class="carousel">
+            <div class="item l1">
+                <div id="l1Text">Contact Info:<br/><br/>E-mail<br/><a href="mailto:coderealmstom@gmail.com">coderealmstom@gmail.com</a>
+                </div>
+            </div>
+            <div class="item l2">
+                <div id="l2Text">Click to view my Freecodecamp profile</div>
+            </div>
+            <div class="item l3"></div>
+            <div class="item l4"></div>
+            <div class="item l5"></div>
+        </div>
+        <div class="goleft"><br/><br/><</div>
+        <div class="goright"><br/><br/>></div>
+    </li>
 </ul>
 </body>
 </html>
