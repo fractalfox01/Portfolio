@@ -3,9 +3,9 @@
   Description: Controls page flow */
 
 console.log("Script Working");
-//$(document).ready(function(){
-//  console.log("Jquery Working!");
-//})
+$(document).ready(function(){
+  console.log("Jquery Working!");
+})
 
 // Declare Variables ----------------------------------------------------
 let svgHeader_name = $("#frame");

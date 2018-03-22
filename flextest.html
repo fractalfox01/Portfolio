@@ -12,6 +12,7 @@
         #wrap{
           display: flex;
           flex-direction: column;
+          -webkit-flex-direction: column;
           margin-left: 0vw;
         }
         .inner{
@@ -19,6 +20,7 @@
           width: 93vw;
           height: 1800px;
           display: inline-flex;
+          -webkit-display: inline-flex;
         }
         #image{
           position: absolute;
@@ -719,7 +721,7 @@
           .item{
             position: inherit;
             width: 25vw;
-            height: 40vh;
+            height: 60vh;
             border-radius: 10vh;
             margin-top: 0vh;
             margin-left: 0vw;
@@ -730,7 +732,7 @@
             transform: rotateY(0deg) translateZ(70px);
             background-image: url("./Images/star3.png");
             background-repeat: no-repeat;
-            background-size: 25vw 40vh;
+            background-size: 25vw 60vh;
           }
           #l1Text{
             position: inherit;
@@ -747,7 +749,7 @@
             transform: rotateY(72deg) translateZ(70px);
             background-image: url("./Images/freecodecamp-logo.png");
             background-repeat: no-repeat;
-            background-size: 25vw 40vh;
+            background-size: 25vw 60vh;
           }
           #l2Text{
             position: inherit;
@@ -763,21 +765,21 @@
             transform: rotateY(144deg) translateZ(70px);
             background-image: url("./Images/lkn-logo.png");
             background-repeat: no-repeat;
-            background-size: 25vw 40vh;
+            background-size: 25vw 60vh;
           }
           .l4{
             margin-left: -12.5vw;
             transform: rotateY(216deg) translateZ(70px);
             background-image: url("./Images/github-logo1.jpg");
             background-repeat: no-repeat;
-            background-size: 25vw 40vh;
+            background-size: 25vw 60vh;
           }
           .l5{
             margin-left: -12.5vw;
             transform: rotateY(288deg) translateZ(70px);
             background-image: url("./Images/trees2.jpg");
             background-repeat: no-repeat;
-            background-size: 25vw 40vh;
+            background-size: 25vw 60vh;
           }
           .goleft{
             position: absolute;
@@ -1138,5 +1140,8 @@
         <div class="goright"><br/><br/>></div>
     </li>
 </ul>
+<script rel="text/javascript" src='./scripts/jquery.min.js'></script>
+<script rel="text/javascript" src='./scripts/jquery-ui.min.js'></script>
+<script rel="text/javascript" src="./scripts/flextest.js"></script>
 </body>
 </html>
