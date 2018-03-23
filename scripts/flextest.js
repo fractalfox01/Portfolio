@@ -41,6 +41,7 @@ $(document).ready(function(){
     }
   });
   left.on('click', function(){
+    console.log("")
     deg = deg - 72;
     carousel.css("transform", "rotateX(" + xdeg + "deg) rotateY("+ (deg) +"deg)");
   });
