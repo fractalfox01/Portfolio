@@ -7,6 +7,21 @@
     <meta charset="utf-8"/>
     <title>My Responsive Portfolio</title>
     <link href="styles/myPortfolio.css" rel="stylesheet" type="text/css"/>
+    <style>
+        @-webkit-keyframes draw{
+          0% { stroke-dasharray: 900; stroke-dashoffset: 900; background-color: "none";}
+          100% { stroke-dasharray: 900; stroke-dashoffset: 0; background-color: "rgb(0, 255, 0)"; }
+        }
+        .name{
+          position: fixed;
+          stroke-width: "10";
+          stroke-dasharray: 900;
+          stroke-dashoffset: 0;
+          animation: draw 15s infinite;
+          z-index: 3;
+        }
+
+    </style>
 </head>
 <body>
 
