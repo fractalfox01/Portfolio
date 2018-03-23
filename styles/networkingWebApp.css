@@ -1,0 +1,13 @@
+/* stylesheet for networkingWebApp.html */
+body{
+  background-color: blue;
+}
+#wrapper{
+  position: absolute;
+  display: flex;
+  -moz-display: flex;
+  -webkit-display: flex;
+  width: 500px;
+  height: 500px;
+  background-color: #dfd;
+}
