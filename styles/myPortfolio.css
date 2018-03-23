@@ -553,6 +553,9 @@
       .name{
         position: fixed;
         stroke-width: "10";
+        stroke-dasharray: 900;
+        stroke-dashoffset: 0;
+        animation: draw 15s infinite;
         z-index: 3;
       }
       #mySkills{
