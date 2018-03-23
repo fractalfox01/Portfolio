@@ -104,6 +104,21 @@
     margin-top: 10%;
     margin-left: 22%;
   }
+  #about{
+    position: default;
+    margin-top: 20px;
+    margin-left: 50px;
+    -moz-display: inline-flex;
+    -webkit-display: inline-flex;
+    width: 500px;
+    height: 100px;
+    background-color: #000;
+  }
+  .texta{
+    color: #fff;
+    width: 500px;
+    line-height: 20px;
+  }
   @media only screen and (max-width: 450px){
     .wrapper{
       padding-left: 0%;
@@ -114,54 +129,81 @@
       margin-right: 0%;
       background-color: black;
     }
+    #about{
+      position: default;
+      width: 500px;
+      height: 500px;
+    }
+    .texta{
+      color: #fff;
+      width: 500px;
+      line-height: 20px;
+    }
   }
 </style>
 </head>
 <body>
-<div class="wrapper">
-  <div class="header"><h1 id="fc">Free-Calc</h1>
-    <div class="col c">
-      <div class="row">
-        <div id="text" class="text"><a class="blink" value="0">0</a></div>
-      </div>
-      <div class="row">
-        <button id="button1" type="button" class="col" onClick="" value="button1">1</button>
-        <button id="button2" type="button" class="col" onClick="" value="button2">2</button>
-        <button id="button3" type="button" class="col" onClick="" value="button3">3</button>
-      </div>
-      <div class="row">
-        <button id="button4" type="button" class="col" value="button4">4</button>
-        <button id="button5" type="button" class="col" onClick="" value="button5">5</button>
-        <button id="button6" type="button" class="col" onClick="" value="button6">6</button>
-      </div>
-      <div class="row">
-        <button id="button7" type="button" class="col" onClick="" value="button7">7</button>
-        <button id="button8" type="button" class="col" onClick="" value="button8">8</button>
-        <button id="button9" type="button" class="col" onClick="" value="button9">9</button>
-      </div>
-      <div class="row">
-        <button id="buttonDot" type="button" class="col" value="buttonClear">.</button>
-        <button id="button0" type="button" class="col" onClick="" value="button0">0</button>
-        <button id="buttonClear" type="button" class="col" onClick="" value="blank">clear</button>
-      </div>
-    </div>
-    <div class="col">
-      <div class="row">
-        <button id="add" type="button" class="col" onClick="" value="button1"><i class="fa fa-plus"></i></button>
-        <button id="sub" type="button" class="col" onClick="" value="button2"><i class="fa fa-minus"></i></button>
-      </div>
-      <div class="row">
-        <button id="divide" type="button" class="col" onClick="" value="button3"><i class="divide">&divide</i></button>
-        <button id="multiply" type="button" class="col" onClick="" value="button4"><i class="fa fa-times"></i></button>
-      </div>
-    </div>
-    <div class="col e">
-      <div class="row">
-        <button id="enter" type="button" class="col" value="enter">Calculate</button>
-      </div>
-    </div>
-  </div>
-</div>
+<ul>
+    <li>
+        <div id="about">
+            <p class="texta">A calculator I created during <a href="http://www.freecodecamp.org">Freecodecamp.org's</a>
+                Front-end Developer certification course.</p>
+            <br/>
+        </div>
+    </li>
+    <li>
+        <div class="wrapper">
+            <div class="header"><h1 id="fc">Free-Calc</h1>
+                <div class="col c">
+                    <div class="row">
+                        <div id="text" class="text"><a class="blink" value="0">0</a></div>
+                    </div>
+                    <div class="row">
+                        <button id="button1" type="button" class="col" onClick="" value="button1">1</button>
+                        <button id="button2" type="button" class="col" onClick="" value="button2">2</button>
+                        <button id="button3" type="button" class="col" onClick="" value="button3">3</button>
+                    </div>
+                    <div class="row">
+                        <button id="button4" type="button" class="col" value="button4">4</button>
+                        <button id="button5" type="button" class="col" onClick="" value="button5">5</button>
+                        <button id="button6" type="button" class="col" onClick="" value="button6">6</button>
+                    </div>
+                    <div class="row">
+                        <button id="button7" type="button" class="col" onClick="" value="button7">7</button>
+                        <button id="button8" type="button" class="col" onClick="" value="button8">8</button>
+                        <button id="button9" type="button" class="col" onClick="" value="button9">9</button>
+                    </div>
+                    <div class="row">
+                        <button id="buttonDot" type="button" class="col" value="buttonClear">.</button>
+                        <button id="button0" type="button" class="col" onClick="" value="button0">0</button>
+                        <button id="buttonClear" type="button" class="col" onClick="" value="blank">clear</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <button id="add" type="button" class="col" onClick="" value="button1"><i class="fa fa-plus"></i>
+                        </button>
+                        <button id="sub" type="button" class="col" onClick="" value="button2"><i
+                                class="fa fa-minus"></i></button>
+                    </div>
+                    <div class="row">
+                        <button id="divide" type="button" class="col" onClick="" value="button3"><i class="divide">&divide</i>
+                        </button>
+                        <button id="multiply" type="button" class="col" onClick="" value="button4"><i
+                                class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <div class="col e">
+                    <div class="row">
+                        <button id="enter" type="button" class="col" value="enter">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+
 <script rel="text/javascript" src='./scripts/jquery.min.js'></script>
 <script rel="text/javascript" src='./scripts/jquery-ui.min.js'></script>
 <script rel="text/javascript" src="./scripts/free-calc.js"></script>
