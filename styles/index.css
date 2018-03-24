@@ -58,7 +58,8 @@
       z-index: 1;
     }
     .aboutText1{
-      margin-left: 0px;
+      margin-left: 1vw;
+      margin-rigth: 1vw;
       color: #fff;
       font-size: 45px;
       font-family: "Bungee Outline";
@@ -365,7 +366,7 @@
     #l2Text{
       position: inherit;
       margin-top: 30vh;
-      color: rgb(255,255,255);
+      color: rgb(72,205,97);
       width: 25vw;
       height: 5vh;
       font-size: 3.5vh;
@@ -762,7 +763,7 @@
       #l2Text{
         position: inherit;
         margin-top: 30vh;
-        color: rgb(255,255,255);
+        color: rgb(72,205,97);
         width: 25vw;
         height: 5vh;
         font-size: 3.5vh;
