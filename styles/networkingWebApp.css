@@ -7,27 +7,33 @@ body{
   margin-left: 0vw;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(190px, auto);
   background-color: #999;
 }
 .header{
-  padding: 25px 0px 25px 0px;
+  position: fixed;
+  margin-left: 25px;
+  padding: 10px 0px 35px 0px;
   font-size: 92px;
   text-align: center;
-  color: #888;
+  color: #3d4;
   grid-column: 1;
   grid-row: 1;
-  width: auto;
+  width: 95vw;
   height: 100px;
-  background-color: #9fc;
+  background-color: #333;
+  z-index: 1;
 }
 .mainContainer{
   display: block;
+  margin-left: 30px;
+  padding-top: 20px;
   grid-column: 1;
   grid-row: 2;
-  width: auto;
+  width: 55vw;
   height: 1000px;
   background-color: #67cc87;
+  border: 5px double #333;
 }
 .ips{
   position: absolute;
@@ -86,10 +92,26 @@ body{
 #convertBtn{
   margin-top: 10px;
   margin-left: 600px;
+  background-color: #f99;
+}
+#convertBtn:hover{
+  margin-top: 9px;
+  margin-left: 597px;
+  width: 105px;
+  height: 37px;
+  opacity: .85;
 }
 #subnetBtn{
   margin-top: 10px;
   margin-left: 710px;
+  background-color: #9f9;
+}
+#subnetBtn:hover{
+  margin-top: 9px;
+  margin-left: 707px;
+  width: 105px;
+  height: 37px;
+  opacity: .85;
 }
 #findMaskBtn{
   margin-top: 100px;
@@ -112,5 +134,12 @@ body{
  background-color: #eee;
  border: 5px double #333;
 }
-.p1{}
-.p2{}
+.p1{
+  margin-left: 10px;
+}
+.p2{
+  margin-left: 10px;
+}
+.p3{
+  margin-left: 10px;
+}

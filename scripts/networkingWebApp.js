@@ -4,7 +4,10 @@ let convert = $("#convertBtn");
 let subnetBtn = $("#subnetBtn");
 let findMask = $("#findMaskBtn");
 let startIP = $("#startIP");
+let startLbl = $(".start");
 let endIP = $("#bCastIP");
+let bCastLbl = $(".broadcast")
+let maskText = $("#masks");
 let p1 = $(".p1");
 let p2 = $(".p2");
 let p3 = $(".p3");
@@ -59,7 +62,9 @@ function validateBroadcast(hostAdd, bcast){
 
 function getMask(start, bCast){
   let count = 0;
-  let netmask = "";
+  let netmaskBin = "";
+  let netmaskDec = "";
+  let maskCount = 4;
   console.log(start);
   let startList = start.split(".");
   console.log(startList.toString());
@@ -86,23 +91,106 @@ function getMask(start, bCast){
     }else{
       for(var la = 0; la < count; la++){
         if(la == 8 || la == 16 || la == 24){
-          netmask += ".1";
+          netmaskBin += ".1";
         }else{
-          netmask += "1";
+          netmaskBin += "1";
         }
       }
       // if bits stop matching.
       for(var lb = 0; lb < (32-count); lb++){
         if(lb == ((32-count)-8) || lb == ((32-count)-16) || lb == ((32-count)-24)){
-          netmask += ".0";
+          netmaskBin += ".0";
         }else{
-          netmask += "0";
+          netmaskBin += "0";
         }
       }
-      p3.html("Network mask in Binary: " + netmask + " /" + count + "</p>");
+      p3.html("Network mask in Binary ----: " + netmaskBin + " /" + count + "</p>");
+
+      // While loop pieces together ipv4 format network mask i.e. 255.255.0.0
+      // uses and deducts from count variable.
+      let tmpCount = count;
+      while(maskCount > 0){
+        if(maskCount == 4){
+          if(count >= 24){
+            console.log("first: 255.255.255");
+            netmaskDec += "255.255.255";
+            count -= 24;
+            maskCount -= 3;
+          }else if(count >= 16){
+            console.log("first: 255.255");
+            netmaskDec += "255.255";
+            count -= 16;
+            maskCount -= 2;
+          }else if(count >=8){
+            console.log("first: 255");
+            netmaskDec += "255";
+            count -= 8;
+            maskCount -= 1;
+          }else{
+            console.log("first: " + maskCount[count]);
+            netmaskDec += "." + maskAssign[count];
+            maskCount -= 1;
+            count = 0;
+          }
+        }else if(maskCount == 3){
+          if(count >= 16){
+            console.log("second: 255.255");
+            netmaskDec += "255.255";
+            count -= 16;
+            maskCount -= 2;
+          }else if(count >=8){
+            console.log("second: 255");
+            netmaskDec += "255";
+            count -= 8;
+            maskCount -= 1;
+          }else{
+            console.log("second: " + maskCount[count]);
+            netmaskDec += "." + maskAssign[count];
+            maskCount -= 1;
+            count = 0;
+          }
+        }else if(maskCount == 2){
+          if(count >=8){
+            console.log("third: 255");
+            netmaskDec += "255";
+            count -= 8;
+            maskCount -= 1;
+          }else{
+            console.log("third: " + maskCount[count]);
+            netmaskDec += "." +  maskAssign[count];
+            maskCount -= 1;
+            count = 0;
+          }
+        }else if(maskCount == 1){
+          maskCount -= 1;
+          console.log("fourth: " + maskCount[count]);
+          netmaskDec += "." + maskAssign[count];
+          maskCount -= 1;
+          count = 0;
+        }else{
+          console.log("Ooops, Something went wrong.");
+        }
+
+      }
+      maskText.val(netmaskDec);
+      console.log("mask dec is: " + netmaskDec);
       break;
     }
   }
+};
+
+function compareAddreses(start, end){
+  console.log("comparing");
+  let cTempStart = start.split(".");
+  let cTempEnd = end.split(".");
+  for(var ia = 0; ia < 4; ia++){
+    console.log("start: " + cTempStart);
+    console.log("end: " + cTempEnd);
+    if(parseInt(cTempStart[ia], 10) > parseInt(cTempEnd[ia], 10)){
+      return false;
+    }
+  }
+  return true;
 };
 
 $(document).ready(function(){
@@ -118,15 +206,25 @@ $(document).ready(function(){
     if(startIP.val() != ""){
       if(validateIP(startIP.val())){
         if(validateIP(endIP.val())){
-          alert("both addresses valid");
-          getMask(startIP.val(), endIP.val());
+          console.log("both addresses valid");
+          if(compareAddreses(startIP.val(),endIP.val())){
+            startLbl.css("color", "#0f0");
+            bCastLbl.css("color", "#0f0");
+            getMask(startIP.val(), endIP.val());
+          }else{
+            startLbl.css("color", "#f00");
+            alert("Starting IP is higher than Broadcast: Fix this to continue.");
+          }
         }else{
+          bCastLbl.css("color", "#f00");
           alert("end ip not valid");
         }
       }else{
+        startLbl.css("color", "#f00");
         alert("start ip not valid");
       }
     }else{
+      startLbl.css("color", "#f00");
       alert("Fill in start ip field with a valid ip");
     }
   });
