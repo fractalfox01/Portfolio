@@ -1,13 +1,116 @@
 /* stylesheet for networkingWebApp.html */
 body{
-  background-color: blue;
+  background-color: #000;
 }
 #wrapper{
-  position: absolute;
-  display: flex;
-  -moz-display: flex;
-  -webkit-display: flex;
-  width: 500px;
-  height: 500px;
-  background-color: #dfd;
+  display: grid;
+  margin-left: 0vw;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+  background-color: #999;
 }
+.header{
+  padding: 25px 0px 25px 0px;
+  font-size: 92px;
+  text-align: center;
+  color: #888;
+  grid-column: 1;
+  grid-row: 1;
+  width: auto;
+  height: 100px;
+  background-color: #9fc;
+}
+.mainContainer{
+  display: block;
+  grid-column: 1;
+  grid-row: 2;
+  width: auto;
+  height: 1000px;
+  background-color: #67cc87;
+}
+.ips{
+  position: absolute;
+  display: inline;
+  padding: 10px;
+  font-size: 32px;
+}
+#startIP{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 250px;
+  width: 300px;
+  height: 32px;
+}
+.start{
+  margin-top: 0vh;
+  margin-left: 60px;
+}
+.broadcast{
+  margin-top: 100px;
+  margin-left: 65px;
+}
+#bCastIP{
+  position: absolute;
+  margin-top: 105px;
+  margin-left: 250px;
+  width: 300px;
+  height: 32px;
+}
+.mask{
+  margin-top: 200px;
+  margin-left: 5px;
+}
+#masks{
+  position: absolute;
+  margin-top: 205px;
+  margin-left: 250px;
+  width: 300px;
+  height: 32px;
+}
+.host{
+  margin-top: 300px;
+}
+#hosts{
+  position: absolute;
+  margin-top: 305px;
+  margin-left: 250px;
+  width: 300px;
+  height: 32px;
+}
+.btn{
+  position: absolute;
+  width: 100px;
+  height: 35px;
+}
+#convertBtn{
+  margin-top: 10px;
+  margin-left: 600px;
+}
+#subnetBtn{
+  margin-top: 10px;
+  margin-left: 710px;
+}
+#findMaskBtn{
+  margin-top: 100px;
+  margin-left: 600px;
+}
+#findRangeBtn{
+  margin-top: 200px;
+  margin-left: 600px;
+}
+#findHostBtn{
+  margin-top: 300px;
+  margin-left: 600px;
+}
+.info{
+ position: absolute;
+ margin-top: 400px;
+ margin-left: 20px;
+ width: 850px;
+ height: 500px;
+ background-color: #eee;
+ border: 5px double #333;
+}
+.p1{}
+.p2{}

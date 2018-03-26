@@ -5,10 +5,36 @@
     <title>Network/subnet calc remake</title>
 </head>
 <link type="text/css" rel="stylesheet" href="./styles/networkingWebApp.css"/>
-<script type="text/javascript" rel="script" src="./scripts/networkingWebApp.js"></script>
+
 <body>
 <div id="wrapper">
-
+    <div class="header">Networking Tool Panel</div>
+    <div class="mainContainer">
+        <form id="subnetForm">
+            <lable class="ips start">Starting IP</lable>
+            <input id="startIP" type="text">
+            <lable class="ips broadcast">Broadcast</lable>
+            <input id="bCastIP" type="text">
+            <lable class="ips mask">Network Mask</lable>
+            <input id="masks" type="text">
+            <lable class="ips host">Available Hosts</lable>
+            <input id="hosts" type="text">
+            <button id="convertBtn" class="btn" name="convertBtn" type="button" value="Convert">Convert</button>
+            <button id="subnetBtn" class="btn" name="subnetBtn" type="button" value="Subnet">Subnet</button>
+            <button id="findMaskBtn" class="btn" name="findMaskBtn" type="button" value="Find Mask">Find Mask</button>
+            <button id="findRangeBtn" class="btn" name="findRangeBtn" type="button" value="Find Range">Find Range
+            </button>
+            <button id="findHostBtn" class="btn" name="findHostBtn" type="button" value="Find Hosts">Find Hosts</button>
+        </form>
+        <div class="info">
+            <p class="p1"></p>
+            <p class="p2"></p>
+            <p class="p3"></p>
+        </div>
+    </div>
 </div>
+<script type="text/javascript" rel="script" src="./scripts/jquery.min.js"></script>
+<script type="text/javascript" rel="script" src="./scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" rel="script" src="./scripts/networkingWebApp.js"></script>
 </body>
 </html>
