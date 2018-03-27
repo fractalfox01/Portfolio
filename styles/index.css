@@ -102,6 +102,10 @@
       position: fixed;
       margin-top: 20vh;
       margin-left: 0vw;
+      background-color: #00a;
+      border-radius: 10px;
+      border: 5px outset #88f;
+      opacity: .85;
       z-index: 5;
     }
     #b1:hover{
@@ -111,6 +115,10 @@
       position: fixed;
       margin-top: 20vh;
       margin-left: 20vw;
+      background-color: #00a;
+      border-radius: 10px;
+      border: 5px outset #88f;
+      opacity: .85;
       z-index: 5;
     }
     #b2:hover{
@@ -120,6 +128,10 @@
       position: fixed;
       margin-top: 20vh;
       margin-left: 40vw;
+      background-color: #00a;
+      border-radius: 10px;
+      border: 5px outset #88f;
+      opacity: .85;
       z-index: 5;
     }
     #b3:hover{
@@ -129,6 +141,10 @@
       position: fixed;
       margin-top: 20vh;
       margin-left: 60vw;
+      background-color: #00a;
+      border-radius: 10px;
+      border: 5px outset #88f;
+      opacity: .85;
       z-index: 5;
     }
     #b4:hover{
@@ -138,6 +154,10 @@
       position: fixed;
       margin-top: 20vh;
       margin-left: 80vw;
+      background-color: #00a;
+      border-radius: 10px;
+      border: 5px outset #88f;
+      opacity: .85;
       z-index: 5;
     }
     #b5:hover{
@@ -690,7 +710,7 @@
         width: 38vw;
       }
       .javascript{
-        width: 38vw;
+        width: 39vw;
       }
       .bash{
         width: 73vw;
@@ -745,13 +765,17 @@
       }
       #l1Text{
         position: inherit;
-        margin-top: 10vh;
+        display: block;
+        margin-top: 15vh;
         color: rgb(255,255,255);
         width: 25vw;
         height: 30vh;
-        font-size: 4vh;
+        font-size: 1em;
         text-align: center;
         background-color: none;
+      }
+      #mail{
+        margin-left: -10vw;
       }
       .l2{
         margin-left: -12.5vw;
@@ -762,12 +786,14 @@
       }
       #l2Text{
         position: inherit;
-        margin-top: 30vh;
+        display: block;
+        margin-top: 35vh;
         color: rgb(72,205,97);
-        width: 25vw;
-        height: 5vh;
-        font-size: 3.5vh;
+        font-size: 1em;
         text-align: center;
+      }
+      .l2:hover #l2Text{
+        color: rgb(0,255,97);
       }
       .l3{
         margin-left: -12.5vw;
