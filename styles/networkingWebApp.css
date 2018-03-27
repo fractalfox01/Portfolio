@@ -148,8 +148,8 @@ body{
   margin-top: 30px;
   width: 250px;
   height: 30px;
-  background-color: #eee;
-  border: 3px double #fff;
+  background-color: #fff;
+  border: 3px inset #333;
 }
 .con{
   opacity: 0;
@@ -160,8 +160,8 @@ body{
   z-index: 4;
 }
 .btn:hover .con{
-  opacity: .85;
+  opacity: 1;
 }
 .btn:hover .sub{
-  opacity: .85;
+  opacity: 1;
 }
