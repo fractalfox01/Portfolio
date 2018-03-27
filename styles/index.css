@@ -38,12 +38,15 @@
     }
     #buttons{
       display: flex;
+      -webkit-display: flex;
       flex-direction: row;
+      -webkit-flex-direction: row;
       margin-left: 0vw;
     }
     .btn{
       margin: 0px;
       display: inline-flex;
+      -webkit-display: inline-flex;
     }
     #aboutme{
       margin-top: 570px;
@@ -272,7 +275,17 @@
       color: #00f;
     }
     #third{
-      height: 500px;
+      height: 700px;
+      width: 95vw;
+      background-color: #eee;
+    }
+    #fourth{
+      height: 475px;
+      width: 95vw;
+      background-color: #000;
+    }
+    #fifth{
+      height: 900px;
       width: 95vw;
       background-color: #eee;
     }
@@ -341,7 +354,7 @@
       -webkit-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
       -webkit-transform-style: preserve-3d;
       background-color: none;
-      z-index: 4;
+      z-index: 2;
     }
     .item{
       position: inherit;
@@ -433,7 +446,7 @@
       color: #fff;
       background-color: #0cf;
       opacity: .5;
-      z-index: 3;
+      z-index: 2;
     }
     .goleft:hover{
       cursor: pointer;
@@ -461,13 +474,16 @@
     @media only screen and (max-width: 451px){
       #wrap{
         display: flex;
+        -webkit-display: flex;
         flex-direction: column;
+        -webkit-direction: column;
       }
       .inner{
         margin: 0px;
         width: 280px;
         height: 1550px;
         display: inline-flex;
+        -webkit-display: inline-flex;
         justify-content: space-between;
       }
       #image{
@@ -523,23 +539,34 @@
         z-index: 5;
       }
       #first{
-        width: 90vw;
+        width: 85vw;
         height: 1850px;
         background-color: #eee;
         z-index: 3;
       }
       #second{
-        width: 90vw;
+        width: 85vw;
         height: 700px;
         background-color: #eee;
       }
       #third{
-        width: 90vw;
+        width: 85vw;
         height: 500px;
+        background-color: #eee;
+      }
+      #fourth{
+        height: 475px;
+        width: 85vw;
+        background-color: #eee;
+      }
+      #fifth{
+        height: 900px;
+        width: 85vw;
         background-color: #eee;
       }
       #buttons{
         display: flex;
+        -webkit-display: flex;
         flex-direction: row;
         margin-left: 0vw;
       }
@@ -745,7 +772,7 @@
         -webkit-transform-style: preserve-3d;
         transition: transform 5s;
         background-color: none;
-        z-index: 4;
+        z-index: 2;
       }
       .item{
         position: inherit;

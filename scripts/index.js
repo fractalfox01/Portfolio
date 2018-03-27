@@ -27,12 +27,12 @@ $(document).ready(function(){
   });
   projects.on('click', function(){
     if(num > 500){
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 2400);
     }
   });
   links.on('click', function(){
     if(num > 500){
-      window.scrollTo(50, 2600);
+      window.scrollTo(50, 3220);
     }
   });
   education.on('click', function(){
