@@ -93,6 +93,7 @@ body{
   margin-top: 10px;
   margin-left: 600px;
   background-color: #f99;
+  z-index: 1;
 }
 #convertBtn:hover{
   margin-top: 9px;
@@ -105,6 +106,7 @@ body{
   margin-top: 10px;
   margin-left: 710px;
   background-color: #9f9;
+  z-index;
 }
 #subnetBtn:hover{
   margin-top: 9px;
@@ -142,4 +144,26 @@ body{
 }
 .p3{
   margin-left: 10px;
+}
+.tooltip{
+  position: absolute;
+  margin-top: 30px;
+  width: 250px;
+  height: 30px;
+  background-color: #eee;
+  border: 3px double #fff;
+}
+.con{
+  opacity: 0;
+  z-index: 4;
+}
+.sub{
+  opacity: 0;
+  z-index: 4;
+}
+.btn:hover .con{
+  opacity: .85;
+}
+.btn:hover .sub{
+  opacity: .85;
 }

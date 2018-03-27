@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Network/subnet calc remake</title>
@@ -19,8 +19,14 @@
             <input id="masks" type="text">
             <lable class="ips host">Available Hosts</lable>
             <input id="hosts" type="text">
-            <button id="convertBtn" class="btn" name="convertBtn" type="button" value="Convert">Convert</button>
-            <button id="subnetBtn" class="btn" name="subnetBtn" type="button" value="Subnet">Subnet</button>
+            <button id="convertBtn" class="btn" name="convertBtn" type="button" value="Convert">
+                Convert
+                <span class="tooltip con">Switch to converter frame</span>
+            </button>
+            <button id="subnetBtn" class="btn" name="subnetBtn" type="button" value="Subnet">
+                Subnet
+                <span class="tooltip sub">Switch to subnet frame</span>
+            </button>
             <button id="findMaskBtn" class="btn" name="findMaskBtn" type="button" value="Find Mask">Find Mask</button>
             <button id="findRangeBtn" class="btn" name="findRangeBtn" type="button" value="Find Range">Find Range
             </button>

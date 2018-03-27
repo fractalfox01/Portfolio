@@ -104,7 +104,7 @@ function getMask(start, bCast){
           netmaskBin += "0";
         }
       }
-      p3.html("Network mask in Binary ----: " + netmaskBin + " /" + count + "</p>");
+      p3.html("Network mask in Binary ----: " + netmaskBin);
 
       // While loop pieces together ipv4 format network mask i.e. 255.255.0.0
       // uses and deducts from count variable.
@@ -172,7 +172,7 @@ function getMask(start, bCast){
         }
 
       }
-      maskText.val(netmaskDec);
+      maskText.val(netmaskDec + "    /" + tmpCount);
       console.log("mask dec is: " + netmaskDec);
       break;
     }
@@ -194,6 +194,8 @@ function compareAddreses(start, end){
 };
 
 $(document).ready(function(){
+
+
   console.log("jQuery working");
   convert.on('click', function(){
     console.log("convert button clicked");
