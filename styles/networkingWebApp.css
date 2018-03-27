@@ -93,7 +93,6 @@ body{
   margin-top: 10px;
   margin-left: 600px;
   background-color: #f99;
-  z-index: 1;
 }
 #convertBtn:hover{
   margin-top: 9px;
@@ -106,7 +105,6 @@ body{
   margin-top: 10px;
   margin-left: 710px;
   background-color: #9f9;
-  z-index;
 }
 #subnetBtn:hover{
   margin-top: 9px;
