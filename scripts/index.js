@@ -8,6 +8,9 @@ let num = window.innerWidth;
 let carousel = $(".carousel");
 let left = $(".goleft");
 let right = $(".goright");
+let footerText = $("#footerText");
+let copyrightDate = new Date();
+let refinedCopyright = copyrightDate.getFullYear();
 let deg = 0;
 let xdeg = -5;
 
@@ -15,6 +18,9 @@ console.log("num is " + num);
 
 $(document).ready(function(){
 //  console.log("jQuery Working");
+  console.log("copyright Date: " + refinedCopyright);
+  footerText.append(" " + refinedCopyright);
+
   about.on('click', function(){
     if(num > 500){
       window.scrollTo(0, 320);
@@ -37,7 +43,7 @@ $(document).ready(function(){
   });
   education.on('click', function(){
     if(num > 500){
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 3900);
     }
   });
   left.on('click', function(){
