@@ -49,15 +49,15 @@
       -webkit-display: inline-flex;
     }
     #aboutme{
-      margin-top: 570px;
+      margin-top: 650px;
       margin-left: 0vw;
       width: 85vw;
       height: 1000px;
-      /* background-color: #999; */
-      background-image: url("../Images/trees4.jpg");
+      background-color: #999;
+      /*background-image: url("../Images/trees4.jpg");
       background-repeat: no-repeat;
-      background-size: 85vw 1000px;
-      border: 2.5vw solid transparent;
+      background-size: 85vw 1000px;*/
+      border: 8px solid #eee;
       z-index: 1;
     }
     .aboutText1{
@@ -218,7 +218,7 @@
       border-radius: 10px;
     }
     .p-top{
-      cursor: pointer;
+      cursor:  url("../Images/python.svg"), pointer;
       background-position: 0 100vh;
     }
     .tt1{
@@ -232,7 +232,7 @@
       z-index: 3;
     }
     .p-2{
-      cursor: pointer;
+      cursor:  url("../Images/wordpress.png"), pointer;
       background-position: 0 95vh;
     }
     .tt2{
@@ -246,7 +246,7 @@
       z-index; 3;
     }
     .p-3{
-      cursor: pointer;
+      cursor:  url("../Images/linux.jpg"), pointer;
       background-position: 0 90vh;
     }
     .tt3{
@@ -261,7 +261,7 @@
       z-index: 3;
     }
     .p-4{
-      cursor: pointer;
+      cursor: url("../Images/html.jpg"), pointer;
       background-position: 0 85vh;
     }
     .tt4{
@@ -276,7 +276,7 @@
       z-index: 3;
     }
     .p-5{
-      cursor: pointer;
+      cursor: url("../Images/bootstrap1.jpg"), pointer;
       background-position: 0 80vh;
     }
     .tt5{
@@ -291,7 +291,7 @@
       z-index: 3;
     }
     .p-6{
-      cursor: pointer;
+      cursor: url("../Images/javascript.jpg"), pointer;
       background-position: 0 75vh;
     }
     .tt6{
@@ -620,9 +620,16 @@
       color: blue;
       opacity: .75;
     }
+    #simonProject{
+      width: 350px;
+      height: 350px;
+      background-image: url("../Images/simonGame.jpg");
+      background-size: 350px 350px;
+    }
     @media only screen and (max-width: 451px){
       #wrap{
         display: flex;
+        margin-left: -6vw;
         -webkit-display: flex;
         flex-direction: column;
         -webkit-direction: column;
@@ -653,7 +660,7 @@
         margin-left: 0vw;
         width: 80vw;
         height: 1450px;
-        background-image: url("../Images/trees1.jpg");
+        background-image: url("../Images/aboutme.jpg");
         background-repeat: no-repeat;
         background-size: 80vw 1500px;
         z-index: 1;
@@ -730,7 +737,7 @@
         display: flex;
         -webkit-display: flex;
         flex-direction: row;
-        margin-left: 0vw;
+        margin-left: -5vw;
       }
       .btn{
         margin: 0px;
@@ -820,12 +827,15 @@
         float: right;
         color: #fff;
       }
+      #tooltip{
+        display: none;
+      }
       .p-top{
-        cursor: pointer;
+        cursor: unset;
         background-position: 0 100vh;
       }
       .p-2{
-        cursor: pointer;
+        cursor: unset;
         background-position: 0 95vh;
       }
       .p-3{
