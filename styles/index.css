@@ -791,7 +791,7 @@ a:hover{
   }
   #third{
     width: 85vw;
-    height: 900px;
+    height: 1200px;
     background-color: #eee;
   }
   #projTitle{
@@ -1169,11 +1169,11 @@ a:hover{
   }
   .simonInfo{
     position: absolute;
-    cursor: help;
+    cursor: unset;
     margin-left: 15px;
     margin-top: 200px;
     width: 230px;
-    height: 130px;
+    height: 150px;
     background-color: #ccc;
     border: 5px inset #676767;
     opacity: 1;
@@ -1182,7 +1182,7 @@ a:hover{
     position: absolute;
     display: inline;
     cursor: pointer;
-    margin-top: 370px;
+    margin-top: 390px;
     margin-left: 5vw;
     width: 250px;
     height: 250px;
@@ -1192,14 +1192,36 @@ a:hover{
   }
   .pythonInfo{
     position: absolute;
-    cursor: help;
+    cursor: unset;
     margin-left: 15px;
     margin-top: 200px;
     width: 230px;
-    height: 150px;
+    height: 170px;
     background-color: #ccc;
     border: 5px inset #676767;
     opacity: 1;
   }
-
+  .spiraledWrap{
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+    margin-top: 800px;
+    margin-left: 5vw;
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    background-image: url("../Images/spiraledthoughts(0).jpg");
+    background-size: 250px 250px;
+  }
+  .spiraledInfo{
+    position: absolute;
+    cursor: unset;
+    margin-left: 15px;
+    margin-top: 224px;
+    width: 230px;
+    height: 130px;
+    background-color: #ccc;
+    border: 5px inset #676767;
+    opacity: 1;
+  }
 }
