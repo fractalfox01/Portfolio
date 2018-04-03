@@ -437,7 +437,7 @@ a:hover{
   background-color: var(--main-background);
 }
 #fifth{
-  height: 1100px;
+  height: 1300px;
   width: 95vw;
   background-color: var(--main-background);
 }
@@ -718,7 +718,7 @@ a:hover{
   height: 100px;
   text-align: center;
   font-size: 3em;
-  background-color: #fff;
+  background-color: #eef;
   border: 5px solid #555;
 }
 .eduWrap{
@@ -729,8 +729,8 @@ a:hover{
   margin-top: 300px;
   margin-left: 100px;
   width: 85vw;
-  height: 700px;
-  background-color: #999;
+  height: auto;
+  background: radial-gradient(#ccc, #888);
   border: 5px solid #fff;
   border-top-color: #555;
 }
@@ -839,7 +839,7 @@ a:hover{
     background-color: #eee;
   }
   #fifth{
-    height: 900px;
+    height: 1575px;
     width: 85vw;
     background-color: #eee;
   }
@@ -1256,5 +1256,35 @@ a:hover{
     background-color: #ccc;
     border: 5px inset #676767;
     opacity: 1;
+  }
+  #eduTitle{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 1px;
+    width: 82vw;
+    height: 50px;
+    text-align: center;
+    font-size: 2em;
+    background-color: #eef;
+    border: 5px solid #555;
+  }
+  .eduWrap{
+    position: absolute;
+    display: inline-block;
+    --moz-display: inline-block;
+    --webkit-display: inline-block;
+    margin-top: 100px;
+    margin-left: 1px;
+    width: 82vw;
+    height: auto;
+    background: radial-gradient(#ccc, #888);
+    border: 5px solid #0af;
+    border-top-color: #555;
+  }
+  .eduHead{
+    color: #00f;
+  }
+  .eduText{
+    color: #fff;
   }
 }
