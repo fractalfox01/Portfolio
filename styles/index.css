@@ -1,6 +1,8 @@
 
 :root{
     --about-background: #07b;
+    --main-background: #dedede;
+    --footer-background: #65b6df;
 }
 @-webkit-keyframes draw{
     0% { stroke-dasharray: 900; stroke-dashoffset: 900; background-color: "none";}
@@ -60,7 +62,7 @@ a:hover{
   /*background-image: url("../Images/trees4.jpg");
   background-repeat: no-repeat;
   background-size: 85vw 1000px;*/
-  border: 8px solid #eee;
+  border: 8px double #09f;
   z-index: 1;
 }
 .aboutText1{
@@ -101,7 +103,7 @@ a:hover{
 #first{
   width: 95vw;
   height: 1800px;
-  background-color: #555;
+  background-color: var(--main-background);
   z-index: 3;
 }
 #b1{
@@ -177,7 +179,7 @@ a:hover{
 #second{
   width: 95vw;
   height: 1000px;
-  background-color: #555;
+  background-color: var(--main-background);
 }
 #mySkills{
   position: absolute;
@@ -419,28 +421,30 @@ a:hover{
   color: #00f;
 }
 #third{
-  height: 700px;
+  height: 600px;
   width: 95vw;
-  background-color: #555;
+  background-color: var(--main-background);
 }
 #projTitle{
   position: absolute;
+  margin-top: -95px;
+  margin-left: 650px;
   font-size: 3em;
 }
 #fourth{
   height: 475px;
   width: 95vw;
-  background-color: #555;
+  background-color: var(--main-background);
 }
 #fifth{
   height: 900px;
   width: 95vw;
-  background-color: #555;
+  background-color: var(--main-background);
 }
 #footer{
   height: 100px;
   width: 95vw;
-  background-color: #00f;
+  background-color: var(--footer-background);
 }
 #footerText{
   position: absolute;
@@ -636,7 +640,7 @@ a:hover{
   position: absolute;
   display: inline;
   cursor: pointer;
-  margin-left: 200px;
+  margin-left: 100px;
   width: 350px;
   height: 350px;
   border: 5px solid black;
@@ -649,8 +653,8 @@ a:hover{
   margin-top: 245px;
   width: 330px;
   height: 100px;
-  background-color: #ccc;
-  border: 5px inset #676767;
+  background-color: #ccf;
+  border: 5px inset #000;
   opacity: 0;
 }
 .simonWrap:hover .simonInfo{
@@ -660,7 +664,7 @@ a:hover{
   position: absolute;
   display: inline;
   cursor: pointer;
-  margin-left: 600px;
+  margin-left: 550px;
   width: 350px;
   height: 350px;
   border: 5px solid black;
@@ -670,16 +674,42 @@ a:hover{
 .pythonInfo{
   position: absolute;
   margin-left: 15px;
-  margin-top: 240px;
+  margin-top: 224px;
   width: 330px;
-  height: 110px;
-  background-color: #ccc;
-  border: 5px inset #676767;
+  height: 120px;
+  background-color: #ccf;
+  border: 5px inset #000;
   opacity: 0;
 }
 .pythonWrap:hover .pythonInfo{
   opacity: 1;
 }
+
+.spiraledWrap{
+  position: absolute;
+  display: inline;
+  cursor: pointer;
+  margin-left: 1000px;
+  width: 350px;
+  height: 350px;
+  border: 5px solid black;
+  background-image: url("../Images/spiraledthoughts(0).jpg");
+  background-size: 350px 350px;
+}
+.spiraledInfo{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 224px;
+  width: 330px;
+  height: 120px;
+  background-color: #ccf;
+  border: 5px inset #000;
+  opacity: 0;
+}
+.spiraledWrap:hover .spiraledInfo{
+  opacity: 1;
+}
+
 @media only screen and (max-width: 451px){
   #wrap{
     display: flex;
@@ -761,12 +791,13 @@ a:hover{
   }
   #third{
     width: 85vw;
-    height: 500px;
+    height: 900px;
     background-color: #eee;
   }
   #projTitle{
     position: absolute;
     margin-top: -50px;
+    margin-left: 0px;
     font-size: 3em;
   }
   #fourth{
@@ -847,6 +878,7 @@ a:hover{
   }
   #mySkills{
     position: absolute;
+    cursor: unset;
     margin-top: 0vh;
     margin-left: 2vw;
     width: 80vw;
@@ -861,6 +893,7 @@ a:hover{
   }
   /* skillsbar css */
   .progress-container{
+    cursor: unset;
     margin: 0vw;
     padding: 5px;
   }
@@ -871,6 +904,7 @@ a:hover{
   }
   .progress-box-outer{
     align: inline-block;
+    cursor: unset;
     margin-top: 2vh;
     margin-left: 0vw;
     width: 75vw;
@@ -898,52 +932,54 @@ a:hover{
     background-position: 0 95vh;
   }
   .p-3{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 90vh;
   }
   .p-4{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 85vh;
   }
   .p-5{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 80vh;
   }
   .p-6{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 75vh;
   }
   .p-7{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 70vh;
   }
   .p-8{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 65vh;
   }
   .p-9{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 60vh;
   }
   .p-10{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 55vh;
   }
   .p-11{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 50vh;
   }
   .p-12{
-    cursor: pointer;
+    cursor: unset;
     background-position: 0 45vh;
   }
   .info{
     margin-left: 1vw;
+    cursor: unset;
     font-size: 2.25vh;
     color: #ccc;
   }
   .progress-box-inner{
     text-shadow: -1px 0px 1px #ffffff;
+    cursor: unset;
     font-family: Oswald, serif;
     padding-left: 1vw;
     border: .5vw solid white;
@@ -1133,6 +1169,7 @@ a:hover{
   }
   .simonInfo{
     position: absolute;
+    cursor: help;
     margin-left: 15px;
     margin-top: 200px;
     width: 230px;
@@ -1145,24 +1182,24 @@ a:hover{
     position: absolute;
     display: inline;
     cursor: pointer;
-    margin-left: 600px;
-    width: 350px;
-    height: 350px;
+    margin-top: 370px;
+    margin-left: 5vw;
+    width: 250px;
+    height: 250px;
     border: 5px solid black;
     background-image: url("../Images/Networking-in-Python.JPG");
-    background-size: 350px 350px;
+    background-size: 250px 250px;
   }
   .pythonInfo{
     position: absolute;
+    cursor: help;
     margin-left: 15px;
-    margin-top: 240px;
-    width: 330px;
-    height: 110px;
+    margin-top: 200px;
+    width: 230px;
+    height: 150px;
     background-color: #ccc;
     border: 5px inset #676767;
-    opacity: 0;
-  }
-  .pythonWrap:hover .pythonInfo{
     opacity: 1;
   }
+
 }
