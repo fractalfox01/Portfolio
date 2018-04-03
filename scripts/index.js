@@ -9,6 +9,10 @@ let carousel = $(".carousel");
 let left = $(".goleft");
 let right = $(".goright");
 let footerText = $("#footerText");
+let linkMe = $(".l1");
+let linkFCC = $(".l2");
+let linkLinkedin = $(".l3");
+let linkGithub = $(".l4");
 let copyrightDate = new Date();
 let refinedCopyright = copyrightDate.getFullYear();
 let deg = 0;
@@ -53,5 +57,20 @@ $(document).ready(function(){
   right.on('click', function(){
     deg = deg + 72;
     carousel.css("transform", "rotateX(" + xdeg + "deg) rotateY("+ (deg) +"deg)");
+  });
+
+//  Link buttons --------------------------------------------------------
+  linkMe.on('click', function(){
+    // Button does Nothing
+    console.log("my link clicked");
+  });
+  linkFCC.on('click', function(){
+    window.open("https://www.freecodecamp.org/fractalfox01");
+  });
+  linkLinkedin.on('click', function(){
+    window.open("https://www.linkedin.com/in/thomas-v-6517aa111");
+  });
+  linkGithub.on('click', function(){
+    window.open("https://github.com/fractalfox01/");
   });
 })

@@ -58,10 +58,10 @@ a:hover{
   margin-left: 0vw;
   width: 85vw;
   height: 1000px;
-  background-color: var(--about-background);
-  /*background-image: url("../Images/trees4.jpg");
+  /*background-color: var(--about-background);*/
+  background-image: url("../Images/aboutme.jpg");
   background-repeat: no-repeat;
-  background-size: 85vw 1000px;*/
+  background-size: 85vw 1000px;
   border: 8px double #09f;
   z-index: 1;
 }
@@ -437,7 +437,7 @@ a:hover{
   background-color: var(--main-background);
 }
 #fifth{
-  height: 900px;
+  height: 1100px;
   width: 95vw;
   background-color: var(--main-background);
 }
@@ -709,7 +709,40 @@ a:hover{
 .spiraledWrap:hover .spiraledInfo{
   opacity: 1;
 }
-
+#eduTitle{
+  position: absolute;
+  padding-top: 15px;
+  margin-top: 200px;
+  margin-left: 100px;
+  width: 85vw;
+  height: 100px;
+  text-align: center;
+  font-size: 3em;
+  background-color: #fff;
+  border: 5px solid #555;
+}
+.eduWrap{
+  position: absolute;
+  display: inline-block;
+  --moz-display: inline-block;
+  --webkit-display: inline-block;
+  margin-top: 300px;
+  margin-left: 100px;
+  width: 85vw;
+  height: 700px;
+  background-color: #999;
+  border: 5px solid #fff;
+  border-top-color: #555;
+}
+.eduHead{
+  color: #00f;
+}
+.eduText{
+  color: #fff;
+}
+/*------------------------------------------------------------------------------------
+ ------------------------------------  Mobile  ---------------------------------------
+ -------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 451px){
   #wrap{
     display: flex;
