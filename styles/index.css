@@ -1,1065 +1,1168 @@
-<style>
-    @-webkit-keyframes draw{
-        0% { stroke-dasharray: 900; stroke-dashoffset: 900; background-color: "none";}
-        100% { stroke-dasharray: 900; stroke-dashoffset: 0; background-color: "rgb(0, 255, 0)"; }
-    }
-    a{
-      font-size: 16px;
-      color: #74e990;
-    }
-    a:hover{
-      font-size: 22px;
-      color: #0f0;
-    }
-    #wrap{
-      display: flex;
-      flex-direction: column;
-      -webkit-flex-direction: column;
-      margin-left: 0vw;
-    }
-    .inner{
-      margin: 0px;
-      width: 93vw;
-      height: 100px;
-      display: inline-flex;
-      -webkit-display: inline-flex;
-    }
-    #image{
-      position: absolute;
-      margin-top: 270px;
-      margin-left: 30vw;
-      width: 30vw;
-      height: 40vh;
-      shape-outside: url("../Images/me.jpg");
-      background-size: 30vw 40vh;
-      float: center;
-      border-radius: 15%;
-      z-index: 0;
-    }
-    #buttons{
-      display: flex;
-      -webkit-display: flex;
-      flex-direction: row;
-      -webkit-flex-direction: row;
-      margin-left: 0vw;
-    }
-    .btn{
-      margin: 0px;
-      display: inline-flex;
-      -webkit-display: inline-flex;
-    }
-    #aboutme{
-      margin-top: 650px;
-      margin-left: 0vw;
-      width: 85vw;
-      height: 1000px;
-      background-color: #999;
-      /*background-image: url("../Images/trees4.jpg");
-      background-repeat: no-repeat;
-      background-size: 85vw 1000px;*/
-      border: 8px solid #eee;
-      z-index: 1;
-    }
-    .aboutText1{
-      margin-left: 1vw;
-      margin-rigth: 1vw;
-      color: #fff;
-      font-size: 45px;
-      font-family: "Bungee Outline";
-      text-align: center;
-    }
-    .aboutText2{
-      margin-left: 1vw;
-      margin-right: 1vw;
-      color: #00ffaa;
-      font-size: 22px;
-      font-family: Rokkitt;
-      text-align: justify;
-    }
-    .aboutmain{
-      margin-left: 1vw;
-      margin-right: 1vw;
-      color: #00ffaa;
-      font-size: 22px;
-      line-height: 25px;
-      text-align: justify;
-    }
-    .list{
-      margin-left: 1vh;
-      color: #00ffaa;
-      font-size: 18px;
-    }
-    #firstName{
-      position: fixed;
-      margin-left: 18vw;
-      background-color: none;
-      z-index: 5;
-    }
-    #first{
-      width: 95vw;
-      height: 1800px;
-      background-color: #555;
-      z-index: 3;
-    }
-    #b1{
-      position: fixed;
-      margin-top: 15vh;
-      margin-left: 0vw;
-      background-color: #00a;
-      border-radius: 10px;
-      border: 5px outset #88f;
-      opacity: .85;
-      z-index: 5;
-    }
-    #b1:hover{
-      background-color: blue;
-    }
-    #b2{
-      position: fixed;
-      margin-top: 15vh;
-      margin-left: 20vw;
-      background-color: #00a;
-      border-radius: 10px;
-      border: 5px outset #88f;
-      opacity: .85;
-      z-index: 5;
-    }
-    #b2:hover{
-      background-color: blue;
-    }
-    #b3{
-      position: fixed;
-      margin-top: 15vh;
-      margin-left: 40vw;
-      background-color: #00a;
-      border-radius: 10px;
-      border: 5px outset #88f;
-      opacity: .85;
-      z-index: 5;
-    }
-    #b3:hover{
-      background-color: blue;
-    }
-    #b4{
-      position: fixed;
-      margin-top: 15vh;
-      margin-left: 60vw;
-      background-color: #00a;
-      border-radius: 10px;
-      border: 5px outset #88f;
-      opacity: .85;
-      z-index: 5;
-    }
-    #b4:hover{
-      background-color: blue;
-    }
-    #b5{
-      position: fixed;
-      margin-top: 15vh;
-      margin-left: 80vw;
-      background-color: #00a;
-      border-radius: 10px;
-      border: 5px outset #88f;
-      opacity: .85;
-      z-index: 5;
-    }
-    #b5:hover{
-      background-color: blue;
-    }
-    #second{
-      width: 95vw;
-      height: 1000px;
-      background-color: #555;
-    }
-    #mySkills{
-      position: absolute;
-      margin-top: 0vh;
-      margin-left: 6vw;
-      width: 80vw;
 
-      height: 70vh;
-      background-color: none;
-      z-index: 0;
-    }
+:root{
+    --about-background: #07b;
+}
+@-webkit-keyframes draw{
+    0% { stroke-dasharray: 900; stroke-dashoffset: 900; background-color: "none";}
+    100% { stroke-dasharray: 900; stroke-dashoffset: 0; background-color: "rgb(0, 255, 0)"; }
+}
+a{
+  font-size: 16px;
+  color: #74e990;
+}
+a:hover{
+  font-size: 22px;
+  color: #0f0;
+}
+#wrap{
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  margin-left: 0vw;
+}
+.inner{
+  margin: 0px;
+  width: 93vw;
+  height: 100px;
+  display: inline-flex;
+  -webkit-display: inline-flex;
+}
+#image{
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 30vw;
+  width: 30vw;
+  height: 40vh;
+  shape-outside: url("../Images/me.jpg");
+  background-size: 30vw 40vh;
+  float: center;
+  border-radius: 15%;
+  z-index: 0;
+}
+#buttons{
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  margin-left: 0vw;
+}
+.btn{
+  margin: 0px;
+  display: inline-flex;
+  -webkit-display: inline-flex;
+}
+#aboutme{
+  margin-top: 650px;
+  margin-left: 0vw;
+  width: 85vw;
+  height: 1000px;
+  background-color: var(--about-background);
+  /*background-image: url("../Images/trees4.jpg");
+  background-repeat: no-repeat;
+  background-size: 85vw 1000px;*/
+  border: 8px solid #eee;
+  z-index: 1;
+}
+.aboutText1{
+  margin-left: 1vw;
+  margin-rigth: 1vw;
+  color: #fff;
+  font-size: 45px;
+  font-family: "Bungee Outline";
+  text-align: center;
+}
+.aboutText2{
+  margin-left: 1vw;
+  margin-right: 1vw;
+  color: #00ffaa;
+  font-size: 22px;
+  font-family: Rokkitt;
+  text-align: justify;
+}
+.aboutmain{
+  margin-left: 1vw;
+  margin-right: 1vw;
+  color: #00ffaa;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: justify;
+}
+.list{
+  margin-left: 1vh;
+  color: #00ffaa;
+  font-size: 18px;
+}
+#firstName{
+  position: fixed;
+  margin-left: 18vw;
+  background-color: none;
+  z-index: 5;
+}
+#first{
+  width: 95vw;
+  height: 1800px;
+  background-color: #555;
+  z-index: 3;
+}
+#b1{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 15vh;
+  margin-left: 0vw;
+  background-color: #00a;
+  border-radius: 10px;
+  border: 5px outset #88f;
+  opacity: .85;
+  z-index: 5;
+}
+#b1:hover{
+  background-color: blue;
+}
+#b2{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 15vh;
+  margin-left: 20vw;
+  background-color: #00a;
+  border-radius: 10px;
+  border: 5px outset #88f;
+  opacity: .85;
+  z-index: 5;
+}
+#b2:hover{
+  background-color: blue;
+}
+#b3{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 15vh;
+  margin-left: 40vw;
+  background-color: #00a;
+  border-radius: 10px;
+  border: 5px outset #88f;
+  opacity: .85;
+  z-index: 5;
+}
+#b3:hover{
+  background-color: blue;
+}
+#b4{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 15vh;
+  margin-left: 60vw;
+  background-color: #00a;
+  border-radius: 10px;
+  border: 5px outset #88f;
+  opacity: .85;
+  z-index: 5;
+}
+#b4:hover{
+  background-color: blue;
+}
+#b5{
+  cursor: pointer;
+  position: fixed;
+  margin-top: 15vh;
+  margin-left: 80vw;
+  background-color: #00a;
+  border-radius: 10px;
+  border: 5px outset #88f;
+  opacity: .85;
+  z-index: 5;
+}
+#b5:hover{
+  background-color: blue;
+}
+#second{
+  width: 95vw;
+  height: 1000px;
+  background-color: #555;
+}
+#mySkills{
+  position: absolute;
+  margin-top: 0vh;
+  margin-left: 6vw;
+  width: 80vw;
+
+  height: 70vh;
+  background-color: none;
+  z-index: 0;
+}
 
 
-    /* skillsbar css */
-    .progress-container{
-      margin: 0vw;
-      padding: 5px;
-    }
-    .mover{
-      margin-left: 0vw;
-    }
-    .moverIn{
+/* skillsbar css */
+.progress-container{
+  margin: 0vw;
+  padding: 5px;
+}
+.mover{
+  margin-left: 0vw;
+}
+.moverIn{
 
-    }
-    .progress-box-outer{
-      align: inline-block;
-      margin-top: 2vh;
-      margin-left: 0vw;
-      width: 81vw;
-      padding: 8px;
-      background-color: #676767;
-      background-image: url("../Images/trees3.jpg");
-      background-size: 80vw 110vh;
-      border: 3px solid black;
-      border-style: inset;
-      box-shadow: 5px 5px 10px 4px #000000;
-    }
-    .bar{
-      float: right;
-      color: #fff;
-    }
-    #tooltip{
-      margin-left: 5vw;
-      background: radial-gradient(#009, #003);
-      border: 5px inset #00f;
-      border-radius: 10px;
-    }
-    .p-top{
-      cursor:  url("../Images/python.svg"), pointer;
-      background-position: 0 100vh;
-    }
-    .tt1{
-      display: none;
-      width: 800px;
-      position: absolute;
-      color: white;
-    }
-    .p-top:hover .tt1{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-2{
-      cursor:  url("../Images/wordpress.png"), pointer;
-      background-position: 0 95vh;
-    }
-    .tt2{
-      display: none;
-      width: 800px;
-      position: absolute;
-      color: white;
-    }
-    .p-2:hover .tt2{
-      display: inline-block;
-      z-index; 3;
-    }
-    .p-3{
-      cursor:  url("../Images/linux.jpg"), pointer;
-      background-position: 0 90vh;
-    }
-    .tt3{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-3:hover .tt3{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-4{
-      cursor: url("../Images/html.jpg"), pointer;
-      background-position: 0 85vh;
-    }
-    .tt4{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-4:hover .tt4{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-5{
-      cursor: url("../Images/bootstrap1.jpg"), pointer;
-      background-position: 0 80vh;
-    }
-    .tt5{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-5:hover .tt5{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-6{
-      cursor: url("../Images/javascript.jpg"), pointer;
-      background-position: 0 75vh;
-    }
-    .tt6{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-6:hover .tt6{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-7{
-      cursor: pointer;
-      background-position: 0 70vh;
-    }
-    .tt7{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-7:hover .tt7{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-8{
-      cursor: pointer;
-      background-position: 0 65vh;
-    }
-    .tt8{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-8:hover .tt8{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-9{
-      cursor: pointer;
-      background-position: 0 60vh;
-    }
-    .tt9{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-9:hover .tt9{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-10{
-      cursor: pointer;
-      background-position: 0 55vh;
-    }
-    .tt10{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-10:hover .tt10{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-11{
-      cursor: pointer;
-      background-position: 0 50vh;
-    }
-    .tt11{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-11:hover .tt11{
-      display: inline-block;
-      z-index: 3;
-    }
-    .p-12{
-      cursor: pointer;
-      background-position: 0 45vh;
-    }
-    .tt12{
-      display: none;
-      width: 800px;
-      0px;
-      position: absolute;
-      color: white;
-    }
-    .p-12:hover .tt12{
-      display: inline-block;
-      z-index: 3;
-    }
-    .info{
-      margin-left: 1vw;
-      font-size: 2.25vh;
-      color: #ccc;
-    }
-    .progress-box-inner{
-      text-shadow: -1px 0px 1px #ffffff;
-      font-family: Oswald, serif;
-      padding-left: 1vw;
-      border: .5vw solid white;
-      border-style: outset;
-      box-shadow: 0px 0px 15px 3px #00ffaa;
-      background-color: #888;
-      color: #00f;
-    }
-    #third{
-      height: 700px;
-      width: 95vw;
-      background-color: #555;
-    }
-    #fourth{
-      height: 475px;
-      width: 95vw;
-      background-color: #555;
-    }
-    #fifth{
-      height: 900px;
-      width: 95vw;
-      background-color: #555;
-    }
-    #footer{
-      height: 100px;
-      width: 95vw;
-      background-color: #00f;
-    }
-    #footerText{
-      position: absolute;
-      margin-top: 20px;
-      margin-left: 30vw;
-      display: block;
-      font-size: 3em;
-      color: white;
-    }
-    .list{
-      margin-left: 1vw;
-      margin-right: 1vw;
-      color: #00ffaa;
-      font-size: 18px;
-    }
-    .name{
-      position: fixed;
-      stroke-width: "10";
-      stroke-dasharray: 900;
-      stroke-dashoffset: 0;
-      animation: draw 15s infinite;
-      z-index: 3;
-    }
-    .python{
-        width: 40vw;
-    }
-    .wordpress{
-      width: 40vw;
-    }
-    .linux{
-      width: 78vw;
-    }
-    .hTml{
-      width: 50vw;
-    }
-    .bootstrap{
-      width: 20vw;
-    }
-    .javascript{
-      width: 20vw;
-    }
-    .bash{
-      width: 78vw;
-    }
-    .java{
-      width: 20vw;
-    }
-    .android{
-      width: 20vw;
-    }
-    .cSharp{
-      width: 30vw;
-    }
-    .apache{
-      width: 50vw;
-    }
-    .nodejs{
-      width: 20vw;
-    }
-    .carousel{
-      position: absolute;
-      display: black;
-      margin-top: 15vh;
-      margin-left: 50vw;
-      width: 0vw;
-      height: 0vh
-      transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
-      transform-style: preserve-3d;
-      transition: transform 5s;
-      -moz-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
-      -moz-transform-style: preserve-3d;
-      -webkit-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
-      -webkit-transform-style: preserve-3d;
-      background-color: none;
-      z-index: 2;
-    }
-    .item{
-      position: inherit;
-      width: 25vw;
-      height: 40vh;
-      border-radius: 10vh;
-      margin-top: 0vh;
-      margin-left: 0vw;
-      text-align: center;
-    }
-    .l1{
-      margin-left: -12.5vw;
-      transform: rotateY(0deg) translateZ(300px);
-      background-image: url("../Images/star3.png");
-      background-repeat: no-repeat;
-      background-size: 25vw 40vh;
-    }
-    .l1:hover{
-      opacity: .85;
-    }
-    #l1Text{
-      position: inherit;
-      margin-top: 10vh;
-      color: rgb(255,255,255);
-      width: 25vw;
-      height: 30vh;
-      font-size: 4vh;
-      font-family: Rokkitt;
-      text-align: center;
-      background-color: none;
-    }
-    .l2{
-      margin-left: -12.5vw;
-      transform: rotateY(72deg) translateZ(300px);
-      background-image: url("../Images/freecodecamp-logo.png");
-      background-repeat: no-repeat;
-      background-size: 25vw 40vh;
-    }
-    .l2:hover{
-      opacity: .85;
-    }
-    #l2Text{
-      position: inherit;
-      margin-top: 30vh;
-      color: rgb(72,205,97);
-      width: 25vw;
-      height: 5vh;
-      font-size: 3.5vh;
-      text-align: center;
-    }
-    .l3{
-      margin-left: -12.5vw;
-      transform: rotateY(144deg) translateZ(300px);
-      background-image: url("../Images/lkn-logo.png");
-      background-repeat: no-repeat;
-      background-size: 25vw 40vh;
-    }
-    .l3:hover{
-      opacity: .85;
-    }
-    .l4{
-      margin-left: -12.5vw;
-      transform: rotateY(216deg) translateZ(300px);
-      background-image: url("../Images/github-logo1.jpg");
-      background-repeat: no-repeat;
-      background-size: 25vw 40vh;
-    }
-    .l4:hover{
-      opacity: .85;
-    }
-    .l5{
-      margin-left: -12.5vw;
-      transform: rotateY(288deg) translateZ(300px);
-      background-image: url("../Images/trees2.jpg");
-      background-repeat: no-repeat;
-      background-size: 25vw 40vh;
-    }
-    .l5:hover{
-      opacity: .85;
-    }
-    .goleft{
-      position: absolute;
-      margin-left: 100px;
-      margin-top: 0vh;
-      height: 60vh;
-      width: 5vw;
-      font-size: 10vh;
-      text-align: center;
-      color: #fff;
-      background-color: #0cf;
-      opacity: .5;
-      z-index: 2;
-    }
-    .goleft:hover{
-      cursor: pointer;
-      color: blue;
-      opacity: .75;
-    }
-    .goright{
-      position: absolute;
-      margin-top: 0vh;
-      height: 60vh;
-      width: 5vw;
-      margin-left: 85vw;
-      font-size: 10vh;
-      text-align: center;
-      color: #fff;
-      background-color: #0cf;
-      opacity: .5;
-      z-index: 2;
-    }
-    .goright:hover{
-      cursor: pointer;
-      color: blue;
-      opacity: .75;
-    }
-    #simonProject{
-      width: 350px;
-      height: 350px;
-      background-image: url("../Images/simonGame.jpg");
-      background-size: 350px 350px;
-    }
-    @media only screen and (max-width: 451px){
-      #wrap{
-        display: flex;
-        margin-left: -6vw;
-        -webkit-display: flex;
-        flex-direction: column;
-        -webkit-direction: column;
-      }
-      .inner{
-        margin: 0px;
-        width: 280px;
-        height: 100px;
-        display: inline-flex;
-        -webkit-display: inline-flex;
-        justify-content: space-between;
-      }
-      #image{
-        position: absolute;
-        margin-top: 18vh;
-        margin-left: 13vw;
-        width: 30vw;
-        height: 40vh;
-        shape-outside: url("../Images/me.jpg");
-        background-size: 30vw 40vh;
-        float: center;
-        border-radius: 15%;
-        z-index: 0;
-      }
-      #aboutme{
-        position: absolute;
-        margin-top: 375px;
-        margin-left: 0vw;
-        width: 80vw;
-        height: 1450px;
-        background-image: url("../Images/aboutme.jpg");
-        background-repeat: no-repeat;
-        background-size: 80vw 1500px;
-        z-index: 1;
-      }
-      .aboutText1{
-        color: #fff;
-        <!--color: #00eecf;-->
-        font-size: 32px;
-        line-height: 35px;
-        text-align: center;
-      }
-      .aboutText2{
-        margin-left: 0vw;
-        color: #0ee;
-        font-size: 16px;
-        text-align: justify;
-      }
-      .aboutmain{
-        margin-left: 1vw;
-        margin-right: 1vw;
-        color: #0ee;
-        font-size: 16px;
-        line-height: 18px;
-        text-align: justify;
-      }
-      #firstName{
-        position: fixed;
-        margin-left: 0vw;
-        width: 300px;
-        height: 100px;
-        background-color: none;
-        z-index: 5;
-      }
-      #first{
-        width: 85vw;
-        height: 1850px;
-        background-color: #eee;
-        z-index: 3;
-      }
-      #second{
-        width: 85vw;
-        height: 700px;
-        background-color: #eee;
-      }
-      #third{
-        width: 85vw;
-        height: 500px;
-        background-color: #eee;
-      }
-      #fourth{
-        height: 475px;
-        width: 85vw;
-        background-color: #eee;
-      }
-      #fifth{
-        height: 900px;
-        width: 85vw;
-        background-color: #eee;
-      }
-      #footer{
-        height: 100px;
-        width: 85vw;
-        background-color: #0f0;
-      }
-      #footerText{
-        position: absolute;
-        margin-top: 25px;
-        margin-left: 10vw;
-        display: block;
-        font-size: 1.25em;
-        color: #000;
-      }
-      #buttons{
-        display: flex;
-        -webkit-display: flex;
-        flex-direction: row;
-        margin-left: -5vw;
-      }
-      .btn{
-        margin: 0px;
-        display: inline-flex;
-      }
-      #b1{
-        position: fixed;
-        margin-top: 12vh;
-        margin-left: 0vw;
-        opacity: 0;
-        z-index: -1;
-      }
-      #b2{
-        position: fixed;
-        margin-top: 12vh;
-        margin-left: 0vw;
-        opacity: 0;
-        z-index: -1;
-      }
-      #b3{
-        position: fixed;
-        margin-top: 12vh;
-        margin-left: 0vw;
-        opacity: 0;
-        z-index: -1;
-      }
-      #b4{
-        position: fixed;
-        margin-top: 12vh;
-        margin-left: 0vw;
-        opacity: 0;
-        z-index: -1;
-      }
-      #b5{
-        position: fixed;
-        margin-top: 12vh;
-        margin-left: 0vw;
-        opacity: 0;
-        z-index: -1;
-      }
-      .name{
-        position: fixed;
-        stroke-width: "10";
-        stroke-dasharray: 900;
-        stroke-dashoffset: 0;
-        animation: draw 15s infinite;
-        z-index: 3;
-      }
-      #mySkills{
-        position: absolute;
-        margin-top: 0vh;
-        margin-left: 2vw;
-        width: 80vw;
-        height: 70vh;
-        background-color: none;
-        /* background-image: url("./Images/trees2.jpg");
-        background-size: 80vw 70vh;
-        background-repeat: no-repeat;
-        border: 2.5vw solid transparent;
-        border-image: url("https://pixnio.com/free-images/textures-and-patterns/wall-texture/brick-wall-texture-pictures/texture-red-stone-wall-725x544.jpg") 10; */
-        z-index: 0;
-      }
-      /* skillsbar css */
-      .progress-container{
-        margin: 0vw;
-        padding: 5px;
-      }
-      .mover{
-        margin-left: 0vw;
-      }
-      .moverIn{
-      }
-      .progress-box-outer{
-        align: inline-block;
-        margin-top: 2vh;
-        margin-left: 0vw;
-        width: 75vw;
-        padding: 8px;
-        background-color: #676767;
-        background-image: url("../Images/trees3.jpg");
-        background-size: 80vw 110vh;
-        border: 3px solid black;
-        border-style: inset;
-        box-shadow: 5px 5px 10px 4px #000000;
-      }
-      .bar{
-        float: right;
-        color: #fff;
-      }
-      #tooltip{
-        display: none;
-      }
-      .p-top{
-        cursor: unset;
-        background-position: 0 100vh;
-      }
-      .p-2{
-        cursor: unset;
-        background-position: 0 95vh;
-      }
-      .p-3{
-        cursor: pointer;
-        background-position: 0 90vh;
-      }
-      .p-4{
-        cursor: pointer;
-        background-position: 0 85vh;
-      }
-      .p-5{
-        cursor: pointer;
-        background-position: 0 80vh;
-      }
-      .p-6{
-        cursor: pointer;
-        background-position: 0 75vh;
-      }
-      .p-7{
-        cursor: pointer;
-        background-position: 0 70vh;
-      }
-      .p-8{
-        cursor: pointer;
-        background-position: 0 65vh;
-      }
-      .p-9{
-        cursor: pointer;
-        background-position: 0 60vh;
-      }
-      .p-10{
-        cursor: pointer;
-        background-position: 0 55vh;
-      }
-      .p-11{
-        cursor: pointer;
-        background-position: 0 50vh;
-      }
-      .p-12{
-        cursor: pointer;
-        background-position: 0 45vh;
-      }
-      .info{
-        margin-left: 1vw;
-        font-size: 2.25vh;
-        color: #ccc;
-      }
-      .progress-box-inner{
-        text-shadow: -1px 0px 1px #ffffff;
-        font-family: Oswald, serif;
-        padding-left: 1vw;
-        border: .5vw solid white;
-        border-style: outset;
-        box-shadow: 0px 0px 15px 3px #00ffaa;
-        background-color: #888;
-        color: #00f;
-      }
-      .python{
-        width: 50vw;
-      }
-      .wordpress{
-        width: 50vw;
-      }
-      .linux{
-        width: 73vw;
-      }
-      .hTml{
-        width: 60vw;
-      }
-      .bootstrap{
-        width: 38vw;
-      }
-      .javascript{
-        width: 39vw;
-      }
-      .bash{
-        width: 73vw;
-      }
-      .java{
-        width: 30vw;
-      }
-      .android{
-        width: 38vw;
-      }
-      .cSharp{
-        width: 43vw;
-      }
-      .apache{
-        width: 60vw;
-      }
-      .nodejs{
-        width: 33vw;
-      }
-      .carousel{
-        position: absolute;
-        display: black;
-        margin-top: 20vh;
-        margin-left: 40vw;
-        width: 0vw;
-        height: 0vh
-        transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
-        transform-style: preserve-3d;
-        -moz-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
-        -moz-transform-style: preserve-3d;
-        -webkit-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
-        -webkit-transform-style: preserve-3d;
-        transition: transform 5s;
-        background-color: none;
-        z-index: 2;
-      }
-      .item{
-        position: inherit;
-        width: 25vw;
-        height: 50vh;
-        border-radius: 10vh;
-        margin-top: 0vh;
-        margin-left: 0vw;
-        text-align: center;
-      }
-      .l1{
-        margin-left: -12.5vw;
-        transform: rotateY(0deg) translateZ(70px);
-        background-image: url("../Images/star3.png");
-        background-repeat: no-repeat;
-        background-size: 25vw 50vh;
-      }
-      #l1Text{
-        position: inherit;
-        display: block;
-        margin-top: 15vh;
-        color: rgb(255,255,255);
-        width: 25vw;
-        height: 30vh;
-        font-size: 1em;
-        text-align: center;
-        background-color: none;
-      }
-      #mail{
-        margin-left: -10vw;
-      }
-      .l2{
-        margin-left: -12.5vw;
-        transform: rotateY(72deg) translateZ(70px);
-        background-image: url("../Images/freecodecamp-logo.png");
-        background-repeat: no-repeat;
-        background-size: 25vw 50vh;
-      }
-      #l2Text{
-        position: inherit;
-        display: block;
-        margin-top: 35vh;
-        color: rgb(72,205,97);
-        font-size: 1em;
-        text-align: center;
-      }
-      .l2:hover #l2Text{
-        color: rgb(0,255,97);
-      }
-      .l3{
-        margin-left: -12.5vw;
-        transform: rotateY(144deg) translateZ(70px);
-        background-image: url("../Images/lkn-logo.png");
-        background-repeat: no-repeat;
-        background-size: 25vw 50vh;
-      }
-      .l4{
-        margin-left: -12.5vw;
-        transform: rotateY(216deg) translateZ(70px);
-        background-image: url("../Images/github-logo1.jpg");
-        background-repeat: no-repeat;
-        background-size: 25vw 50vh;
-      }
-      .l5{
-        margin-left: -12.5vw;
-        transform: rotateY(288deg) translateZ(70px);
-        background-image: url("../Images/trees2.jpg");
-        background-repeat: no-repeat;
-        background-size: 25vw 50vh;
-      }
-      .goleft{
-        position: absolute;
-        margin-left: 0vh;
-        margin-top: 20vh;
-        height: 50vh;
-        width: 5vw;
-        font-size: 32px;
-        text-align: center;
-        color: #fff;
-        background-color: #0cf;
-        opacity: .5;
-        z-index: 2;
-      }
-      .goleft:hover{
-        cursor: pointer;
-        color: blue;
-        opacity: .75;
-      }
-      .goright{
-        position: absolute;
-        margin-top: 20vh;
-        height: 50vh;
-        width: 5vw;
-        margin-left: 80vw;
-        font-size: 32px;
-        text-align: center;
-        color: #fff;
-        background-color: #0cf;
-        opacity: .5;
-        z-index: 2;
-      }
-      .goright:hover{
-        cursor: pointer;
-        color: blue;
-        opacity: .75;
-      }
-      .noselect {
-        -webkit-touch-callout: none; /* iOS Safari */
-        -webkit-user-select: none; /* Safari */
-        -khtml-user-select: none; /* Konqueror HTML */
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Non-prefixed version, currently
-                              supported by Chrome and Opera */
-      }
-    }
-
-</style>
+}
+.progress-box-outer{
+  align: inline-block;
+  margin-top: 2vh;
+  margin-left: 0vw;
+  width: 81vw;
+  padding: 8px;
+  background-color: #676767;
+  background-image: url("../Images/trees3.jpg");
+  background-size: 80vw 110vh;
+  border: 3px solid black;
+  border-style: inset;
+  box-shadow: 5px 5px 10px 4px #000000;
+}
+.bar{
+  float: right;
+  color: #fff;
+}
+#tooltip{
+  margin-left: 5vw;
+  background: radial-gradient(#009, #003);
+  border: 5px inset #00f;
+  border-radius: 10px;
+}
+.p-top{
+  cursor: pointer;
+  background-position: 0 100vh;
+}
+.tt1{
+  display: none;
+  width: 800px;
+  position: absolute;
+  color: white;
+}
+.p-top:hover .tt1{
+  display: inline-block;
+  z-index: 3;
+}
+.p-2{
+  cursor: pointer;
+  background-position: 0 95vh;
+}
+.tt2{
+  display: none;
+  width: 800px;
+  position: absolute;
+  color: white;
+}
+.p-2:hover .tt2{
+  display: inline-block;
+  z-index; 3;
+}
+.p-3{
+  cursor: pointer;
+  background-position: 0 90vh;
+}
+.tt3{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-3:hover .tt3{
+  display: inline-block;
+  z-index: 3;
+}
+.p-4{
+  cursor: pointer;
+  background-position: 0 85vh;
+}
+.tt4{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-4:hover .tt4{
+  display: inline-block;
+  z-index: 3;
+}
+.p-5{
+  cursor: pointer;
+  background-position: 0 80vh;
+}
+.tt5{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-5:hover .tt5{
+  display: inline-block;
+  z-index: 3;
+}
+.p-6{
+  cursor: pointer;
+  background-position: 0 75vh;
+}
+.tt6{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-6:hover .tt6{
+  display: inline-block;
+  z-index: 3;
+}
+.p-7{
+  cursor: pointer;
+  background-position: 0 70vh;
+}
+.tt7{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-7:hover .tt7{
+  display: inline-block;
+  z-index: 3;
+}
+.p-8{
+  cursor: pointer;
+  background-position: 0 65vh;
+}
+.tt8{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-8:hover .tt8{
+  display: inline-block;
+  z-index: 3;
+}
+.p-9{
+  cursor: pointer;
+  background-position: 0 60vh;
+}
+.tt9{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-9:hover .tt9{
+  display: inline-block;
+  z-index: 3;
+}
+.p-10{
+  cursor: pointer;
+  background-position: 0 55vh;
+}
+.tt10{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-10:hover .tt10{
+  display: inline-block;
+  z-index: 3;
+}
+.p-11{
+  cursor: pointer;
+  background-position: 0 50vh;
+}
+.tt11{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-11:hover .tt11{
+  display: inline-block;
+  z-index: 3;
+}
+.p-12{
+  cursor: pointer;
+  background-position: 0 45vh;
+}
+.tt12{
+  display: none;
+  width: 800px;
+  0px;
+  position: absolute;
+  color: white;
+}
+.p-12:hover .tt12{
+  display: inline-block;
+  z-index: 3;
+}
+.info{
+  margin-left: 1vw;
+  font-size: 2.25vh;
+  color: #ccc;
+}
+.progress-box-inner{
+  text-shadow: -1px 0px 1px #ffffff;
+  font-family: Oswald, serif;
+  padding-left: 1vw;
+  border: .5vw solid white;
+  border-style: outset;
+  box-shadow: 0px 0px 15px 3px #00ffaa;
+  background-color: #888;
+  color: #00f;
+}
+#third{
+  height: 700px;
+  width: 95vw;
+  background-color: #555;
+}
+#projTitle{
+  position: absolute;
+  font-size: 3em;
+}
+#fourth{
+  height: 475px;
+  width: 95vw;
+  background-color: #555;
+}
+#fifth{
+  height: 900px;
+  width: 95vw;
+  background-color: #555;
+}
+#footer{
+  height: 100px;
+  width: 95vw;
+  background-color: #00f;
+}
+#footerText{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 30vw;
+  display: block;
+  font-size: 3em;
+  color: white;
+}
+.list{
+  margin-left: 1vw;
+  margin-right: 1vw;
+  color: #00ffaa;
+  font-size: 18px;
+}
+.name{
+  position: fixed;
+  stroke-width: "10";
+  stroke-dasharray: 900;
+  stroke-dashoffset: 0;
+  animation: draw 15s infinite;
+  z-index: 3;
+}
+.python{
+    width: 40vw;
+}
+.wordpress{
+  width: 40vw;
+}
+.linux{
+  width: 78vw;
+}
+.hTml{
+  width: 50vw;
+}
+.bootstrap{
+  width: 20vw;
+}
+.javascript{
+  width: 20vw;
+}
+.bash{
+  width: 78vw;
+}
+.java{
+  width: 20vw;
+}
+.android{
+  width: 20vw;
+}
+.cSharp{
+  width: 30vw;
+}
+.apache{
+  width: 50vw;
+}
+.nodejs{
+  width: 20vw;
+}
+.carousel{
+  position: absolute;
+  display: black;
+  margin-top: 15vh;
+  margin-left: 50vw;
+  width: 0vw;
+  height: 0vh
+  transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+  transform-style: preserve-3d;
+  transition: transform 5s;
+  -moz-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+  -moz-transform-style: preserve-3d;
+  -webkit-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+  -webkit-transform-style: preserve-3d;
+  background-color: none;
+  z-index: 2;
+}
+.item{
+  position: inherit;
+  width: 25vw;
+  height: 40vh;
+  border-radius: 10vh;
+  margin-top: 0vh;
+  margin-left: 0vw;
+  text-align: center;
+}
+.l1{
+  margin-left: -12.5vw;
+  transform: rotateY(0deg) translateZ(300px);
+  background-image: url("../Images/star3.png");
+  background-repeat: no-repeat;
+  background-size: 25vw 40vh;
+}
+.l1:hover{
+  opacity: .85;
+}
+#l1Text{
+  position: inherit;
+  margin-top: 10vh;
+  color: rgb(255,255,255);
+  width: 25vw;
+  height: 30vh;
+  font-size: 4vh;
+  font-family: Rokkitt;
+  text-align: center;
+  background-color: none;
+}
+.l2{
+  margin-left: -12.5vw;
+  transform: rotateY(72deg) translateZ(300px);
+  background-image: url("../Images/freecodecamp-logo.png");
+  background-repeat: no-repeat;
+  background-size: 25vw 40vh;
+}
+.l2:hover{
+  opacity: .85;
+}
+#l2Text{
+  position: inherit;
+  margin-top: 30vh;
+  color: rgb(72,205,97);
+  width: 25vw;
+  height: 5vh;
+  font-size: 3.5vh;
+  text-align: center;
+}
+.l3{
+  margin-left: -12.5vw;
+  transform: rotateY(144deg) translateZ(300px);
+  background-image: url("../Images/lkn-logo.png");
+  background-repeat: no-repeat;
+  background-size: 25vw 40vh;
+}
+.l3:hover{
+  opacity: .85;
+}
+.l4{
+  margin-left: -12.5vw;
+  transform: rotateY(216deg) translateZ(300px);
+  background-image: url("../Images/github-logo1.jpg");
+  background-repeat: no-repeat;
+  background-size: 25vw 40vh;
+}
+.l4:hover{
+  opacity: .85;
+}
+.l5{
+  margin-left: -12.5vw;
+  transform: rotateY(288deg) translateZ(300px);
+  background-image: url("../Images/trees2.jpg");
+  background-repeat: no-repeat;
+  background-size: 25vw 40vh;
+}
+.l5:hover{
+  opacity: .85;
+}
+.goleft{
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 0vh;
+  height: 60vh;
+  width: 5vw;
+  font-size: 10vh;
+  text-align: center;
+  color: #fff;
+  background-color: #0cf;
+  opacity: .5;
+  z-index: 2;
+}
+.goleft:hover{
+  cursor: pointer;
+  color: blue;
+  opacity: .75;
+}
+.goright{
+  position: absolute;
+  margin-top: 0vh;
+  height: 60vh;
+  width: 5vw;
+  margin-left: 85vw;
+  font-size: 10vh;
+  text-align: center;
+  color: #fff;
+  background-color: #0cf;
+  opacity: .5;
+  z-index: 2;
+}
+.goright:hover{
+  cursor: pointer;
+  color: blue;
+  opacity: .75;
+}
+.simonWrap{
+  position: absolute;
+  display: inline;
+  cursor: pointer;
+  margin-left: 200px;
+  width: 350px;
+  height: 350px;
+  border: 5px solid black;
+  background-image: url("../Images/simonGame.jpg");
+  background-size: 350px 350px;
+}
+.simonInfo{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 245px;
+  width: 330px;
+  height: 100px;
+  background-color: #ccc;
+  border: 5px inset #676767;
+  opacity: 0;
+}
+.simonWrap:hover .simonInfo{
+  opacity: 1;
+}
+.pythonWrap{
+  position: absolute;
+  display: inline;
+  cursor: pointer;
+  margin-left: 600px;
+  width: 350px;
+  height: 350px;
+  border: 5px solid black;
+  background-image: url("../Images/Networking-in-Python.jpg");
+  background-size: 350px 350px;
+}
+.pythonInfo{
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 240px;
+  width: 330px;
+  height: 110px;
+  background-color: #ccc;
+  border: 5px inset #676767;
+  opacity: 0;
+}
+.pythonWrap:hover .pythonInfo{
+  opacity: 1;
+}
+@media only screen and (max-width: 451px){
+  #wrap{
+    display: flex;
+    margin-left: -6vw;
+    -webkit-display: flex;
+    flex-direction: column;
+    -webkit-direction: column;
+  }
+  .inner{
+    margin: 0px;
+    width: 280px;
+    height: 100px;
+    display: inline-flex;
+    -webkit-display: inline-flex;
+    justify-content: space-between;
+  }
+  #image{
+    position: absolute;
+    margin-top: 18vh;
+    margin-left: 13vw;
+    width: 30vw;
+    height: 40vh;
+    shape-outside: url("../Images/me.jpg");
+    background-size: 30vw 40vh;
+    float: center;
+    border-radius: 15%;
+    z-index: 0;
+  }
+  #aboutme{
+    position: absolute;
+    margin-top: 375px;
+    margin-left: 0vw;
+    width: 80vw;
+    height: 1450px;
+    background-image: url("../Images/aboutme.jpg");
+    background-repeat: no-repeat;
+    background-size: 80vw 1500px;
+    z-index: 1;
+  }
+  .aboutText1{
+    color: #fff;
+    <!--color: #00eecf;-->
+    font-size: 32px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .aboutText2{
+    margin-left: 0vw;
+    color: #0ee;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .aboutmain{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: #0ee;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: justify;
+  }
+  #firstName{
+    position: fixed;
+    margin-left: 0vw;
+    width: 300px;
+    height: 100px;
+    background-color: none;
+    z-index: 5;
+  }
+  #first{
+    width: 85vw;
+    height: 1850px;
+    background-color: #eee;
+    z-index: 3;
+  }
+  #second{
+    width: 85vw;
+    height: 700px;
+    background-color: #eee;
+  }
+  #third{
+    width: 85vw;
+    height: 500px;
+    background-color: #eee;
+  }
+  #projTitle{
+    position: absolute;
+    margin-top: -50px;
+    font-size: 3em;
+  }
+  #fourth{
+    height: 475px;
+    width: 85vw;
+    background-color: #eee;
+  }
+  #fifth{
+    height: 900px;
+    width: 85vw;
+    background-color: #eee;
+  }
+  #footer{
+    height: 100px;
+    width: 85vw;
+    background-color: #0f0;
+  }
+  #footerText{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 10vw;
+    display: block;
+    font-size: 1.25em;
+    color: #000;
+  }
+  #buttons{
+    display: flex;
+    -webkit-display: flex;
+    flex-direction: row;
+    margin-left: -5vw;
+  }
+  .btn{
+    margin: 0px;
+    display: inline-flex;
+  }
+  #b1{
+    position: fixed;
+    margin-top: 12vh;
+    margin-left: 0vw;
+    opacity: 0;
+    z-index: -1;
+  }
+  #b2{
+    position: fixed;
+    margin-top: 12vh;
+    margin-left: 0vw;
+    opacity: 0;
+    z-index: -1;
+  }
+  #b3{
+    position: fixed;
+    margin-top: 12vh;
+    margin-left: 0vw;
+    opacity: 0;
+    z-index: -1;
+  }
+  #b4{
+    position: fixed;
+    margin-top: 12vh;
+    margin-left: 0vw;
+    opacity: 0;
+    z-index: -1;
+  }
+  #b5{
+    position: fixed;
+    margin-top: 12vh;
+    margin-left: 0vw;
+    opacity: 0;
+    z-index: -1;
+  }
+  .name{
+    position: fixed;
+    stroke-width: "10";
+    stroke-dasharray: 900;
+    stroke-dashoffset: 0;
+    animation: draw 15s infinite;
+    z-index: 3;
+  }
+  #mySkills{
+    position: absolute;
+    margin-top: 0vh;
+    margin-left: 2vw;
+    width: 80vw;
+    height: 70vh;
+    background-color: none;
+    /* background-image: url("./Images/trees2.jpg");
+    background-size: 80vw 70vh;
+    background-repeat: no-repeat;
+    border: 2.5vw solid transparent;
+    border-image: url("https://pixnio.com/free-images/textures-and-patterns/wall-texture/brick-wall-texture-pictures/texture-red-stone-wall-725x544.jpg") 10; */
+    z-index: 0;
+  }
+  /* skillsbar css */
+  .progress-container{
+    margin: 0vw;
+    padding: 5px;
+  }
+  .mover{
+    margin-left: 0vw;
+  }
+  .moverIn{
+  }
+  .progress-box-outer{
+    align: inline-block;
+    margin-top: 2vh;
+    margin-left: 0vw;
+    width: 75vw;
+    padding: 8px;
+    background-color: #676767;
+    background-image: url("../Images/trees3.jpg");
+    background-size: 80vw 110vh;
+    border: 3px solid black;
+    border-style: inset;
+    box-shadow: 5px 5px 10px 4px #000000;
+  }
+  .bar{
+    float: right;
+    color: #fff;
+  }
+  #tooltip{
+    display: none;
+  }
+  .p-top{
+    cursor: unset;
+    background-position: 0 100vh;
+  }
+  .p-2{
+    cursor: unset;
+    background-position: 0 95vh;
+  }
+  .p-3{
+    cursor: pointer;
+    background-position: 0 90vh;
+  }
+  .p-4{
+    cursor: pointer;
+    background-position: 0 85vh;
+  }
+  .p-5{
+    cursor: pointer;
+    background-position: 0 80vh;
+  }
+  .p-6{
+    cursor: pointer;
+    background-position: 0 75vh;
+  }
+  .p-7{
+    cursor: pointer;
+    background-position: 0 70vh;
+  }
+  .p-8{
+    cursor: pointer;
+    background-position: 0 65vh;
+  }
+  .p-9{
+    cursor: pointer;
+    background-position: 0 60vh;
+  }
+  .p-10{
+    cursor: pointer;
+    background-position: 0 55vh;
+  }
+  .p-11{
+    cursor: pointer;
+    background-position: 0 50vh;
+  }
+  .p-12{
+    cursor: pointer;
+    background-position: 0 45vh;
+  }
+  .info{
+    margin-left: 1vw;
+    font-size: 2.25vh;
+    color: #ccc;
+  }
+  .progress-box-inner{
+    text-shadow: -1px 0px 1px #ffffff;
+    font-family: Oswald, serif;
+    padding-left: 1vw;
+    border: .5vw solid white;
+    border-style: outset;
+    box-shadow: 0px 0px 15px 3px #00ffaa;
+    background-color: #888;
+    color: #00f;
+  }
+  .python{
+    width: 50vw;
+  }
+  .wordpress{
+    width: 50vw;
+  }
+  .linux{
+    width: 73vw;
+  }
+  .hTml{
+    width: 60vw;
+  }
+  .bootstrap{
+    width: 38vw;
+  }
+  .javascript{
+    width: 39vw;
+  }
+  .bash{
+    width: 73vw;
+  }
+  .java{
+    width: 30vw;
+  }
+  .android{
+    width: 38vw;
+  }
+  .cSharp{
+    width: 43vw;
+  }
+  .apache{
+    width: 60vw;
+  }
+  .nodejs{
+    width: 33vw;
+  }
+  .carousel{
+    position: absolute;
+    display: black;
+    margin-top: 20vh;
+    margin-left: 40vw;
+    width: 0vw;
+    height: 0vh
+    transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+    transform-style: preserve-3d;
+    -moz-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+    -moz-transform-style: preserve-3d;
+    -webkit-transform: rotateX(-5deg) rotateY(0deg) translateZ(0px);
+    -webkit-transform-style: preserve-3d;
+    transition: transform 5s;
+    background-color: none;
+    z-index: 2;
+  }
+  .item{
+    position: inherit;
+    width: 25vw;
+    height: 50vh;
+    border-radius: 10vh;
+    margin-top: 0vh;
+    margin-left: 0vw;
+    text-align: center;
+  }
+  .l1{
+    margin-left: -12.5vw;
+    transform: rotateY(0deg) translateZ(70px);
+    background-image: url("../Images/star3.png");
+    background-repeat: no-repeat;
+    background-size: 25vw 50vh;
+  }
+  #l1Text{
+    position: inherit;
+    display: block;
+    margin-top: 15vh;
+    color: rgb(255,255,255);
+    width: 25vw;
+    height: 30vh;
+    font-size: 1em;
+    text-align: center;
+    background-color: none;
+  }
+  #mail{
+    margin-left: -10vw;
+  }
+  .l2{
+    margin-left: -12.5vw;
+    transform: rotateY(72deg) translateZ(70px);
+    background-image: url("../Images/freecodecamp-logo.png");
+    background-repeat: no-repeat;
+    background-size: 25vw 50vh;
+  }
+  #l2Text{
+    position: inherit;
+    display: block;
+    margin-top: 35vh;
+    color: rgb(72,205,97);
+    font-size: 1em;
+    text-align: center;
+  }
+  .l2:hover #l2Text{
+    color: rgb(0,255,97);
+  }
+  .l3{
+    margin-left: -12.5vw;
+    transform: rotateY(144deg) translateZ(70px);
+    background-image: url("../Images/lkn-logo.png");
+    background-repeat: no-repeat;
+    background-size: 25vw 50vh;
+  }
+  .l4{
+    margin-left: -12.5vw;
+    transform: rotateY(216deg) translateZ(70px);
+    background-image: url("../Images/github-logo1.jpg");
+    background-repeat: no-repeat;
+    background-size: 25vw 50vh;
+  }
+  .l5{
+    margin-left: -12.5vw;
+    transform: rotateY(288deg) translateZ(70px);
+    background-image: url("../Images/trees2.jpg");
+    background-repeat: no-repeat;
+    background-size: 25vw 50vh;
+  }
+  .goleft{
+    position: absolute;
+    margin-left: 0vh;
+    margin-top: 20vh;
+    height: 50vh;
+    width: 5vw;
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    background-color: #0cf;
+    opacity: .5;
+    z-index: 2;
+  }
+  .goleft:hover{
+    cursor: pointer;
+    color: blue;
+    opacity: .75;
+  }
+  .goright{
+    position: absolute;
+    margin-top: 20vh;
+    height: 50vh;
+    width: 5vw;
+    margin-left: 80vw;
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+    background-color: #0cf;
+    opacity: .5;
+    z-index: 2;
+  }
+  .goright:hover{
+    cursor: pointer;
+    color: blue;
+    opacity: .75;
+  }
+  .noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome and Opera */
+  }
+  .simonWrap{
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 5vw;
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    background-image: url("../Images/simonGame.jpg");
+    background-size: 250px 250px;
+  }
+  .simonInfo{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 200px;
+    width: 230px;
+    height: 130px;
+    background-color: #ccc;
+    border: 5px inset #676767;
+    opacity: 1;
+  }
+  .pythonWrap{
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+    margin-left: 600px;
+    width: 350px;
+    height: 350px;
+    border: 5px solid black;
+    background-image: url("../Images/Networking-in-Python.jpg");
+    background-size: 350px 350px;
+  }
+  .pythonInfo{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 240px;
+    width: 330px;
+    height: 110px;
+    background-color: #ccc;
+    border: 5px inset #676767;
+    opacity: 0;
+  }
+  .pythonWrap:hover .pythonInfo{
+    opacity: 1;
+  }
+}

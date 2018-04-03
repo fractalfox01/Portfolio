@@ -210,9 +210,10 @@
         </ul>
         <div id="aboutme">
             <p class="aboutText1">Welcome to my online portfolio!</p>
-            <p class="aboutText2">The following page is a full summarization of my technical background. For any
+            <article class="aboutText2">The following page is a full summarization of my technical background. For any
                 questions
-                please see the <a target='_self' href='#frame5'>Links</a> section for contact information.</p>
+                please see the <a target='_self' href='#frame5'>Links</a> section for contact information.
+            </article>
             <p class="aboutmain">I'm a freelance website developer/designer and, owner of CodeRealms LLC. As-well-as
                 website services I also have experience in a number of other programming languages and services, such
                 as:</p>
@@ -422,21 +423,30 @@
                         interesting of which can be viewed in the Projects section.</p>
                 </span>
             </div>
-            <div class="progress-box-outer p-9 mover">
-                <div class="progress-box-inner android">
-                    Android<span class="bar">< 1 year</span>
-                </div>
-                <span id="tooltip" class="tt9">
-                    <p class="infoText">Android</p>
-                    <p class="info">Im still very inexperienced with Android. I am however, very impressed with Android Studios</p>
-                </span>
-            </div>
+            <!--        REMOVED  -  CSS LEFT INTACT  -->
+            <!--<div class="progress-box-outer p-9 mover">-->
+            <!--<div class="progress-box-inner android">-->
+            <!--Android<span class="bar">< 1 year</span>-->
+            <!--</div>-->
+            <!--<span id="tooltip" class="tt9">-->
+            <!--<p class="infoText">Android</p>-->
+            <!--<p class="info">Im still very inexperienced with Android. I am however, very impressed with Android Studios</p>-->
+            <!--</span>-->
+            <!--</div>-->
             <div class="progress-box-outer p-10 mover">
                 <div class="progress-box-inner cSharp">
                     C#<span class="bar">< 2 years</span>
                 </div>
                 <span id="tooltip" class="tt10">
-
+                    <p class="infoText">C Sharp / C#</p>
+                    <p class="info">While attending school for programming, C# was my first learned language. Before this,
+                        any object oriented programming was a foreign concept to me. I learned a great deal during that course
+                        due to an amazing instructor, as well as I gained my first glance at a proper structure for programming.
+                        The class was fairly difficult, I admittedly got a month head start on the course. I've grown very fond
+                        of that approach.
+                    </p>
+                    <p class="info">C# is a powerful tool to have under your belt. It closely resembles the syntax of other popular
+                        languages, which makes retaining proper coding easy across intervals of time between use of each language.</p>
                 </span>
             </div>
             <div class="progress-box-outer p-11 mover">
@@ -458,8 +468,13 @@
         </div>
     </li>
     <li class="inner" id="third">
-        <h1>Projects</h1>
-        <img id="simonProject"/>
+        <h1 id="projTitle">Projects</h1>
+        <div class="simonWrap">
+            <span class="simonInfo">Click to view at CodePen.io. A Simon Game Written using Javascript, Jquery, HTML & CSS. This projects is part of a group of projects required for the front-end developer certification at FreeCodeCamp.org</span>
+        </div>
+        <div class="pythonWrap">
+            <span class="pythonInfo">Click to view code on Github. A simple networking app to convert between Hexadecimal, Decimal and, Binary interchangeably. The application also performs various manipulations on IPV4 type addresses in relation to broadcast, subnets, network masks, etc.</span>
+        </div>
     </li>
     <li class="inner" id="fourth">
         <div class="carousel">
