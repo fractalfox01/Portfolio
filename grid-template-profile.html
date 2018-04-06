@@ -61,24 +61,43 @@
         }
         .nav-title{
           position: fixed;
+          display: flex;
+          -moz-display: flex;
+          -webkit-display: flex;
+          flex-direction: column;
+          -moz-flex-direction: column;
+          -webkit-flex-direction: column;
           width: inherit;
-          height: 65vh;
-          margin-top: -5px;
+          height: 45vh;
+          margin-top: 10px;
           margin-left: 28px;
           font-size: 2em;
-          background-color: #fff;
+          background-color: none;
           border-bottom: 10px solid #000;
           text-align: center;
           z-index: 1;
         }
-        img{
+        .img{
           position: fixed;
           margin-top: -150px;
-          margin-left: 1vw;
-          width: 147px;
-          height: 135px;
+          margin-left: 1.1vw;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
           border: 15px solid #000;
           border-bottom: 70vh solid #00f;
+        }
+        .nav-btn{
+          width: inherit;
+          margin: 10px 3px 15px 3px;
+          padding: 3px;
+          height: 20px;
+          font-size: .5em;
+          background-color: #fff;
+          border: 1px solid #000;
+        }
+        .nav-btn:hover{
+          background-color: #00b;
+          border: 1px solid #00f;
         }
 
     </style>
@@ -86,12 +105,12 @@
     <script rel="text/javascript" src="./scripts/jquery-ui.min.js"></script>
     <script type="text/javascript">
         console.log("Script Working");
-
+        const about = $("#btn-abt");
+        const skill = $("#btn-skl");
+        const education = $("#btn-edu");
+        const contact = $("#btn-con");
         $(document).ready(function(){
-          let top = $(window).scrollTop();
-          $(window).on('scroll',function(event){
-            console.log("scrolling");
-          });
+
         });
 
     </script>
@@ -99,12 +118,21 @@
 <body>
 <div id="wrapper">
     <header class="header"><h1 class="big-n-center">Header</h1></header>
-    <nav class="navigation"><img src="Images/me.jpg"/>
-        <h1 class="nav-title">Navigation</h1></nav>
-    <section class="aboutMe"><h1 class="big-n-center">About Me</h1></section>
-    <section class="skills"><h1 class="big-n-center">Skills</h1></section>
-    <section class="education"><h1 class="big-n-center">Education</h1></section>
-    <section class="contact"><h1 class="big-n-center">Contact Info</h1></section>
+    <nav class="navigation">
+        <svg class="img" width="153" height="120" viewbox="230 0 50 100">
+            <image xlink:href="./Images/template.svg" x="0" y="0" height="1000px" width="1100px"/>
+        </svg>
+        <h1 class="nav-title">Navigation
+            <div id="btn-abt" class="nav-btn">About</div>
+            <div id="btn-skl" class="nav-btn">Skills</div>
+            <div id="btn-edu" class="nav-btn">Education</div>
+            <div id="btn-con" class="nav-btn">Contact</div>
+        </h1>
+    </nav>
+    <section id="about" class="aboutMe"><h1 class="big-n-center">About Me</h1></section>
+    <section id="skills" class="skills"><h1 class="big-n-center">Skills</h1></section>
+    <section id="education" class="education"><h1 class="big-n-center">Education</h1></section>
+    <section id="contact" class="contact"><h1 class="big-n-center">Contact Info</h1></section>
     <footer class="footer">Footer</footer>
 </div>
 
