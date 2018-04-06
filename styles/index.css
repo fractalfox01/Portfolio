@@ -427,9 +427,10 @@ a:hover{
 }
 #projTitle{
   position: absolute;
-  margin-top: -95px;
+  margin-top: -85px;
   margin-left: 650px;
   font-size: 3em;
+  z-index: 0;
 }
 #fourth{
   height: 475px;
@@ -714,7 +715,7 @@ a:hover{
   padding-top: 15px;
   margin-top: 200px;
   margin-left: 100px;
-  width: 85vw;
+  width: 80vw;
   height: 100px;
   text-align: center;
   font-size: 3em;
@@ -728,7 +729,7 @@ a:hover{
   --webkit-display: inline-block;
   margin-top: 300px;
   margin-left: 100px;
-  width: 85vw;
+  width: 80vw;
   height: auto;
   background: radial-gradient(#ccc, #888);
   border: 5px solid #fff;
@@ -739,6 +740,97 @@ a:hover{
 }
 .eduText{
   color: #fff;
+}
+/*------------------------------------------------------------------------------------*/
+/*-----------------------------------  Tablet  ---------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1370px){
+    #third{
+      height: 500px;
+      width: 95vw;
+      background-color: var(--main-background);
+    }
+    #projTitle{
+      position: absolute;
+      margin-top: -85px;
+      margin-left: 575px;
+      font-size: 3em;
+      z-index: 0;
+    }
+    .simonWrap{
+      position: absolute;
+      display: inline;
+      cursor: pointer;
+      margin-left: 70px;
+      width: 350px;
+      height: 350px;
+      border: 5px solid black;
+      background-image: url("../Images/simonGame.jpg");
+      background-size: 350px 350px;
+    }
+    .simonInfo{
+      position: absolute;
+      margin-left: 15px;
+      margin-top: 245px;
+      width: 330px;
+      height: 100px;
+      background-color: #ccf;
+      border: 5px inset #000;
+      opacity: 0;
+    }
+    .simonWrap:hover .simonInfo{
+      opacity: 1;
+    }
+    .pythonWrap{
+      position: absolute;
+      display: inline;
+      cursor: pointer;
+      margin-left: 35vw;
+      width: 350px;
+      height: 350px;
+      border: 5px solid black;
+      background-image: url("../Images/Networking-in-Python.JPG");
+      background-size: 350px 350px;
+    }
+    .pythonInfo{
+      position: absolute;
+      margin-left: 15px;
+      margin-top: 224px;
+      width: 330px;
+      height: 120px;
+      background-color: #ccf;
+      border: 5px inset #000;
+      opacity: 0;
+    }
+    .pythonWrap:hover .pythonInfo{
+      opacity: 1;
+    }
+
+    .spiraledWrap{
+      position: absolute;
+      display: inline;
+      cursor: pointer;
+      margin-left: 65vw;
+      width: 350px;
+      height: 350px;
+      border: 5px solid black;
+      background-image: url("../Images/spiraledthoughts(0).jpg");
+      background-size: 350px 350px;
+    }
+    .spiraledInfo{
+      position: absolute;
+      margin-left: 15px;
+      margin-top: 224px;
+      width: 330px;
+      height: 120px;
+      background-color: #ccf;
+      border: 5px inset #000;
+      opacity: 0;
+    }
+    .spiraledWrap:hover .spiraledInfo{
+      opacity: 1;
+    }
+
 }
 /*------------------------------------------------------------------------------------
  ------------------------------------  Mobile  ---------------------------------------
