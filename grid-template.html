@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Layout</title>
+    <style>
+        .wrapper-main{
+          height: 300px;
+          display: grid;
+          color: #fff;
+        }
+        .header-main{
+          height: 200px;
+          background-color: #2eeb4a;
+          grid-column: 1 / 8; /* span starting from the first column (far left), going to the far right (i'm specifying an semi-arbitrary number here; as my header it sets the area width, 8 means 8 even sections) */
+          grid-row: 1; /* only using the first row */
+          text-align: center;
+          color: #420bad;
+        }
+        .left-bar-main{
+          margin-top: 0px;
+          height: 105vh;
+          grid-column: 1 / 2;
+          grid-row: 2 / 3;
+          background-color: #001337;
+          color: #4eeb4a;
+        }
+        .body-main{
+          margin-top: 0px;
+          height: 100vh;
+          grid-column: 2 / 8;
+          grid-row: 2;
+          background-color: #eef;
+          border: 1.5vh double #0fb;
+        }
+        .footer-main{
+          margin-top: -15px;
+          height: 100px;
+          width: auto;
+          grid-column: 1 / 8;
+          grid-row: 3;
+          background-color: #006;
+        }
+        .info{
+          font-size: 2em;
+          color: #000;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="wrapper-main">
+    <header class="header-main">
+        <h1>Header</h1>
+        <p>A Simple Html/CSS Grid Template</p>
+    </header>
+    <nav class="left-bar-main">
+        <h1>Navigation</h1>
+    </nav>
+    <div class="body-main">
+        <h1 class="info">Main Body</h1>
+        <p></p>
+    </div>
+    <footer class="footer-main">
+        <h1>Footer</h1>
+    </footer>
+</div>
+</body>
+<script type="text/javascript">
+  console.log("Script Working");
+
+</script>
+</html>
