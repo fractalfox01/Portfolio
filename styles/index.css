@@ -11,6 +11,7 @@
 a{
   font-size: 16px;
   color: #74e990;
+  pointer-events: auto;
 }
 a:hover{
   font-size: 22px;
@@ -57,12 +58,13 @@ a:hover{
   margin-top: 650px;
   margin-left: 0vw;
   width: 85vw;
-  height: 1000px;
+  height: auto;
   /*background-color: var(--about-background);*/
   background-image: url("../Images/aboutme.jpg");
   background-repeat: no-repeat;
-  background-size: 85vw 1000px;
+  background-size: 85vw auto;
   border: 8px double #09f;
+  box-sizing: border-box;
   z-index: 1;
 }
 .aboutText1{
@@ -70,8 +72,9 @@ a:hover{
   margin-rigth: 1vw;
   color: #fff;
   font-size: 45px;
-  font-family: "Bungee Outline";
+  font-family: "Crete Round";
   text-align: center;
+  pointer-events: none;
 }
 .aboutText2{
   margin-left: 1vw;
@@ -80,19 +83,28 @@ a:hover{
   font-size: 22px;
   font-family: Rokkitt;
   text-align: justify;
+  pointer-events: none;
 }
 .aboutmain{
   margin-left: 1vw;
   margin-right: 1vw;
-  color: #00ffaa;
-  font-size: 22px;
+  padding: 3px;
+  color: #ade5de;
+  font-size: 1.2em;
   line-height: 25px;
+  font-family: Bitter;
   text-align: justify;
+  pointer-events: none;
+}
+#underline{
+  text-decoration: underline;
+  text-decoration-color: #fff;
 }
 .list{
   margin-left: 1vh;
   color: #00ffaa;
   font-size: 18px;
+  pointer-events: none;
 }
 #firstName{
   position: fixed;
@@ -233,7 +245,7 @@ a:hover{
 }
 .tt1{
   display: none;
-  width: 800px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -247,7 +259,7 @@ a:hover{
 }
 .tt2{
   display: none;
-  width: 800px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -261,8 +273,7 @@ a:hover{
 }
 .tt3{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -276,8 +287,7 @@ a:hover{
 }
 .tt4{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -291,8 +301,7 @@ a:hover{
 }
 .tt5{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -306,8 +315,7 @@ a:hover{
 }
 .tt6{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -321,8 +329,7 @@ a:hover{
 }
 .tt7{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -336,8 +343,7 @@ a:hover{
 }
 .tt8{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -351,8 +357,7 @@ a:hover{
 }
 .tt9{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -366,8 +371,7 @@ a:hover{
 }
 .tt10{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -381,8 +385,7 @@ a:hover{
 }
 .tt11{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -396,8 +399,7 @@ a:hover{
 }
 .tt12{
   display: none;
-  width: 800px;
-  0px;
+  width: auto;
   position: absolute;
   color: white;
 }
@@ -429,8 +431,16 @@ a:hover{
   position: absolute;
   margin-top: -85px;
   margin-left: 650px;
+  background-color: #fff;
   font-size: 3em;
   z-index: 0;
+}
+.blueText{
+  color: #00f;
+}
+.blueText:hover{
+  font-size: 1.1em;
+  color: #00f;
 }
 #fourth{
   height: 475px;
@@ -543,7 +553,7 @@ a:hover{
 }
 #l1Text{
   position: inherit;
-  margin-top: 10vh;
+  margin-top: 5vh;
   color: rgb(255,255,255);
   width: 25vw;
   height: 30vh;
@@ -868,16 +878,16 @@ a:hover{
     margin-top: 375px;
     margin-left: 0vw;
     width: 80vw;
-    height: 1450px;
+    height: 2180px;
     background-image: url("../Images/aboutme.jpg");
     background-repeat: no-repeat;
-    background-size: 80vw 1500px;
+    background-size: 80vw 100%;
     z-index: 1;
   }
   .aboutText1{
     color: #fff;
     <!--color: #00eecf;-->
-    font-size: 32px;
+    font-size: 26px;
     line-height: 35px;
     text-align: center;
   }
@@ -905,7 +915,7 @@ a:hover{
   }
   #first{
     width: 85vw;
-    height: 1850px;
+    height: 2600px;
     background-color: #eee;
     z-index: 3;
   }
@@ -924,6 +934,15 @@ a:hover{
     margin-top: -50px;
     margin-left: 0px;
     font-size: 3em;
+    background-color: #fff;
+    z-index: 0;
+  }
+  .blueText{
+    color: #00f;
+  }
+  .blueText:hover{
+    font-size: 1.1em;
+    color: #00f;
   }
   #fourth{
     height: 475px;

@@ -13,6 +13,7 @@ let linkMe = $(".l1");
 let linkFCC = $(".l2");
 let linkLinkedin = $(".l3");
 let linkGithub = $(".l4");
+let projSimon = $(".simonWrap");
 let copyrightDate = new Date();
 let refinedCopyright = copyrightDate.getFullYear();
 let deg = 0;
@@ -72,5 +73,9 @@ $(document).ready(function(){
   });
   linkGithub.on('click', function(){
     window.open("https://github.com/fractalfox01/");
+  });
+
+//  Project element clicks -----------------------------------------------
+  projSimon.on('click', function(){
   });
 })
